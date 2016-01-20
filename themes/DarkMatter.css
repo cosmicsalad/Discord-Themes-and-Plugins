@@ -220,6 +220,11 @@ textarea {
 	padding: 18px 20px;
 }
 
+.guilds-add {
+	font-size:30px;
+	background:#000;
+}
+
 .guilds li .guild-inner {
 	background:#151515;
 }
