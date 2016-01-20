@@ -1,0 +1,282 @@
+//META{"name":"Dark Matter","description":"A cold dark depressingly sexy theme for all your gloomy moodz bb.","author":"CosmicSalad","version":"1.0"}*//
+
+.app {
+	background-image:url("https://i.imgur.com/7SbtKvw.png") !important;
+	background-size: cover !important;
+}
+
+textarea {
+	background:transparent !important;
+}
+
+.guild-header ul {
+    opacity: 0 !important;
+    transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
+}
+
+.guild-header-open ul {
+	opacity: 1 !important;
+}
+
+.help-container {
+	display: none;
+}
+
+.guilds-add {
+    opacity: 0.15
+}
+
+.tooltip {
+    background:#1D6586;
+    color:#e0e0e0;
+}
+
+.tooltip.tooltip-right:after {
+    border-right-color:#1D6586;
+}
+
+.tooltip.tooltip-top:after {
+    border-top-color:#1D6586;
+}
+
+/*.guild-header span {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+.username {
+	font-size: 16px;
+	padding: 12px;
+	text-shadow: 0 0 1.25px rgba(255,255,255,1) ,
+        0 0 2.5px rgba(255,255,255,1) ,
+        0 0 5.25px rgba(255,255,255,1) ,
+        0 0 1.25px #ff00de , 0 0 8.75px #ff00de ,
+        0 0 10px #ff00de , 0 0 12.5px #ff00de ;
+}*/
+
+.links {
+	display: none;
+}
+
+.topic {
+	color: #cdcdcd !important;
+}
+
+#twitchcord-button {
+	background-size: 24px;
+	background-position: 20px;
+	background-color: transparent;
+}
+
+#voice-connection,
+/*.guilds-wrapper,
+.channels-wrap,*/
+.guild-channels,
+/*.account,*/
+.links,
+.chat,
+/*.title-wrap,
+.channel-members,*/
+.content,
+.chat-empty,
+.private-channels,
+.guild-header header,
+.typing,
+.divider-red span {
+	background: transparent !important;
+}
+
+.chat-empty {
+	background:rgba(20,23,27,0.95);
+}
+
+.chat>.content .messages .message-group:not(.has-divider) {
+    border-bottom-color: hsla(0,0%,100%,.04) !important;
+}
+
+.chat .divider>div {
+	background:rgba(0,0,0,0.4) !important;
+}
+
+.chat .divider>span {
+	background-color:rgba(0,0,0,0.4);
+	font-size:12px;
+	padding: 5px 15px;
+}
+
+.message-group .markup {
+	color:rgba(255,255,255,0.5) !important;
+}
+
+.message-group h2 .user-name {
+	color:rgba(255,255,255,0.8) !important;
+}
+
+.message-group h2 span {
+	color:rgba(255,255,255,0.2) !important;
+}
+
+.guilds-wrapper, .channels-wrap {
+	background:rgba(0,0,0,0.7);
+}
+
+.guilds-wrapper {
+	border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+.guild-header header span {
+	margin-left:-3px;
+}
+
+.btn-hamburger {
+	margin-right:-25px;
+}
+.btn-hamburger span {
+	background:#fff;
+}
+
+.guild-header header {
+	box-shadow:none !important;
+	color:#ddd;
+}
+
+.guild-channels header h2, .guild-channels ul .channel a {
+	color:#fff;
+}
+
+.account {
+	border-top:none !important;
+	width:290px;
+    margin-left:-80px;
+	padding:0 15px !important;
+	background:rgba(0,0,0,0.8);
+}
+
+.account .status {
+    border: 2px solid rgba(0,0,0,1);
+}
+
+#voice-connection {
+	border-top:none !important;
+	width:290px;
+    margin-left:-83px;
+	padding:15px 20px 15px 18px !important;
+}
+
+.guild-header ul {
+	background:#000 !important;
+}
+
+.content .flex-spacer {
+	background:rgba(20,23,27,0.95);
+}
+
+.title-wrap {
+	border-bottom:1px solid rgba(0,0,0,0.3) !important
+}
+
+.title-wrap, .channel-members {
+	background:rgba(10,13,16,0.95) !important;
+}
+
+.account .btn {
+	background:#000;
+	box-shadow:none !important;
+}
+
+#voice-connection .btn {
+	background:#000;
+	box-shadow:none !important;
+}
+
+.account .btn-deafen, .account .btn-settings {
+	box-shadow:none !important;
+}
+
+.account .btn-group, #voice-connection .btn-group {
+	border:none;
+}
+
+.guilds {
+	padding: 18px 20px;
+}
+
+.guilds li .guild-inner {
+	background:#151515;
+}
+
+.guilds li .guild-inner a, .guilds li, .guilds li .avatar-small {
+	width:40px;
+	height:40px;
+}
+
+.guilds li .avatar-small {
+	width:40px;
+	height:40px;
+	background-size: 40px 40px;
+}
+
+.guilds li .guild-inner {
+	line-height:40px;
+}
+
+.guilds .friends-icon {
+	width:40px;
+	height:40px;
+	background-size:25px 19px;
+}
+
+.guilds-separator:after {
+	background:#969696;
+}
+
+.guilds li .guild-inner:before {
+	left:-26px;
+}
+
+.guild-channels ul .channel-text.selected {
+	background:#1E2124;
+}
+
+.guild-channels ul .channel-text.selected:before,
+.guild-channels ul .channel-text.selected:hover:before {
+	border-left:5px solid #1D6586;
+}
+
+.channel-members .invite-btn {
+	background:#1D6586;
+}
+
+.channel-members .invite-btn:hover {
+	background:#25ACE8;
+}
+
+.channel-members .member:hover {
+	background:rgba(255,255,255,0.07) !important;
+}
+
+.channel-textarea-upload {
+	border-right:1px solid rgba(0,0,0,0.3);
+}
+
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {
+	border:3px solid rgba(255,255,255,0) !important;
+	background-color:#1D6586 !important;
+}
+
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+	border:3px solid rgba(255,255,255,0) !important;
+	background-color:rgba(0,0,0,0.3) !important;
+}
+
+.channel-textarea-inner {
+	border: 2px solid rgba(255,255,255,0.1) !important;
+	background:rgba(10,13,16,0.95) !important;
+}
+
+// SETTINGS
+
+.settings .settings-header {
+	background:#1a1d20 !important;
+}
