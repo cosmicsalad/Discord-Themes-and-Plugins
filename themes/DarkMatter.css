@@ -58,7 +58,6 @@ textarea {
 .links,
 .chat,
 .content,
-.chat-empty,
 .private-channels,
 .guild-header header,
 .typing,
@@ -66,33 +65,69 @@ textarea {
 	background: transparent !important;
 }
 
+.chat .new-messages-bar {
+	background-color: rgba(29,101,134,.9);
+}
+
+.chat .new-messages-bar:hover {
+	background-color: rgba(29,101,134,1);
+}
+
+.chat .new-messages-bar button:last-child {
+	color:rgba(255,255,255,0.5);
+}
+
 .chat-empty {
 	background:rgba(20,23,27,0.95);
 }
 
 .chat>.content .messages .message-group:not(.has-divider) {
-    border-bottom-color: hsla(0,0%,100%,.04) !important;
+    border-bottom-color:hsla(0,0%,100%,.04) !important;
 }
 
-.chat .divider>div {
-	background:rgba(0,0,0,0.4) !important;
+.chat>.content .messages .message-group .comment .markup .highlight {
+    background-color:rgba(29,101,134,.5) !important;
+    color:#ddd !important;
+}
+
+.chat>.content .messages .message-group .comment .markup .highlight:hover {
+    background-color:rgba(29,101,134,1) !important;
+    color:#fff !important;
+}
+
+.chat>.content .messages .divider span {
+	background-color:rgba(0,0,0,0.6) !important;
+}
+
+/* Date 1px line */
+.chat .divider:not(.divider-red)>div {
+	background:rgba(0,0,0,0.9) !important;
 }
 
 .chat .divider>span {
-	background-color:rgba(0,0,0,0.4);
+	background-color:rgba(0,0,0,0.4) !important;
 	font-size:12px;
-	padding: 5px 15px;
+	padding:5px 15px;
 }
 
-.message-group .markup {
+.chat .divider:not(.divider-red)>span {
+	color:rgba(255,255,255,1) !important;
+}
+
+.chat>.content .messages .message-group a {
+	color:#25ACE8 !important;
+}
+
+.chat>.content .messages .message-group .markup {
 	color:rgba(255,255,255,0.5) !important;
+	line-height:1.5em;
 }
 
-.message-group h2 .user-name {
+.chat>.content .messages .message-group h2 .user-name {
 	color:rgba(255,255,255,0.8) !important;
 }
 
-.message-group h2 span {
+.chat>.content .messages .message-group h2 span {
 	color:rgba(255,255,255,0.2) !important;
 }
 
@@ -215,7 +250,11 @@ textarea {
 }
 
 .guild-channels ul .channel-text.selected {
-	background:#1E2124;
+	background:rgba(0,0,0,0.6) !important;
+}
+
+.guild-channels ul .channel-text:not(.selected):hover {
+	background:rgba(0,0,0,0.3) !important;
 }
 
 .guild-channels ul .channel-text.selected:before,
@@ -254,8 +293,12 @@ textarea {
 	background:rgba(10,13,16,0.95) !important;
 }
 
-// SETTINGS
+/* SETTINGS */
 
 .settings .settings-header {
 	background:#1a1d20 !important;
+}
+
+.form .btn-primary {
+	background-color:#25ACE8;
 }
