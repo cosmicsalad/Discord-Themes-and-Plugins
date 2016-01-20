@@ -81,6 +81,10 @@ textarea {
 	background:rgba(20,23,27,0.95);
 }
 
+.chat>.title-wrap>.topic {
+	font-size:12px;
+}
+
 .chat>.content .messages .message-group:not(.has-divider) {
     border-bottom-color:hsla(0,0%,100%,.04) !important;
 }
@@ -274,6 +278,22 @@ textarea {
 	background:rgba(255,255,255,0.07) !important;
 }
 
+.popout header,
+.slider-bar-fill {
+	background-color:#1D6586;
+	border:1px solid #1D6586;
+}
+
+.user-popout .user-popout-options .btn {
+	background-color:#1D6586;
+	border:1px solid #1D6586;
+}
+
+.user-popout .user-popout-options .btn:hover {
+	background-color:#25ACE8;
+	border:1px solid #25ACE8;
+}
+
 .channel-textarea-upload {
 	border-right:1px solid rgba(0,0,0,0.3);
 }
@@ -300,5 +320,17 @@ textarea {
 }
 
 .form .btn-primary {
+	background-color:#1D6586;
+}
+
+.form .btn-primary:hover {
 	background-color:#25ACE8;
+}
+
+.user-settings-modal a {
+	color:#1D6586;
+}
+
+.user-settings-modal a:hover {
+	color:#25ACE8;
 }
