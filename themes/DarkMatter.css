@@ -39,22 +39,6 @@ textarea {
     border-top-color:#1D6586;
 }
 
-/*.guild-header span {
-	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-	color: transparent;
-	-webkit-background-clip: text;
-}
-
-.username {
-	font-size: 16px;
-	padding: 12px;
-	text-shadow: 0 0 1.25px rgba(255,255,255,1) ,
-        0 0 2.5px rgba(255,255,255,1) ,
-        0 0 5.25px rgba(255,255,255,1) ,
-        0 0 1.25px #ff00de , 0 0 8.75px #ff00de ,
-        0 0 10px #ff00de , 0 0 12.5px #ff00de ;
-}*/
-
 .links {
 	display: none;
 }
@@ -70,14 +54,9 @@ textarea {
 }
 
 #voice-connection,
-/*.guilds-wrapper,
-.channels-wrap,*/
 .guild-channels,
-/*.account,*/
 .links,
 .chat,
-/*.title-wrap,
-.channel-members,*/
 .content,
 .chat-empty,
 .private-channels,
