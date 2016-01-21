@@ -111,19 +111,15 @@ textarea {
     color:#fff !important;
 }
 
-.chat>.content .messages .divider span {
-	background-color:rgba(0,0,0,0.6) !important;
-}
-
 /* Date 1px line */
 .chat .divider:not(.divider-red)>div {
 	background:rgba(0,0,0,0.9) !important;
 }
 
 .chat .divider>span {
-	background-color:rgba(0,0,0,0.4) !important;
-	font-size:12px;
-	padding:5px 15px;
+	background-color:rgba(0,0,0,0) !important;
+	font-size:13px;
+	padding:5px 20px;
 }
 
 .chat .divider:not(.divider-red)>span {
@@ -237,6 +233,10 @@ textarea {
 	background:#151515;
 }
 
+.guilds li .guild-inner:hover {
+	background:#1D6586;
+}
+
 .guilds li .guild-inner a, .guilds li, .guilds li .avatar-small {
 	width:40px;
 	height:40px;
@@ -266,17 +266,28 @@ textarea {
 	left:-26px;
 }
 
-.guild-channels ul .channel-text.selected {
+
+.guild-channels ul .channel.selected,
+.private-channels .channel.selected {
 	background:rgba(0,0,0,0.6) !important;
 }
 
-.guild-channels ul .channel-text:not(.selected):hover {
+.guild-channels ul .channel:not(.selected):hover,
+.private-channels .channel:not(.selected):hover {
 	background:rgba(0,0,0,0.3) !important;
 }
 
-.guild-channels ul .channel-text.selected:before,
-.guild-channels ul .channel-text.selected:hover:before {
-	border-left:5px solid #1D6586;
+.guild-channels ul .channel:not(.selected):before,
+.guild-channels ul .channel.selected:before,
+.guild-channels ul .channel.selected:hover:before,
+.private-channels .channel:not(.selected):before,
+.private-channels .channel.selected:before,
+.private-channels .channel.selected:hover:before {
+	border-left:5px solid #1D6586 !important;
+}
+
+.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
+	left:-11px;
 }
 
 .channel-members .invite-btn {
@@ -326,6 +337,9 @@ textarea {
 	background:rgba(10,13,16,0.95) !important;
 }
 
+.typing {
+	font-size:12px;
+}
 
 /* SETTINGS */
 
