@@ -118,8 +118,9 @@ textarea {
 
 .chat .divider>span {
 	background-color:rgba(0,0,0,0) !important;
-	font-size:13px;
+	font-size:12px;
 	padding:5px 20px;
+	text-transform:uppercase;
 }
 
 .chat .divider:not(.divider-red)>span {
