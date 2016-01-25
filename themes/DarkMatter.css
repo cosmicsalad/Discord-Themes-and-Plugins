@@ -1,8 +1,8 @@
-//META{"name":"Dark Matter","description":"A cold dark depressingly sexy theme for all your gloomy moodz bb.","author":"CosmicSalad","version":"1.0"}*//
+//META{"name":"Dark Matter","description":"A cold dark depressingly sexy theme for all your gloomy moodz bb.","author":"CosmicSalad","version":"1.0.1"}*//
 
 .app {
 	background-image:url("https://i.imgur.com/7SbtKvw.png") !important;
-	background-size: cover !important;
+	background-size:cover !important;
 }
 
 textarea {
@@ -328,7 +328,7 @@ textarea {
 }
 
 .channel-textarea-upload {
-	border-right:1px solid rgba(0,0,0,0.3);
+	border-right-color: hsla(0,0%,100%,.1) !important;
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
@@ -343,7 +343,7 @@ textarea {
 
 .channel-textarea-inner {
 	border: 2px solid rgba(255,255,255,0.1) !important;
-	background:rgba(10,13,16,0.95) !important;
+	background:rgba(0,0,0,0.6) !important;
 }
 
 .typing {
