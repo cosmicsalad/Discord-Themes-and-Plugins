@@ -64,10 +64,6 @@ textarea {
 	background: transparent !important;
 }
 
-#voice-connection {
-	background:rgba(0,0,0,0.3);
-}
-
 .guilds-wrapper, .channels-wrap {
 	background:rgba(0,0,0,0.75);
 }
@@ -169,22 +165,35 @@ textarea {
 }
 
 .account {
+	z-index:9;
 	border-top:none !important;
 	width:290px;
     margin-left:-80px;
 	padding:0 15px !important;
-	background:rgba(0,0,0,0.8);
+	background:rgba(0,0,0,0.9);
 }
 
 .account .status {
-    border: 2px solid rgba(0,0,0,1);
+    border:2px solid rgba(0,0,0,1);
+}
+
+.account .btn {
+	background:#000;
+	box-shadow:none !important;
 }
 
 #voice-connection {
+	z-index:9;
 	border-top:none !important;
-	width:290px;
-    margin-left:-83px;
+	/*width:285px;
+    margin-left:-83px;*/
 	padding:15px 20px 15px 18px !important;
+	background:rgba(0,0,0,0.6);
+}
+
+#voice-connection .btn {
+	background:#000;
+	box-shadow:none !important;
 }
 
 .guild-header ul {
@@ -203,16 +212,6 @@ textarea {
 	background:rgba(10,13,16,0.95) !important;
 }
 
-.account .btn {
-	background:#000;
-	box-shadow:none !important;
-}
-
-#voice-connection .btn {
-	background:#000;
-	box-shadow:none !important;
-}
-
 .account .btn-deafen, .account .btn-settings {
 	box-shadow:none !important;
 }
@@ -222,7 +221,7 @@ textarea {
 }
 
 .guilds {
-	padding: 18px 20px;
+	padding:18px 20px 85px 20px;
 }
 
 .guilds-add {
