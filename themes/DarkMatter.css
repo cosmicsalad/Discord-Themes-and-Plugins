@@ -285,7 +285,11 @@ textarea {
 }
 
 .private-channels .search-bar {
-	background:rgba(10,13,16,0.95) !important
+	background:rgba(10,13,16,0) !important;
+}
+
+.private-channels .search-bar input {
+	background:rgba(0,0,0,0.8) !important;
 }
 
 .guild-channels ul .channel.selected,
