@@ -233,6 +233,10 @@ textarea {
 	background:#151515;
 }
 
+.guilds li.active .guild-inner {
+	background:#25ACE8;
+}
+
 .guilds li .guild-inner:hover {
 	background:#1D6586;
 }
@@ -275,8 +279,19 @@ textarea {
 	background:#fff !important;
 }
 
+.guild-channels header h2,
+.private-channels header {
+	opacity:.6;
+}
+
+.private-channels .search-bar {
+	background:rgba(10,13,16,0.95) !important
+}
+
 .guild-channels ul .channel.selected,
-.private-channels .channel.selected {
+.private-channels .channel.selected,
+.private-channels .search-result.selected,
+.private-channels .search-result:hover {
 	background:rgba(0,0,0,0.6) !important;
 }
 
@@ -290,7 +305,9 @@ textarea {
 .guild-channels ul .channel.selected:hover:before,
 .private-channels .channel:not(.selected):before,
 .private-channels .channel.selected:before,
-.private-channels .channel.selected:hover:before {
+.private-channels .channel.selected:hover:before,
+.private-channels .search-result.selected:before,
+.private-channels .search-result:hover:before {
 	border-left:5px solid #1D6586 !important;
 }
 
