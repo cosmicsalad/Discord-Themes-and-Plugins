@@ -22,8 +22,7 @@ ServerSort.prototype.start = function() {
 
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
-	script.src = 'https://code.jquery.com/ui/1.11.4/jquery-ui.js';
-	//script.src = 'https://raw.githubusercontent.com/cosmicsalad/html5sortable/master/dist/html.sortable.js';
+	script.src = 'https://raw.githubusercontent.com/cosmicsalad/Discord-Themes-and-Plugins/master/lib/jquery-ui.min.js';
 	$("head").append(script);
 	console.log("server sort loaded");
 
@@ -41,16 +40,6 @@ ServerSort.prototype.start = function() {
 			ServerSort.prototype.storeNewList();
 		}
 	}).disableSelection();
-
-	// HTML5 DnD sortable
-	/*$('.guilds').sortable({
-		handle: 'a',
-		items: 'li[data-reactid*=".0.1.1.0.0.0.3:"]'
-	});
-
-	$('.guilds').sortable().bind('sortupdate', function(e, ui) {
-		ServerSort.prototype.storeNewList();
-	});*/
 
 	//set initial order if order changed
 	if(storedOrder) {
@@ -78,8 +67,7 @@ ServerSort.prototype.checkNew = function() {
     	if($.inArray($(e.target).data('reactid'), storedOrder) !== -1) {
     		//console.log('IS IN ARRAY');
     	} else {
-    		console.log('IS NOT IN ARRAY');
-    		$(e.target).appendTo($('.guilds'));
+    		//console.log('IS NOT IN ARRAY');
     		ServerSort.prototype.storeNewList();
     		$('.guilds-add').parent().appendTo($('.guilds'));
     	}
