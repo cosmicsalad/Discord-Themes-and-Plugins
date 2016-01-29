@@ -7,7 +7,7 @@ ServerSort.prototype.getName = function() {
 };
 
 ServerSort.prototype.getDescription = function() {
-    return "Reorder the list of servers";
+    return "Drag and Drop to reorder the list of servers";
 };
 
 ServerSort.prototype.getVersion = function() {
