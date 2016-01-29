@@ -27,7 +27,7 @@ ServerSort.prototype.start = function() {
 	$("head").append(script);
 	console.log("server sort loaded");
 
-	//set var for list without fluff
+	//set var for accurate server list
 	var serverList = $('.guilds li[data-reactid*=".0.1.1.0.0.0.3:"]');
 
 	// set initial order
