@@ -22,7 +22,8 @@ ServerSort.prototype.start = function() {
 
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
-	script.src = 'https://raw.githubusercontent.com/voidberg/html5sortable/master/dist/html.sortable.min.js';
+	script.src = 'https://code.jquery.com/ui/1.11.4/jquery-ui.js';
+	//script.src = 'https://raw.githubusercontent.com/cosmicsalad/html5sortable/master/dist/html.sortable.js';
 	$("head").append(script);
 	console.log("server sort loaded");
 
@@ -33,26 +34,23 @@ ServerSort.prototype.start = function() {
 	var storedOrder = JSON.parse(localStorage.getItem("sortOrder"));
 
 	// make list sortable
-	/*$(".guilds").sortable({
+	$(".guilds").sortable({
 		axis: 'y',
 		items: 'li[data-reactid*=".0.1.1.0.0.0.3:"]',
 		update: function (e, ui) {
 			ServerSort.prototype.storeNewList();
 		}
-	}).disableSelection();*/
-	$('.guilds').sortable({
+	}).disableSelection();
+
+	// HTML5 DnD sortable
+	/*$('.guilds').sortable({
 		handle: 'a',
 		items: 'li[data-reactid*=".0.1.1.0.0.0.3:"]'
 	});
 
-	$('.guilds').sortable().bind('sortstart', function(e, ui) {
-		console.log('grabbed');
-		$('.guild-inner:before').hide();
-	});
-
 	$('.guilds').sortable().bind('sortupdate', function(e, ui) {
 		ServerSort.prototype.storeNewList();
-	});
+	});*/
 
 	//set initial order if order changed
 	if(storedOrder) {
