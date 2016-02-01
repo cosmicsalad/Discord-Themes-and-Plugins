@@ -1,4 +1,4 @@
-//META{"name":"Dark Matter","description":"A cold dark sexy theme for all your gloomy moods.","author":"CosmicSalad","version":"1.1"}*//
+//META{"name":"Dark Matter","description":"A cold dark depressingly sexy theme for all your gloomy moodz bb.","author":"CosmicSalad","version":"1.0.1"}*//
 
 /*
                      _                _                                   _ 
@@ -330,12 +330,12 @@ textarea {
     border-bottom-color:hsla(0,0%,100%,.04) !important;
 }
 
-.chat>.content .messages .message-group .comment .markup .highlight {
+.chat>.content .messages .message-group .markup .highlight {
     background-color:rgba(29,101,134,.5) !important;
     color:#ddd !important;
 }
 
-.chat>.content .messages .message-group .comment .markup .highlight:hover {
+.chat>.content .messages .message-group .markup .highlight:hover {
     background-color:rgba(29,101,134,1) !important;
     color:#fff !important;
 }
@@ -371,6 +371,23 @@ textarea {
 
 .chat>.content .messages .message-group h2 span {
 	color:rgba(255,255,255,0.2) !important;
+}
+
+.chat>.content .messages .message-group .markup pre {
+	background:transparent !important;
+    border-color:rgba(255,255,255,0.1) !important;
+}
+
+.chat>.content .messages .message-group .markup pre code.hljs {
+    background:rgba(255,255,255,0.1) !important;
+    color:rgba(255,255,255,0.7) !important;
+    padding:1em !important;
+}
+
+.chat>.content .messages .message-group .markup code.inline {
+	background:rgba(255,255,255,0.1) !important;
+    color:rgba(255,255,255,0.7) !important;
+	padding:0.3em 0.6em;
 }
 
 .channel-textarea-upload {
@@ -410,7 +427,7 @@ textarea {
 */
 
 .channel-members .invite-btn {
-	background:#1D6586;
+	background:#x;
 }
 
 .channel-members .invite-btn:hover {
