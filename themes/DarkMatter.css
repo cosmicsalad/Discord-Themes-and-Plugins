@@ -417,6 +417,17 @@ textarea {
 	background-color: transparent;
 }
 
+/*** COMPACT MODE ***/
+
+.message-group.compact .timestamp {
+    position: relative;
+    top: -4px;
+}
+
+.message-group.compact .message .markup .user-name {
+    margin-right: 10px;
+}
+
 /*
                        _ _     _                   _   _             
  _   _ ___  ___ _ __  | (_)___| |_   ___  ___  ___| |_(_) ___  _ __  
@@ -427,7 +438,7 @@ textarea {
 */
 
 .channel-members .invite-btn {
-	background:#x;
+	background:#1D6586;
 }
 
 .channel-members .invite-btn:hover {
