@@ -342,7 +342,7 @@ textarea {
 
 /* Date 1px line */
 .chat .divider:not(.divider-red)>div {
-	background:rgba(0,0,0,0.9) !important;
+	background:rgba(255,255,255,0.2) !important;
 }
 
 .chat .divider>span {
