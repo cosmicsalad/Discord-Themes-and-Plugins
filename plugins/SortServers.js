@@ -35,6 +35,7 @@ ServerSort.prototype.start = function() {
 	// make list sortable
 	$(".guilds").sortable({
 		axis: 'y',
+		distance: 10,
 		items: 'li[data-reactid*=".0.1.1.0.0.0.3:"]',
 		update: function (e, ui) {
 			ServerSort.prototype.storeNewList();
