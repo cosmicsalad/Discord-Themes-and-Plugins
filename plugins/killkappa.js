@@ -7,7 +7,7 @@ KillKappa.prototype.getName = function() {
 };
 
 KillKappa.prototype.getDescription = function() {
-    return "The most acceptable felony. I just really hate this emote.";
+    return "The most acceptable felony. This emote must die in every way possible";
 };
 
 KillKappa.prototype.getVersion = function() {
