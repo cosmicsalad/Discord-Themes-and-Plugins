@@ -20,6 +20,7 @@ KillKappa.prototype.getAuthor = function() {
 
 KillKappa.prototype.start = function() {
 	KillKappa.prototype.murder();
+	var replaceInsult = localStorage.getItem('murderText');
 };
 
 KillKappa.prototype.onMessage = function() {
@@ -29,10 +30,13 @@ KillKappa.prototype.onMessage = function() {
 	};
 };
 
-KillKappa.prototype.murder = function() {
+KillKappa.prototype.murder = function(e) {
+	if (this.replaceInsult == null) this.replaceInsult = "I'M A FLAMING BAG OF DICKS";
+	if (e) this.replaceInsult = e;
+	localStorage.setItem('murderText',this.replaceInsult);
 	$('.message .markup').find(":contains('Kappa')").each( function() {
 		var text = $(this).text();
-		text = text.replace('Kappa','I\'M A FLAMING BAG OF DICKS');
+		text = text.replace('Kappa',localStorage.getItem('murderText'));
 		$(this).text(text);
 	});
 };
@@ -40,5 +44,12 @@ KillKappa.prototype.murder = function() {
 KillKappa.prototype.load = function() {};
 KillKappa.prototype.unload = function() {};
 KillKappa.prototype.stop = function() {};
-KillKappa.prototype.onSwitch = function() {};
-KillKappa.prototype.getSettingsPanel = function() {};
+KillKappa.prototype.onSwitch = function() {
+	KillKappa.prototype.murder();
+};
+KillKappa.prototype.getSettingsPanel = function() {
+	/*return '<label for="murdered">Replace Text: </label> ' + 
+           '<input type="text" placeholder="Game.." name="murdered" id="murdered" value="'+localStorage.getItem('murderText')+'" style="width:200px;">' + 
+           '<button onclick="KillKappa.prototype.murder(document.getElementById(\'murdered\').value)">Murder</button>';
+           */
+};
