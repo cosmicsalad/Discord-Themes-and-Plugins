@@ -2,7 +2,6 @@
 
 *All themes go into %AppData%\BetterDiscord\themes*
 
-### Dark Matter
-A cold, dark & frosty theme.
+##### Dark Matter | *A cold, dark & frosty theme.*
 
 ![Alt text](/dm-ss.png?raw=true "Optional Title")
