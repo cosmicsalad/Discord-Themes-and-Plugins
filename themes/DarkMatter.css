@@ -333,6 +333,8 @@ textarea {
 .chat>.content .messages .message-group .markup .highlight {
     background-color:rgba(29,101,134,.5) !important;
     color:#ddd !important;
+	padding: 1px 4px;
+    border-radius: 6px;
 }
 
 .chat>.content .messages .message-group .markup .highlight:hover {
@@ -447,6 +449,10 @@ textarea {
 
 .channel-members .member:hover {
 	background:rgba(255,255,255,0.07) !important;
+}
+
+.channel-members .member .member-username {
+	font-size:14px;
 }
 
 /*
