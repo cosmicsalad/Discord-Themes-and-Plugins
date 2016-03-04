@@ -530,21 +530,41 @@ textarea {
 
 /* SERVER LIST */
 .bd-minimal .guilds {
-	padding-left:13px !important;
+	padding-left:10px !important;
+}
+
+.bd-minimal .guilds .friends-icon {
+	background-size:60%;
+}
+
+.bd-minimal .guilds li .guild-inner:before {
+    height:25px;
+    border-radius:5px;
+    margin-top:-13px;
 }
 
 .bd-minimal .guilds li.unread .guild-inner:before {
 	width:10px;
 	height:10px;
 	margin-top:-5px;
+	left:-16px;
 }
 
+.bd-minimal .guilds li.active .guild-inner:before {
+	left:-18px;
+	border-radius:5px;
+	height:25px;
+	margin-top:-13px;
+}
+
+.bd-minimal .guilds li,
+.bd-minimal .guilds li .avatar-small,
+.bd-minimal .guilds li .guild-inner,
+.bd-minimal .guilds li .guild-inner a,
 .bd-minimal .guilds .friends-icon {
-	background-size:70%;
-}
-
-.bd-minimal .guilds li .guild-inner:before {
-    left:-19px;
+	width:25px;
+    height:25px;
+    line-height:25px;
 }
 
 .bd-minimal .guilds li .avatar-small, #bd-pub-button {
@@ -590,7 +610,7 @@ textarea {
 }
 
 .bd-minimal .channel-members .member {
-    padding:5px 15px 3px 20px;
+    padding:5px 15px 8px 20px;
 }
 
 /* CHANNELS */
