@@ -7,11 +7,11 @@ ServerSort.prototype.getName = function() {
 };
 
 ServerSort.prototype.getDescription = function() {
-    return "Drag and Drop to reorder the list of servers";
+    return "Drag and Drop to reorder the list of servers and channels";
 };
 
 ServerSort.prototype.getVersion = function() {
-    return "1.0";
+    return "1.1";
 };
 
 ServerSort.prototype.getAuthor = function() {
@@ -26,19 +26,23 @@ ServerSort.prototype.start = function() {
 	$("head").append(script);
 	console.log("server sort loaded");
 
-	//set var for accurate server list
-	var serverList = $('.guilds li[data-reactid*=".0.1.1.0.0.0.3:"]');
+	this.initServerList();
+	this.initChannelList();
+
+};
+
+ServerSort.prototype.initServerList = function() {
 
 	// set initial order
 	var storedOrder = JSON.parse(localStorage.getItem("sortOrder"));
 
-	// make list sortable
+	// make server list sortable
 	$(".guilds").sortable({
 		axis: 'y',
 		distance: 10,
 		items: 'li[data-reactid*=".0.1.1.0.0.0.3:"]',
 		update: function (e, ui) {
-			ServerSort.prototype.storeNewList();
+			ServerSort.prototype.storeNewServerList();
 		}
 	}).disableSelection();
 
@@ -50,19 +54,64 @@ ServerSort.prototype.start = function() {
 		});
 	};
 
-	this.checkNew();
-	this.storeNewList();
+	this.checkNewServer();
+	this.storeNewServerList();
 
 };
 
-ServerSort.prototype.storeNewList = function() {
-	dataArray = $.map($(".guilds").children('li[data-reactid*=".0.1.1.0.0.0.3:"]'), function(el) {
+ServerSort.prototype.storeNewServerList = function() {
+	serverArray = $.map($(".guilds").children('li[data-reactid*=".0.1.1.0.0.0.3:"]'), function(el) {
 		return $(el).data('reactid');
 	});
-	localStorage.setItem("sortOrder", JSON.stringify(dataArray));
+	localStorage.setItem("sortOrder", JSON.stringify(serverArray));
 };
 
-ServerSort.prototype.checkNew = function() {
+ServerSort.prototype.initChannelList = function() {
+
+	// set initial order
+	storedChannelOrder = JSON.parse(localStorage.getItem("sortChannelOrder"));
+
+	// make channel list sortable
+	$(".guild-channels ul").sortable({
+		axis: 'y',
+		distance: 10,
+		items: 'li[data-reactid*=".0.1.1.0.1.0.1.0.0.1.0:"]',
+		update: function (e, ui) {
+			ServerSort.prototype.storeNewChannelList();
+		}
+	}).disableSelection();
+
+	currentServer = $('.guilds li.active').data('reactid');
+
+	//set initial order if order changed
+	if(storedChannelOrder && storedChannelOrder[currentServer]) {
+		$.each(storedChannelOrder[currentServer],function(index,value) {
+			$(".guild-channels ul[data-reactid='.0.1.1.0.1.0.1.0.0.1']").append($('li[data-reactid*="'+value+'"]'));
+		});
+	}
+
+	//this.checkNewChannel();
+	this.storeNewChannelList();
+
+};
+
+ServerSort.prototype.storeNewChannelList = function() {
+
+	currentServer = $('.guilds li.active').data('reactid');
+	channels = $.map($(".guild-channels ul").children('li[data-reactid*=".0.1.1.0.1.0.1.0.0.1.0:"]'), function(el) { 
+		return $(el).data('reactid');
+	});
+
+	var storedChannelOrder = JSON.parse(localStorage.getItem("sortChannelOrder"));
+
+	channelList = {};
+	channelList[currentServer] = channels;
+	newChannelList = $.extend({}, storedChannelOrder, channelList);
+
+	localStorage.setItem("sortChannelOrder", JSON.stringify(newChannelList));
+};
+
+ServerSort.prototype.checkNewServer = function() {
     $(".guilds").on('DOMNodeInserted', 'li[data-reactid*=".0.1.1.0.0.0.3:"]', function(e) {
     	var storedOrder = JSON.parse(localStorage.getItem("sortOrder"));
     	if($.inArray($(e.target).data('reactid'), storedOrder) !== -1) {
@@ -78,7 +127,9 @@ ServerSort.prototype.checkNew = function() {
 ServerSort.prototype.load = function() {};
 ServerSort.prototype.unload = function() {};
 ServerSort.prototype.stop = function() {};
-ServerSort.prototype.onSwitch = function() {};
+ServerSort.prototype.onSwitch = function() {
+	this.initChannelList();
+};
 ServerSort.prototype.getSettingsPanel = function() {
-    return '';
+    return null;
 };
