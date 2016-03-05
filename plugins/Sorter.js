@@ -1,37 +1,37 @@
-//META{"name":"ServerSort"}*//
+//META{"name":"Sorter"}*//
 
-function ServerSort(){}
+function Sorter(){}
 
-ServerSort.prototype.getName = function() {
-    return "Server Sort";
+Sorter.prototype.getName = function() {
+    return "Sorter";
 };
 
-ServerSort.prototype.getDescription = function() {
+Sorter.prototype.getDescription = function() {
     return "Drag and Drop to reorder the list of servers and channels";
 };
 
-ServerSort.prototype.getVersion = function() {
+Sorter.prototype.getVersion = function() {
     return "1.1";
 };
 
-ServerSort.prototype.getAuthor = function() {
+Sorter.prototype.getAuthor = function() {
     return "CosmicSalad";
 };
 
-ServerSort.prototype.start = function() {
+Sorter.prototype.start = function() {
 
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
 	script.src = 'https://raw.githubusercontent.com/cosmicsalad/Discord-Themes-and-Plugins/master/lib/jquery-ui.min.js';
 	$("head").append(script);
-	console.log("server sort loaded");
+	console.log("Sorter loaded");
 
 	this.initServerList();
 	this.initChannelList();
 
 };
 
-ServerSort.prototype.initServerList = function() {
+Sorter.prototype.initServerList = function() {
 
 	// set initial order
 	var storedOrder = JSON.parse(localStorage.getItem("sortOrder"));
@@ -42,7 +42,7 @@ ServerSort.prototype.initServerList = function() {
 		distance: 10,
 		items: 'li[data-reactid*=".0.1.1.0.0.0.3:"]',
 		update: function (e, ui) {
-			ServerSort.prototype.storeNewServerList();
+			Sorter.prototype.storeNewServerList();
 		}
 	}).disableSelection();
 
@@ -59,14 +59,14 @@ ServerSort.prototype.initServerList = function() {
 
 };
 
-ServerSort.prototype.storeNewServerList = function() {
+Sorter.prototype.storeNewServerList = function() {
 	serverArray = $.map($(".guilds").children('li[data-reactid*=".0.1.1.0.0.0.3:"]'), function(el) {
 		return $(el).data('reactid');
 	});
 	localStorage.setItem("sortOrder", JSON.stringify(serverArray));
 };
 
-ServerSort.prototype.initChannelList = function() {
+Sorter.prototype.initChannelList = function() {
 
 	// set initial order
 	storedChannelOrder = JSON.parse(localStorage.getItem("sortChannelOrder"));
@@ -77,7 +77,7 @@ ServerSort.prototype.initChannelList = function() {
 		distance: 10,
 		items: 'li[data-reactid*=".0.1.1.0.1.0.1.0.0.1.0:"]',
 		update: function (e, ui) {
-			ServerSort.prototype.storeNewChannelList();
+			Sorter.prototype.storeNewChannelList();
 		}
 	}).disableSelection();
 
@@ -95,7 +95,7 @@ ServerSort.prototype.initChannelList = function() {
 
 };
 
-ServerSort.prototype.storeNewChannelList = function() {
+Sorter.prototype.storeNewChannelList = function() {
 
 	currentServer = $('.guilds li.active').data('reactid');
 	channels = $.map($(".guild-channels ul").children('li[data-reactid*=".0.1.1.0.1.0.1.0.0.1.0:"]'), function(el) { 
@@ -111,25 +111,25 @@ ServerSort.prototype.storeNewChannelList = function() {
 	localStorage.setItem("sortChannelOrder", JSON.stringify(newChannelList));
 };
 
-ServerSort.prototype.checkNewServer = function() {
+Sorter.prototype.checkNewServer = function() {
     $(".guilds").on('DOMNodeInserted', 'li[data-reactid*=".0.1.1.0.0.0.3:"]', function(e) {
     	var storedOrder = JSON.parse(localStorage.getItem("sortOrder"));
     	if($.inArray($(e.target).data('reactid'), storedOrder) !== -1) {
     		//console.log('IS IN ARRAY');
     	} else {
     		//console.log('IS NOT IN ARRAY');
-    		ServerSort.prototype.storeNewList();
+    		Sorter.prototype.storeNewList();
     		$('.guilds-add').parent().appendTo($('.guilds'));
     	}
     });
 };
 
-ServerSort.prototype.load = function() {};
-ServerSort.prototype.unload = function() {};
-ServerSort.prototype.stop = function() {};
-ServerSort.prototype.onSwitch = function() {
+Sorter.prototype.load = function() {};
+Sorter.prototype.unload = function() {};
+Sorter.prototype.stop = function() {};
+Sorter.prototype.onSwitch = function() {
 	this.initChannelList();
 };
-ServerSort.prototype.getSettingsPanel = function() {
+Sorter.prototype.getSettingsPanel = function() {
     return null;
 };
