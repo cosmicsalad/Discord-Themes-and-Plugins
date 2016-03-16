@@ -118,7 +118,7 @@ textarea {
 }
 
 .guild-header header span {
-	margin-left:-13px;
+	margin-left:-5px;
 }
 
 .guild-header header {
@@ -352,7 +352,6 @@ textarea {
 .chat .divider>span {
 	background:rgba(255,255,255,0.2) !important;
 	font-size:12px;
-	padding:5px 20px;
 	text-transform:uppercase;
 	margin:5px 0px 10px 0px;
 	border-radius: 3px;
@@ -572,6 +571,10 @@ textarea {
 }
 
 /* CHAT */
+.bd-minimal .chat>.title-wrap>.title {
+    font-size: 16px;
+}
+
 .bd-minimal .theme-dark .comment {
 	border-left:none !important;
 	padding-left:10px;
@@ -614,6 +617,11 @@ textarea {
 }
 
 /* CHANNELS */
+.bd-minimal .guild-header header span {
+	margin-left:-13px;
+	font-size:14px;
+}
+
 .bd-minimal .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
 	top:9px;
     width:10px;
@@ -625,6 +633,11 @@ textarea {
 }
 
 /* ACCOUNT BAR */
+.bd-minimal #voice-connection {
+	width:176px;
+    margin-left:-46px;
+}
+
 .bd-minimal .account {
 	width:176px;
     margin-left:-46px;
