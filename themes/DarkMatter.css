@@ -140,6 +140,10 @@ textarea {
 	background:#000;
 }
 
+.guilds .friends-online {
+	margin-left:-5px;
+}
+
 .guilds li .guild-inner {
 	background:#151515;
 }
@@ -362,7 +366,7 @@ textarea {
 	background:rgba(255,255,255,0.2) !important;
 	font-size:12px;
 	text-transform:uppercase;
-	margin:5px 0px 10px 0px;
+	margin:10px 0px;
 	border-radius: 3px;
 	opacity: 1;
     padding: 5px 15px;
@@ -523,6 +527,10 @@ textarea {
 
 .channel-members .member .member-username {
 	font-size:14px;
+}
+
+.channel-members .avatar-small .status {
+    border-color:rgba(0,0,0,0.7) !important;
 }
 
 /*
