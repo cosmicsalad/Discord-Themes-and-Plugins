@@ -11,7 +11,7 @@ Sorter.prototype.getDescription = function() {
 };
 
 Sorter.prototype.getVersion = function() {
-    return "1.1";
+    return "1.2";
 };
 
 Sorter.prototype.getAuthor = function() {
@@ -40,7 +40,7 @@ Sorter.prototype.initServerList = function() {
 	$(".guilds").sortable({
 		axis: 'y',
 		distance: 10,
-		items: 'li[data-reactid*=".0.1.1.0.0.0.3:"]',
+		items: 'li[data-reactid*=".0.1.1.0.0.0.4:"]',
 		update: function (e, ui) {
 			Sorter.prototype.storeNewServerList();
 		}
@@ -60,7 +60,7 @@ Sorter.prototype.initServerList = function() {
 };
 
 Sorter.prototype.storeNewServerList = function() {
-	serverArray = $.map($(".guilds").children('li[data-reactid*=".0.1.1.0.0.0.3:"]'), function(el) {
+	serverArray = $.map($(".guilds").children('li[data-reactid*=".0.1.1.0.0.0.4:"]'), function(el) {
 		return $(el).data('reactid');
 	});
 	localStorage.setItem("sortOrder", JSON.stringify(serverArray));
