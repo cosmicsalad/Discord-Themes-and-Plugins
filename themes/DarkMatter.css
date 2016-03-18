@@ -483,6 +483,10 @@ textarea {
 	background-color:#1D6586 !important;
 }
 
+.private-channels .channel.btn-friends .badge {
+	margin-right:10px;
+}
+
 #friends {
 	background:transparent !important;
 }
