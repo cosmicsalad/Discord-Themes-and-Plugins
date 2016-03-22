@@ -10,7 +10,7 @@
 */
 
 .app {
-	background-image:url("https://i.imgur.com/7SbtKvw.png") !important;
+	background:url(https://i.imgur.com/7SbtKvw.png);
 	background-size:cover !important;
 }
 
@@ -335,6 +335,10 @@ textarea {
 	background:rgba(20,23,27,0.95);
 }
 
+.chat>.title-wrap>.title .channel-name {
+	color:rgba(255,255,255,0.8);
+}
+
 .chat>.title-wrap>.topic {
 	font-size:12px;
 	margin-top:5px;
@@ -498,6 +502,16 @@ textarea {
 .friends-table {
 	background:rgba(0,0,0,0.85) !important;
 	margin-top:0 !important;
+}
+
+.friends-header,
+.friends-table .friends-table-header {
+	border-bottom: 1px solid hsla(0,0%,100%,.1) !important;
+}
+
+.friends-header .tab-bar .tab-bar-separator,
+.friends-table .friends-table-header .friends-column-separator {
+	background-color:hsla(0,0%,100%,.1) !important;
 }
 
 .friends-table .friends-table-body {
