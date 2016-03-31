@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.3.1"}*//
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4"}*//
 
 /*
                      _                _                                   _ 
@@ -9,7 +9,9 @@
       |_|   |_|                           |___/                             
 */
 
-.app {
+/* Main background and settings background */
+.app,
+.callout-backdrop {
 	background:url(https://i.imgur.com/7SbtKvw.png);
 	background-size:cover !important;
 }
@@ -831,4 +833,180 @@ textarea {
 
 .channel-notification-settings .content .content-inner {
 	background:transparent !important;
+}
+
+.callout-backdrop {
+	opacity:0.55;
+}
+
+.tab-bar.SIDE {
+    margin-right: -17px;
+}
+
+.popout header,
+.slider-bar-fill {
+	border:none !important;
+}
+
+.slider-handle,
+.Select-control {
+	border:none !important;
+}
+
+.slider-bar {
+	background: rgba(255,255,255,0.5);
+}
+
+.settings .settings-header {
+	background:rgba(0,0,0,0.88) !important;
+}
+
+.settings .settings-inner,
+.settings .settings-actions {
+	background:rgba(0,0,0,0.75);
+}
+
+.settings .settings-actions {
+	border-top:none !important;
+}
+
+.form .radio-group .radio,
+.form .checkbox-group .checkbox,
+.checkbox .checkbox-inner+span {
+	color:rgba(255,255,255,0.7);
+}
+
+.form .control-group input[type=email],
+.form .control-group input[type=password],
+.form .control-group input[type=text],
+.form .control-group textarea {
+	padding:5px 10px 5px 10px;
+	border-radius:5px;
+}
+
+.form .btn-default {
+	padding:10px 0 !important;
+	width: 75px;
+    height: 35.5px;
+    border-radius: 3px;
+}
+
+.form hr {
+	border-color:rgba(255,255,255,0.2);
+}
+
+.btn-help:hover,
+.radio:hover span:after {
+	background:#1D6586;
+}
+
+.radio .radio-inner span:after {
+	background:#25ACE8;
+}
+
+.user-settings-modal .voice-settings .reset-voice-settings {
+	color:#1D6586;
+}
+
+.user-settings-modal .voice-settings .reset-voice-settings:hover {
+	color:#1D6586;
+	opacity:0.6;
+}
+
+.checkbox .checkbox-inner input[type=checkbox]:checked+span {
+	background:#25ACE8;
+	border-color:#25ACE8;
+}
+
+.user-settings-modal-connections .user-settings-modal-accounts-list .connect-container .name {
+	color:rgba(255,255,255,0.8);
+}
+
+.user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations.no-integrations {
+	color:rgba(255,255,255,0.8);
+}
+
+.user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations {
+	border-color:#643DA7 !important;
+}
+
+.user-settings-modal-connections .user-settings-modal-connections-list {
+	box-shadow: 0 -1px rgba(255,255,255,0.2);
+}
+
+.tab-bar.TOP {
+	border-color:rgba(255,255,255,0.2);
+}
+
+.tab-bar.TOP .tab-bar-item.selected {
+	border-color:#25ACE8;
+	color:#25ACE8;
+}
+
+.user-settings-streamer-mode {
+	background:none;
+}
+
+.user-settings-modal-games {
+	background:rgba(255,255,255,0.05) !important;
+	border:none !important;
+}
+
+.user-settings-modal-games .games-table .games-row .item-game,
+.user-settings-modal-games .games-table .games-row .item-overlay {
+	border-color:rgba(255,255,255,0.2) !important;
+}
+
+.user-settings-modal-games .games-table .games-row .item-game .game-input,
+.user-settings-modal-games .games-table .games-row .item-game .game-name {
+	color:#fff;
+}
+
+.user-settings-modal-games .games-table .games-row .item-game .last-played {
+	color:rgba(255,255,255,0.5);
+}
+
+.now-playing.no-detection {
+	background: rgba(0,0,0,0.8);
+}
+
+.bd-g-table tbody tr,
+.bd-g-table thead th,
+.bd-g-table tbody tr:nth-child(odd) {
+	background:transparent !important;
+}
+
+.bd-g-table textarea {
+	color: rgba(255,255,255,0.4) !important;
+	background: rgba(255,255,255,0.2) !important;
+	padding: 8px 10px !important;
+	box-sizing:border-box;
+}
+
+#bd-pane .scroller-wrap div[style*="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bottom:0; left:0; right:0;"] {
+	background:rgba(255,255,255,0.05) !important;
+}
+
+.CodeMirror {
+	background: rgba(255,255,255,0.15) !important;
+    border-radius: 5px;
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.CodeMirror-gutters {
+	background: rgba(255,255,255,0.25) !important;
+	border:none !important;
+}
+
+.CodeMirror-linenumber {
+	color: #fff !important;
+}
+
+.cm-s-neat span.cm-builtin {
+	color:#25ACE8;
+}
+
+.cm-s-neat span.cm-atom,
+.cm-s-neat span.cm-number {
+	color:#25ACE8;
 }
