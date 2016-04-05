@@ -364,22 +364,6 @@ textarea {
 	color:#656565 !important;
 }
 
-.chat>.content .messages .message-group:not(.has-divider) {
-    border-bottom-color:hsla(0,0%,100%,.04) !important;
-}
-
-.chat>.content .messages .message-group .markup .highlight {
-    background-color:rgba(29,101,134,.5) !important;
-    color:#ddd !important;
-	padding: 1px 4px;
-    border-radius: 6px;
-}
-
-.chat>.content .messages .message-group .markup .highlight:hover {
-    background-color:rgba(29,101,134,1) !important;
-    color:#fff !important;
-}
-
 /* Date 1px line */
 .chat .divider:not(.divider-red)>div {
 	background:rgba(255,255,255,0.2) !important;
@@ -414,49 +398,63 @@ textarea {
 	border-top: none !important;
 }
 
-.chat>.content .messages .message-group {
+.messages .message-group:not(.has-divider) {
+    border-bottom-color:hsla(0,0%,100%,.04) !important;
+}
+
+.messages .message-group .markup .highlight {
+    background-color:rgba(29,101,134,.5) !important;
+    color:#ddd !important;
+	padding: 1px 4px;
+    border-radius: 6px;
+}
+
+.messages .message-group .markup .highlight:hover {
+    background-color:rgba(29,101,134,1) !important;
+    color:#fff !important;
+}
+
+.messages .message-group {
 	border-bottom: none !important;
 }
 
-/* Boxed messages instead of a basic chat box 
-.chat>.content .messages .message-group {
-    background: rgba(0,0,0,0.2) !important;
-    margin-left: 0;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    padding: 15px !important;
-}*/
+.friends-table .messages .message-group .message-send-failed .markup,
+.friends-table .messages .message-group .message-send-failed .markup a,
+.messages .message-group .message-send-failed .markup,
+.messages .message-group .message-send-failed .markup a {
+	color:rgba(240,71,71,0.5) !important;
+	font-style:italic;
+}
 
-.chat>.content .messages .message-group a {
+.messages .message-group a {
 	color:#25ACE8 !important;
 }
 
-.chat>.content .messages .message-group .markup {
+.messages .message-group .markup {
 	color:rgba(255,255,255,0.5) !important;
 	line-height:1.5em;
 }
 
-.chat>.content .messages .message-group h2 .user-name {
+.messages .message-group h2 .user-name {
 	color:rgba(255,255,255,0.8);
 }
 
-.chat>.content .messages .message-group h2 span {
+.messages .message-group h2 span {
 	color:rgba(255,255,255,0.2) !important;
 }
 
-.chat>.content .messages .message-group .markup pre {
+.messages .message-group .markup pre {
 	background:transparent !important;
     border-color:rgba(255,255,255,0.1) !important;
 }
 
-.chat>.content .messages .message-group .markup pre code.hljs {
+.messages .message-group .markup pre code.hljs {
     background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
     padding:1em !important;
 }
 
-.chat>.content .messages .message-group .markup code.inline {
+.messages .message-group .markup code.inline {
 	background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
 	padding:0.3em 0.6em;
