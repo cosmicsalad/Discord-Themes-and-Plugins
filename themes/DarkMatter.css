@@ -611,8 +611,8 @@ textarea {
 
 .popout header,
 .slider-bar-fill {
-	background-color:#1D6586;
-	border:1px solid #1D6586;
+	background-color:#25ACE8;
+	border:1px solid #25ACE8;
 }
 
 .user-popout .user-popout-options .btn {
@@ -623,6 +623,19 @@ textarea {
 .user-popout .user-popout-options .btn:hover {
 	background-color:#25ACE8;
 	border:1px solid #25ACE8;
+}
+
+/* Admin buttons */
+.user-popout .user-popout-options .btn.btn-server {
+    color: rgba(255,255,255,0.7);
+    background: rgba(240,71,71,0.4);
+	border: none !important;
+}
+
+.user-popout .user-popout-options .btn.btn-server:hover {
+	color: rgba(255,255,255,1);
+    background: rgba(240,71,71,1);
+	border: none !important;
 }
 
 /*
@@ -809,6 +822,14 @@ textarea {
                           |___/     
 */
 
+.avatar-uploader a {
+	color:#25ACE8;
+}
+
+.avatar-uploader a:hover {
+	color:#1D6586;
+}
+
 .settings .settings-header {
 	background:#1a1d20 !important;
 }
@@ -839,6 +860,18 @@ textarea {
 
 .tab-bar.SIDE {
     margin-right: -17px;
+}
+
+.tab-bar.SIDE .tab-bar-item.selected {
+	background: rgba(0,0,0,0.7) !important;
+}
+
+.tab-bar.SIDE .tab-bar-item.selected:before {
+	border-color:#25ACE8;
+}
+
+.tab-bar.SIDE .tab-bar-item:before {
+	border-color:#1D6586;
 }
 
 .popout header,
@@ -880,6 +913,7 @@ textarea {
 .form .control-group textarea {
 	padding:5px 10px 5px 10px;
 	border-radius:5px;
+	box-sizing: border-box;
 }
 
 .form .btn-default {
@@ -889,8 +923,52 @@ textarea {
     border-radius: 3px;
 }
 
-.form hr {
+.form hr,
+.form .control-groups.control-separator,
+.instant-invites .instant-invites-header,
+.guild-settings-modal-integrations .guild-settings-modal-integrations-header,
+.guild-settings-modal-members .guild-settings-modal-members-header,
+.guild-settings-modal-members .guild-settings-modal-list .member+.member,
+.guild-settings-modal-members .guild-settings-modal-members-footer,
+#settings-roles .roles header,
+#user-profile-modal .tab-bar {
 	border-color:rgba(255,255,255,0.2);
+	box-shadow:none;
+}
+
+.form .control-group input[type=email]:disabled,
+.form .control-group input[type=password]:disabled,
+.form .control-group input[type=text]:disabled,
+.form .control-group textarea:disabled {
+	background:rgba(255,255,255,0.2) !important;
+}
+
+.form .control-group input[type=email],
+.form .control-group input[type=password],
+.form .control-group input[type=text],
+.form .control-group textarea {
+	border:none !important;
+}
+
+#settings-roles .roles li:hover:before {
+	background:#1D6586;
+}
+
+#settings-roles .roles li:hover:not(.selected) {
+	background:rgba(0,0,0,0.9) !important;
+}
+
+#settings-roles .roles li.selected {
+	background:rgba(0,0,0,0.5) !important;
+}
+
+#settings-roles .roles li.selected:before {
+	background:#25ACE8;
+}
+
+.btn-help {
+	font-size: 11px;
+	background: rgba(255,255,255,0.3);
 }
 
 .btn-help:hover,
@@ -1007,4 +1085,60 @@ textarea {
 .cm-s-neat span.cm-atom,
 .cm-s-neat span.cm-number {
 	color:#25ACE8;
+}
+
+.member-roles .member-role {
+	background-color: rgba(255,255,255,0.1);
+	border:none;
+	padding: 6px 8px;
+	color: #fff;
+}
+
+.popout section {
+	background:rgba(0,0,0,0.85) !important;
+}
+
+.popout.popout-bottom header:before {
+	border-bottom-color:#1D6586;
+}
+
+#autocomplete-popout .row.selected,
+#autocomplete-popout .row:hover {
+	background:rgba(255,255,255,0.2) !important;
+}
+
+#autocomplete-popout .empty h4,
+.guild-settings-modal-members .guild-settings-modal-members-footer a {
+	color:#25ACE8;
+}
+
+.guild-settings-modal-members .guild-settings-modal-members-footer a:hover {
+	color:#1D6586;
+}
+
+#user-profile-modal .header,
+#user-profile-modal .btn {
+	background:#25ACE8;
+}
+
+#user-profile-modal .btn:hover {
+	background:#1D6586;
+}
+
+#user-profile-modal .sub-header,
+#user-profile-modal .tab-bar,
+#user-profile-modal .scroller,
+#user-profile-modal .empty,
+#user-profile-modal footer {
+	background:rgba(0,0,0,0.85) !important;
+}
+
+#user-profile-modal .guilds .guild:hover {
+	background:rgba(255,255,255,0.2) !important;
+	color:rgba(255,255,255,0.7);
+}
+
+#user-profile-modal .avatar-profile {
+	border-color:rgba(0,0,0,0.7);
+	background-color:rgba(0,0,0,0.85);
 }
