@@ -278,11 +278,12 @@ textarea {
 .account {
 	z-index:9;
 	border-top:none !important;
-	width:290px;
+	width:320px;
     margin-left:-80px;
 	padding:0 15px !important;
 	background:rgba(0,0,0,0.75);
 	height:77px;
+	box-sizing:border-box;
 }
 
 .account .status {
@@ -374,7 +375,7 @@ textarea {
 	font-size:12px;
 	text-transform:uppercase;
 	margin:10px 0px;
-	border-radius: 3px;
+	border-radius: 0px;
 	opacity: 1;
     padding: 5px 15px;
     width: 100%;
@@ -406,7 +407,7 @@ textarea {
     background-color:rgba(29,101,134,.5) !important;
     color:#ddd !important;
 	padding: 1px 4px;
-    border-radius: 6px;
+    border-radius: 0;
 }
 
 .messages .message-group .markup .highlight:hover {
@@ -426,35 +427,50 @@ textarea {
 	font-style:italic;
 }
 
-.messages .message-group a {
+.messages .mentioned .message-text {
+	border-radius: 0 !important;
+	background: rgba(37,172,232,0.2) !important;
+}
+
+.messages .mentioned .message-text:after {
+	border-radius: 0 !important;
+	border-color:#25ACE8 !important;
+	background:rgba(37,172,232,0.2) !important;
+}
+
+.messages a {
 	color:#25ACE8 !important;
 }
 
-.messages .message-group .markup {
+.messages .markup {
 	color:rgba(255,255,255,0.5) !important;
-	line-height:1.5em;
+	line-height:1.5em !important;
 }
 
-.messages .message-group h2 .user-name {
+.messages .comment .markup pre {
+	border-radius:0 !important;
+}
+
+.messages h2 .user-name {
 	color:rgba(255,255,255,0.8);
 }
 
-.messages .message-group h2 span {
+.messages h2 span {
 	color:rgba(255,255,255,0.2) !important;
 }
 
-.messages .message-group .markup pre {
+.messages .markup pre {
 	background:transparent !important;
     border-color:rgba(255,255,255,0.1) !important;
 }
 
-.messages .message-group .markup pre code.hljs {
+.messages .markup pre code.hljs {
     background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
     padding:1em !important;
 }
 
-.messages .message-group .markup code.inline {
+.messages .markup code.inline {
 	background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
 	padding:0.3em 0.6em;
