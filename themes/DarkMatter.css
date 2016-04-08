@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4"}*//
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.1"}*//
 
 /*
                      _                _                                   _ 
@@ -37,11 +37,6 @@ textarea {
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
 	border:3px solid rgba(255,255,255,0) !important;
 	background-color:rgba(0,0,0,0.3) !important;
-}
-
-.win-buttons button {
-    width: 12px;
-    height: 12px;
 }
 
 /*
@@ -339,6 +334,43 @@ textarea {
 	background:rgba(0,0,0,0.95) !important;
 }
 
+.need-help-modal .header {
+	background:#25ACE8;
+}
+
+.form header {
+	color:#25ACE8;
+}
+
+.markdown-modal,
+.form .form-inner,
+.form .form-header,
+.form .form-actions,
+.need-help-modal .footer {
+	background:rgba(0,0,0,0.85) !important;
+}
+
+.channel-notification-settings .content label,
+.notification-settings-modal .mute-server .checkbox .label span {
+	color:#fff;
+}
+
+.notification-settings-modal .notification-settings-modal-channel-settings-list {
+	box-shadow:none !important;
+}
+
+.markdown-modal .markdown-modal-header {
+	color:#fff;
+}
+
+.form .form-header,
+.form .form-actions,
+.need-help-modal .footer,
+.channel-notification-settings,
+.markdown-modal .markdown-modal-header {
+	border-color:rgba(255,255,255,0.2);
+}
+
 .chat .new-messages-bar {
 	background-color:rgba(29,101,134,.9);
 }
@@ -473,7 +505,8 @@ textarea {
 .messages .markup code.inline {
 	background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
-	padding:0.3em 0.6em;
+	padding:0.3em 0.6em !important;
+	border-radius:0 !important;
 }
 
 .channel-textarea-upload {
@@ -501,6 +534,16 @@ textarea {
 	background-size: 24px;
 	background-position: 20px;
 	background-color: transparent;
+	opacity:0.4;
+}
+
+#twitchcord-button:hover,
+#twitchcord-button.twitchcord-button-open {
+	opacity:1;
+}
+
+#twitchcord-button-container {
+	right:30px !important;
 }
 
 /*** COMPACT MODE ***/
@@ -674,6 +717,10 @@ textarea {
 
 .tooltip.tooltip-top:after {
     border-top-color:#1D6586;
+}
+
+.tooltip.tooltip-bottom:after {
+    border-bottom-color:#1D6586;
 }
 
 /*
@@ -920,7 +967,7 @@ textarea {
 .form .radio-group .radio,
 .form .checkbox-group .checkbox,
 .checkbox .checkbox-inner+span {
-	color:rgba(255,255,255,0.7);
+	color:rgba(255,255,255,0.7) !important;
 }
 
 .form .control-group input[type=email],
@@ -1076,12 +1123,12 @@ textarea {
 }
 
 #bd-pane .scroller-wrap div[style*="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bottom:0; left:0; right:0;"] {
-	background:rgba(255,255,255,0.05) !important;
+	background:rgba(0,0,0,0.95) !important;
 }
 
 .CodeMirror {
 	background: rgba(255,255,255,0.15) !important;
-    border-radius: 5px;
+    border-radius: 0px;
     color: rgba(255,255,255,0.8) !important;
 }
 
@@ -1124,10 +1171,12 @@ textarea {
 }
 
 #autocomplete-popout .empty h4,
+#permissions .permissions-helpdesk,
 .guild-settings-modal-members .guild-settings-modal-members-footer a {
 	color:#25ACE8;
 }
 
+#permissions .permissions-helpdesk:hover,
 .guild-settings-modal-members .guild-settings-modal-members-footer a:hover {
 	color:#1D6586;
 }
@@ -1157,4 +1206,17 @@ textarea {
 #user-profile-modal .avatar-profile {
 	border-color:rgba(0,0,0,0.7);
 	background-color:rgba(0,0,0,0.85);
+}
+
+#bd-customcss-attach-controls {
+	background:rgba(0,0,0,0.85);
+	border:none;
+	box-shadow:none;
+    padding:5px 10px 10px 10px;
+}
+
+#bd-customcss-attach-controls .checkbox > span {
+	font-size:14px;
+	margin-right:8px;
+	margin-left:5px;
 }
