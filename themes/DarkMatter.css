@@ -1,4 +1,4 @@
-//META{"name":"Dark Matter","description":"A cold dark depressingly sexy theme for all your gloomy moodz bb.","author":"CosmicSalad","version":"1.0.1"}*//
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.1"}*//
 
 /*
                      _                _                                   _ 
@@ -9,8 +9,10 @@
       |_|   |_|                           |___/                             
 */
 
-.app {
-	background-image:url("https://i.imgur.com/7SbtKvw.png") !important;
+/* Main background and settings background */
+.app,
+.callout-backdrop {
+	background:url(https://i.imgur.com/7SbtKvw.png) !important;
 	background-size:cover !important;
 }
 
@@ -68,6 +70,7 @@ textarea {
 .private-channels,
 .guild-header header,
 .divider-red span,
+.messages-wrapper,
 #voice-connection {
 	background: transparent !important;
 }
@@ -76,10 +79,10 @@ textarea {
 .guilds-wrapper { background:rgba(0,0,0,0.6) !important }
 
 /* Channels list area */
-.channels-wrap { background:rgba(0,0,0,0.75) }
+.channels-wrap { background:rgba(0,0,0,0.7) }
 
 /* Chat area */
-.content .flex-spacer { background:rgba(0,0,0,0.85) }
+.content .flex-spacer { background:rgba(0,0,0,0.8) }
 
 /* User list area */
 .channel-members { background:rgba(0,0,0,0.9) !important }
@@ -101,6 +104,8 @@ textarea {
 	background:#000 !important;
     opacity:0 !important;
     transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
+    padding-top:100px;
+    top:-56px;
 }
 
 .guild-header-open ul {
@@ -116,12 +121,20 @@ textarea {
 }
 
 .guild-header header span {
-	margin-left:-3px;
+	margin-left:-7px;
 }
 
 .guild-header header {
 	box-shadow:none !important;
 	color:#ddd;
+}
+
+.guild-channels header h2 {
+	padding:0 18px;
+}
+
+.guild-channels ul .channel-text a {
+	padding:8px 6px 10px 18px;
 }
 
 .guild-channels header h2, .guild-channels ul .channel a {
@@ -137,8 +150,12 @@ textarea {
 	background:#000;
 }
 
+.guilds .friends-online {
+	margin-left:-5px;
+}
+
 .guilds li .guild-inner {
-	background:#151515;
+	background:#151515 !important;
 }
 
 .guilds li.active .guild-inner {
@@ -192,6 +209,18 @@ textarea {
 	background:#fff !important;
 }
 
+.guilds .friends-online {
+	color: #ccc;
+    font-size: 9px;
+    margin-left: -7px;
+    line-height: 20px;
+    width: 55px;
+    height: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.3);
+}
+
 .guild-channels header h2,
 .private-channels header {
 	opacity:.6;
@@ -225,11 +254,11 @@ textarea {
 .private-channels .channel.selected:hover:before,
 .private-channels .search-result.selected:before,
 .private-channels .search-result:hover:before {
-	border-left:5px solid #1D6586 !important;
+	border-left:2px solid #1D6586 !important;
 }
 
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
-	left:-11px;
+	left:-8px;
 }
 
 /*
@@ -242,7 +271,7 @@ textarea {
 */
 
 .btn-hamburger {
-	margin-right:-25px;
+	margin-right:-30px;
 }
 
 .btn-hamburger span {
@@ -252,10 +281,12 @@ textarea {
 .account {
 	z-index:9;
 	border-top:none !important;
-	width:290px;
+	width:320px;
     margin-left:-80px;
 	padding:0 15px !important;
 	background:rgba(0,0,0,0.75);
+	height:77px;
+	box-sizing:border-box;
 }
 
 .account .status {
@@ -263,8 +294,17 @@ textarea {
 }
 
 .account .btn {
-	background:#000;
+	background:transparent;/*#000;*/
 	box-shadow:none !important;
+}
+
+.account .btn:active {
+	background:#000;
+}
+
+.account .btn-deafen,
+.account .btn-mute {
+    border-right:none;/*1px solid #101010;*/
 }
 
 #voice-connection {
@@ -297,13 +337,79 @@ textarea {
 
 */
 
-.topic {
-	color: #cdcdcd !important;
+.emoji-picker {
+	background:rgba(0,0,0,0.85) !important;
+}
+
+.emoji-picker .search-bar input {
+	color:rgba(255,255,255,0.7);
+	background:rgba(255,255,255,0.1);
+}
+
+.emoji-picker .search-bar-clear {
+	background:rgba(0,0,0,0.7);
+}
+
+.emoji-picker .sticky-header,
+.emoji-picker .search-bar {
+	background:rgba(0,0,0,0.95) !important;
+}
+
+.emoji-picker .categories .item.selected {
+	border-bottom-color:#25ACE8;
 }
 
 .title-wrap {
 	border-bottom:1px solid rgba(0,0,0,0.3) !important;
 	background:rgba(0,0,0,0.95) !important;
+}
+
+.bot-tag,
+.need-help-modal .header {
+	background:#25ACE8;
+}
+
+.form header {
+	color:#25ACE8;
+}
+
+.markdown-modal,
+.form .form-inner,
+.form .form-header,
+.form .form-actions,
+.need-help-modal .footer,
+.markdown-modal .markdown-modal-footer {
+	background:rgba(0,0,0,0.85) !important;
+}
+
+.channel-notification-settings .content label,
+.notification-settings-modal .mute-server .checkbox .label span {
+	color:#fff;
+}
+
+.notification-settings-modal .notification-settings-modal-channel-settings-list {
+	box-shadow:none !important;
+}
+
+.markdown-modal .markdown-modal-header {
+	color:#fff;
+}
+
+.form .form-header,
+.form .form-actions,
+.need-help-modal .footer,
+.channel-notification-settings,
+.markdown-modal .markdown-modal-header,
+.markdown-modal .markdown-modal-footer {
+	border-color:rgba(255,255,255,0.2);
+}
+
+.modal-content .user-name {
+	color:#fff;
+}
+
+.modal-content .form-inner p {
+	color:rgba(255,255,255,0.7);
 }
 
 .chat .new-messages-bar {
@@ -322,22 +428,14 @@ textarea {
 	background:rgba(20,23,27,0.95);
 }
 
+.chat>.title-wrap>.title .channel-name {
+	color:rgba(255,255,255,0.8);
+}
+
 .chat>.title-wrap>.topic {
 	font-size:12px;
-}
-
-.chat>.content .messages .message-group:not(.has-divider) {
-    border-bottom-color:hsla(0,0%,100%,.04) !important;
-}
-
-.chat>.content .messages .message-group .markup .highlight {
-    background-color:rgba(29,101,134,.5) !important;
-    color:#ddd !important;
-}
-
-.chat>.content .messages .message-group .markup .highlight:hover {
-    background-color:rgba(29,101,134,1) !important;
-    color:#fff !important;
+	margin-top:5px;
+	color:#656565 !important;
 }
 
 /* Date 1px line */
@@ -346,48 +444,111 @@ textarea {
 }
 
 .chat .divider>span {
-	background-color:rgba(0,0,0,0) !important;
+	background:rgba(255,255,255,0.1) !important;
 	font-size:12px;
-	padding:5px 20px;
 	text-transform:uppercase;
+	margin:10px 0px;
+	border-radius: 0px;
+	opacity: 1;
+    padding: 5px 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.chat .divider.divider-red>span {
+	background: rgba(240,71,71,.8) !important;
+    color: rgba(255,255,255,0.9) !important;
 }
 
 .chat .divider:not(.divider-red)>span {
 	color:rgba(255,255,255,1) !important;
 }
 
-.chat>.content .messages .message-group a {
+.chat .divider>div {
+	display:none;
+}
+
+.chat form {
+	border-top: none !important;
+}
+
+.messages .message-group:not(.has-divider) {
+    border-bottom-color:hsla(0,0%,100%,.04) !important;
+}
+
+.messages .message-group .markup .highlight {
+    background-color:rgba(29,101,134,.5) !important;
+    color:#ddd !important;
+	padding: 1px 4px;
+    border-radius: 0;
+}
+
+.messages .message-group .markup .highlight:hover {
+    background-color:rgba(29,101,134,1) !important;
+    color:#fff !important;
+}
+
+.messages .message-group {
+	border-bottom: none !important;
+}
+
+.friends-table .messages .message-group .message-send-failed .markup,
+.friends-table .messages .message-group .message-send-failed .markup a,
+.messages .message-group .message-send-failed .markup,
+.messages .message-group .message-send-failed .markup a {
+	color:rgba(240,71,71,0.5) !important;
+	font-style:italic;
+}
+
+.messages .mentioned .message-text {
+	border-radius: 0 !important;
+	background: rgba(37,172,232,0.2) !important;
+}
+
+.messages .mentioned .message-text:after {
+	border-radius: 0 !important;
+	border-color:#25ACE8 !important;
+	background:rgba(37,172,232,0.2) !important;
+}
+
+.messages a {
 	color:#25ACE8 !important;
 }
 
-.chat>.content .messages .message-group .markup {
+.messages .markup {
 	color:rgba(255,255,255,0.5) !important;
-	line-height:1.5em;
+	line-height:1.5em !important;
 }
 
-.chat>.content .messages .message-group h2 .user-name {
+.messages .comment .markup pre {
+	border-radius:0 !important;
+}
+
+.messages h2 .user-name {
 	color:rgba(255,255,255,0.8);
 }
 
-.chat>.content .messages .message-group h2 span {
+.messages h2 span {
 	color:rgba(255,255,255,0.2) !important;
 }
 
-.chat>.content .messages .message-group .markup pre {
+.messages .markup pre {
 	background:transparent !important;
     border-color:rgba(255,255,255,0.1) !important;
 }
 
-.chat>.content .messages .message-group .markup pre code.hljs {
+.messages .markup pre code.hljs {
     background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
     padding:1em !important;
 }
 
-.chat>.content .messages .message-group .markup code.inline {
+.modal-content .markup code.inline,
+.messages .markup code.inline {
 	background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
-	padding:0.3em 0.6em;
+	padding:0.3em 0.6em !important;
+	border-radius:0 !important;
 }
 
 .channel-textarea-upload {
@@ -415,6 +576,16 @@ textarea {
 	background-size: 24px;
 	background-position: 20px;
 	background-color: transparent;
+	opacity:0.4;
+}
+
+#twitchcord-button:hover,
+#twitchcord-button.twitchcord-button-open {
+	opacity:1;
+}
+
+#twitchcord-button-container {
+	right:30px !important;
 }
 
 /*** COMPACT MODE ***/
@@ -426,6 +597,65 @@ textarea {
 
 .message-group.compact .message .markup .user-name {
     margin-right: 10px;
+}
+
+/*
+  __      _                _       _ _     _   
+ / _|_ __(_) ___ _ __   __| |___  | (_)___| |_ 
+| |_| '__| |/ _ \ '_ \ / _` / __| | | / __| __|
+|  _| |  | |  __/ | | | (_| \__ \ | | \__ \ |_ 
+|_| |_|  |_|\___|_| |_|\__,_|___/ |_|_|___/\__|
+
+*/
+
+#friends .btn,
+.add-friend-popout .btn,
+.private-channels .channel.selected .icon-friends {
+	background-color:#25ACE8 !important;
+}
+
+.add-friend-popout .btn:disabled {
+	background-color:#1D6586 !important;
+	opacity:0.4;
+}
+
+.private-channels .channel:hover:not(.selected) .icon-friends {
+	background-color:#1D6586 !important;
+}
+
+.private-channels .channel.btn-friends .badge {
+	margin-right:10px;
+}
+
+#friends {
+	background:transparent !important;
+}
+
+.friends-header {
+	background:rgba(0,0,0,0.95) !important;
+}
+
+.friends-table {
+	background:rgba(0,0,0,0.85) !important;
+	margin-top:0 !important;
+}
+
+.friends-header,
+.friends-table .friends-table-header {
+	border-bottom: 1px solid hsla(0,0%,100%,.1) !important;
+}
+
+.friends-header .tab-bar .tab-bar-separator,
+.friends-table .friends-table-header .friends-column-separator {
+	background-color:hsla(0,0%,100%,.1) !important;
+}
+
+.friends-table .friends-table-body {
+	padding-top:20px !important;
+}
+
+.friends-table .friends-row:hover {
+	background: rgba(0,0,0,0.7) !important;
 }
 
 /*
@@ -449,6 +679,28 @@ textarea {
 	background:rgba(255,255,255,0.07) !important;
 }
 
+.channel-members .member .member-username {
+	font-size:12px;
+}
+
+.channel-members .member .member-game {
+	font-size:10px;
+}
+
+.channel-members .avatar-small .status {
+    border-color:rgba(0,0,0,0.7) !important;
+}
+
+.channel-members h2 {
+	background: rgba(0,0,0,0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.channel-members h2:first-of-type {
+	margin-top:0px !important;
+}
+
 /*
                        _        __                                       _   
  _   _ ___  ___ _ __  (_)_ __  / _| ___    _ __   ___  _ __   ___  _   _| |_ 
@@ -460,8 +712,8 @@ textarea {
 
 .popout header,
 .slider-bar-fill {
-	background-color:#1D6586;
-	border:1px solid #1D6586;
+	background-color:#25ACE8;
+	border:1px solid #25ACE8;
 }
 
 .user-popout .user-popout-options .btn {
@@ -472,6 +724,19 @@ textarea {
 .user-popout .user-popout-options .btn:hover {
 	background-color:#25ACE8;
 	border:1px solid #25ACE8;
+}
+
+/* Admin buttons */
+.user-popout .user-popout-options .btn.btn-server {
+    color: rgba(255,255,255,0.7);
+    background: rgba(240,71,71,0.4);
+	border: none !important;
+}
+
+.user-popout .user-popout-options .btn.btn-server:hover {
+	color: rgba(255,255,255,1);
+    background: rgba(240,71,71,1);
+	border: none !important;
 }
 
 /*
@@ -496,6 +761,163 @@ textarea {
     border-top-color:#1D6586;
 }
 
+.tooltip.tooltip-bottom:after {
+    border-bottom-color:#1D6586;
+}
+
+/*
+           _       _                 _                       _      
+ _ __ ___ (_)_ __ (_)_ __ ___   __ _| |  _ __ ___   ___   __| | ___ 
+| '_ ` _ \| | '_ \| | '_ ` _ \ / _` | | | '_ ` _ \ / _ \ / _` |/ _ \
+| | | | | | | | | | | | | | | | (_| | | | | | | | | (_) | (_| |  __/
+|_| |_| |_|_|_| |_|_|_| |_| |_|\__,_|_| |_| |_| |_|\___/ \__,_|\___|
+
+*/
+
+/* SERVER LIST */
+.bd-minimal .guilds {
+	padding-left:10px !important;
+}
+
+.bd-minimal .guilds .friends-icon {
+	background-size:60%;
+}
+
+.bd-minimal .guilds li .guild-inner:before {
+    height:25px;
+    border-radius:5px;
+    margin-top:-13px;
+}
+
+.bd-minimal .guilds li.unread .guild-inner:before {
+	width:10px;
+	height:10px;
+	margin-top:-5px;
+	left:-16px;
+}
+
+.bd-minimal .guilds li.active .guild-inner:before {
+	left:-18px;
+	border-radius:5px;
+	height:25px;
+	margin-top:-13px;
+}
+
+.bd-minimal .guilds li,
+.bd-minimal .guilds li .avatar-small,
+.bd-minimal .guilds li .guild-inner,
+.bd-minimal .guilds li .guild-inner a,
+.bd-minimal .guilds .friends-icon {
+	width:25px;
+    height:25px;
+    line-height:25px;
+}
+
+.bd-minimal .guilds li .avatar-small, #bd-pub-button {
+	font-size:10px !important;
+}
+
+.bd-minimal .guilds .friends-online {
+    font-size: 10px;
+    word-spacing: 50px;
+    line-height: 20px;
+    margin-left: 0px;
+    width: 25px;
+    height: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.5);
+}
+
+/* CHAT */
+.bd-minimal .chat>.title-wrap>.title {
+    font-size: 16px;
+}
+
+.bd-minimal .theme-dark .comment {
+	border-left:none !important;
+	padding-left:10px;
+}
+
+.bd-minimal .message-group {
+	padding:10px 5px;
+}
+
+.bd-minimal .guild-channels ul .channel-text .channel-name {
+	padding-left:5px;
+}
+
+.bd-minimal .avatar-large {
+	border-radius:100%;
+}
+
+.bd-minimal .message-group .edit-message .edit-container-outer {
+    margin-left:50px;
+}
+
+.bd-minimal .message-group .edit-message .edit-container-inner {
+	margin-left:10px;
+}
+
+/* MEMBERS */
+.bd-minimal .channel-members h2 {
+	margin-top:20px;
+    margin-bottom:3px;
+    padding-left:20px;
+}
+
+.bd-minimal .channel-members h2:first-of-type {
+	margin-top:0px;
+    margin-bottom:3px;
+}
+
+.bd-minimal .channel-members .member {
+    padding:5px 15px 8px 20px;
+}
+
+/* CHANNELS */
+.bd-minimal .guild-header header span {
+	margin-left:-13px;
+	font-size:14px;
+}
+
+.bd-minimal .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
+	top:9px;
+    width:10px;
+    height:10px;
+}
+
+.bd-minimal .guild-channels h2 {
+	margin-left:10px;
+}
+
+/* ACCOUNT BAR */
+.bd-minimal #voice-connection {
+	width:176px;
+    margin-left:-46px;
+}
+
+.bd-minimal .account {
+	width:176px;
+    margin-left:-46px;
+}
+
+.bd-minimal .account .avatar-small {
+	display:block !important;
+}
+
+.bd-minimal .account .username {
+	display:none;
+}
+
+.bd-minimal .account .btn-group {
+	margin-left:10px;
+}
+
+.bd-minimal .account .btn-group .btn {
+	width:30px;
+}
+
 /*
           _   _   _                 
  ___  ___| |_| |_(_)_ __   __ _ ___ 
@@ -504,6 +926,14 @@ textarea {
 |___/\___|\__|\__|_|_| |_|\__, |___/
                           |___/     
 */
+
+.avatar-uploader a {
+	color:#25ACE8;
+}
+
+.avatar-uploader a:hover {
+	color:#1D6586;
+}
 
 .settings .settings-header {
 	background:#1a1d20 !important;
@@ -527,4 +957,309 @@ textarea {
 
 .channel-notification-settings .content .content-inner {
 	background:transparent !important;
+}
+
+.callout-backdrop {
+	opacity:0.55;
+}
+
+.tab-bar.SIDE {
+    margin-right: -17px;
+}
+
+.tab-bar.SIDE .tab-bar-item.selected {
+	background: rgba(0,0,0,0.7) !important;
+}
+
+.tab-bar.SIDE .tab-bar-item.selected:before {
+	border-color:#25ACE8;
+}
+
+.tab-bar.SIDE .tab-bar-item:before {
+	border-color:#1D6586;
+}
+
+.popout header,
+.slider-bar-fill {
+	border:none !important;
+}
+
+.slider-handle,
+.Select-control {
+	border:none !important;
+}
+
+.slider-bar {
+	background: rgba(255,255,255,0.5);
+}
+
+.settings .settings-header {
+	background:rgba(0,0,0,0.88) !important;
+}
+
+.settings .settings-inner,
+.settings .settings-actions {
+	background:rgba(0,0,0,0.75);
+}
+
+.settings .settings-actions {
+	border-top:none !important;
+}
+
+.form .radio-group .radio,
+.form .checkbox-group .checkbox,
+.checkbox .checkbox-inner+span,
+#permissions .permission-actions {
+	color:rgba(255,255,255,0.7) !important;
+}
+
+.form .control-group input[type=email],
+.form .control-group input[type=password],
+.form .control-group input[type=text],
+.form .control-group textarea {
+	padding:5px 10px 5px 10px;
+	border-radius:5px;
+	box-sizing: border-box;
+}
+
+.form .btn-default {
+	padding:10px 0 !important;
+	width: 75px;
+    height: 35.5px;
+    border-radius: 3px;
+}
+
+.form hr,
+.form .control-groups.control-separator,
+.instant-invites .instant-invites-header,
+.guild-settings-modal-integrations .guild-settings-modal-integrations-header,
+.guild-settings-modal-members .guild-settings-modal-members-header,
+.guild-settings-modal-members .guild-settings-modal-list .member+.member,
+.guild-settings-modal-members .guild-settings-modal-members-footer,
+#settings-roles .roles header,
+#user-profile-modal .tab-bar {
+	border-color:rgba(255,255,255,0.2);
+	box-shadow:none;
+}
+
+.form .control-group input[type=email]:disabled,
+.form .control-group input[type=password]:disabled,
+.form .control-group input[type=text]:disabled,
+.form .control-group textarea:disabled {
+	background:rgba(255,255,255,0.2) !important;
+}
+
+.form .control-group input[type=email],
+.form .control-group input[type=password],
+.form .control-group input[type=text],
+.form .control-group textarea {
+	border:none !important;
+}
+
+#settings-roles .roles li:hover:before {
+	background:#1D6586;
+}
+
+#settings-roles .roles li:hover:not(.selected) {
+	background:rgba(0,0,0,0.9) !important;
+}
+
+#settings-roles .roles li.selected {
+	background:rgba(0,0,0,0.5) !important;
+}
+
+#settings-roles .roles li.selected:before {
+	background:#25ACE8;
+}
+
+.btn-help {
+	font-size: 11px;
+	background: rgba(255,255,255,0.3);
+}
+
+.btn-help:hover,
+.radio:hover span:after {
+	background:#1D6586;
+}
+
+.radio .radio-inner span:after {
+	background:#25ACE8;
+}
+
+.user-settings-modal .voice-settings .reset-voice-settings {
+	color:#1D6586;
+}
+
+.user-settings-modal .voice-settings .reset-voice-settings:hover {
+	color:#1D6586;
+	opacity:0.6;
+}
+
+.checkbox .checkbox-inner input[type=checkbox]:checked+span {
+	background:#25ACE8;
+	border-color:#25ACE8;
+}
+
+.user-settings-modal-connections .user-settings-modal-accounts-list .connect-container .name {
+	color:rgba(255,255,255,0.8);
+}
+
+.user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations.no-integrations {
+	color:rgba(255,255,255,0.8);
+}
+
+.user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations {
+	border-color:#643DA7 !important;
+}
+
+.user-settings-modal-connections .user-settings-modal-connections-list {
+	box-shadow: 0 -1px rgba(255,255,255,0.2);
+}
+
+.tab-bar.TOP {
+	border-color:rgba(255,255,255,0.2);
+}
+
+.tab-bar.TOP .tab-bar-item.selected {
+	border-color:#25ACE8;
+	color:#25ACE8;
+}
+
+.user-settings-streamer-mode {
+	background:none;
+}
+
+.user-settings-modal-games {
+	background:rgba(255,255,255,0.05) !important;
+	border:none !important;
+}
+
+.user-settings-modal-games .games-table .games-row .item-game,
+.user-settings-modal-games .games-table .games-row .item-overlay {
+	border-color:rgba(255,255,255,0.2) !important;
+}
+
+.user-settings-modal-games .games-table .games-row .item-game .game-input,
+.user-settings-modal-games .games-table .games-row .item-game .game-name {
+	color:#fff;
+}
+
+.user-settings-modal-games .games-table .games-row .item-game .last-played {
+	color:rgba(255,255,255,0.5);
+}
+
+.now-playing.no-detection {
+	background: rgba(0,0,0,0.8);
+}
+
+.bd-g-table tbody tr,
+.bd-g-table thead th,
+.bd-g-table tbody tr:nth-child(odd) {
+	background:transparent !important;
+}
+
+.bd-g-table textarea {
+	color: rgba(255,255,255,0.4) !important;
+	background: rgba(255,255,255,0.2) !important;
+	padding: 8px 10px !important;
+	box-sizing:border-box;
+}
+
+#bd-pane .scroller-wrap div[style*="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bottom:0; left:0; right:0;"] {
+	background:rgba(0,0,0,0.95) !important;
+}
+
+.CodeMirror {
+	background: rgba(255,255,255,0.15) !important;
+    border-radius: 0px;
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.CodeMirror-gutters {
+	background: rgba(255,255,255,0.25) !important;
+	border:none !important;
+}
+
+.CodeMirror-linenumber {
+	color: #fff !important;
+}
+
+.cm-s-neat span.cm-builtin {
+	color:#25ACE8;
+}
+
+.cm-s-neat span.cm-atom,
+.cm-s-neat span.cm-number {
+	color:#25ACE8;
+}
+
+.member-roles .member-role {
+	background-color: rgba(255,255,255,0.1);
+	border:none;
+	padding: 6px 8px;
+	color: #fff;
+}
+
+.popout section {
+	background:rgba(0,0,0,0.85) !important;
+}
+
+.popout.popout-bottom header:before {
+	border-bottom-color:#1D6586;
+}
+
+#autocomplete-popout .row.selected,
+#autocomplete-popout .row:hover {
+	background:rgba(255,255,255,0.2) !important;
+}
+
+#autocomplete-popout .empty h4,
+#permissions .permissions-helpdesk,
+.guild-settings-modal-members .guild-settings-modal-members-footer a {
+	color:#25ACE8;
+}
+
+#permissions .permissions-helpdesk:hover,
+.guild-settings-modal-members .guild-settings-modal-members-footer a:hover {
+	color:#1D6586;
+}
+
+#user-profile-modal .header,
+#user-profile-modal .btn {
+	background:#25ACE8;
+}
+
+#user-profile-modal .btn:hover {
+	background:#1D6586;
+}
+
+#user-profile-modal .sub-header,
+#user-profile-modal .tab-bar,
+#user-profile-modal .scroller,
+#user-profile-modal .empty,
+#user-profile-modal footer {
+	background:rgba(0,0,0,0.85) !important;
+}
+
+#user-profile-modal .guilds .guild:hover {
+	background:rgba(255,255,255,0.2) !important;
+	color:rgba(255,255,255,0.7);
+}
+
+#user-profile-modal .avatar-profile {
+	border-color:rgba(0,0,0,0.7);
+	background-color:rgba(0,0,0,0.85);
+}
+
+#bd-customcss-attach-controls {
+	background:rgba(0,0,0,0.85);
+	border:none;
+	box-shadow:none;
+    padding:5px 10px 10px 10px;
+}
+
+#bd-customcss-attach-controls .checkbox > span {
+	font-size:14px;
+	margin-right:8px;
+	margin-left:5px;
 }
