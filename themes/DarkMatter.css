@@ -12,11 +12,7 @@
 /* Main background and settings background */
 .app,
 .callout-backdrop {
-<<<<<<< HEAD
 	background:url(https://i.imgur.com/7SbtKvw.png) !important;
-=======
-	background:url(https://i.imgur.com/7SbtKvw.png);
->>>>>>> origin/master
 	background-size:cover !important;
 }
 
@@ -1012,12 +1008,8 @@ textarea {
 
 .form .radio-group .radio,
 .form .checkbox-group .checkbox,
-<<<<<<< HEAD
 .checkbox .checkbox-inner+span,
 #permissions .permission-actions {
-=======
-.checkbox .checkbox-inner+span {
->>>>>>> origin/master
 	color:rgba(255,255,255,0.7) !important;
 }
 
