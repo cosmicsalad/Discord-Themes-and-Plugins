@@ -12,7 +12,7 @@
 /* Main background and settings background */
 .app,
 .callout-backdrop {
-	background:url(https://i.imgur.com/7SbtKvw.png);
+	background:url(https://i.imgur.com/7SbtKvw.png) !important;
 	background-size:cover !important;
 }
 
@@ -1044,6 +1044,7 @@ textarea {
 	padding:5px 10px 5px 10px;
 	border-radius:5px;
 	box-sizing: border-box;
+	border:none !important;
 }
 
 .form .btn-default {
@@ -1071,13 +1072,6 @@ textarea {
 .form .control-group input[type=text]:disabled,
 .form .control-group textarea:disabled {
 	background:rgba(255,255,255,0.2) !important;
-}
-
-.form .control-group input[type=email],
-.form .control-group input[type=password],
-.form .control-group input[type=text],
-.form .control-group textarea {
-	border:none !important;
 }
 
 #settings-roles .roles li:hover:before {
