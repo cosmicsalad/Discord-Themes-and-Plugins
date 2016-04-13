@@ -572,7 +572,7 @@ textarea {
 
 .channel-textarea-autocomplete-inner {
 	border:none !important;
-	background:rgba(0,0,0,0.85) !important;
+	background:rgba(0,0,0,0.95) !important;
 }
 
 .channel-textarea-autocomplete-inner header {
