@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.1"}*//
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.2"}*//
 
 /*
                      _                _                                   _ 
@@ -12,7 +12,7 @@
 /* Main background and settings background */
 .app,
 .callout-backdrop {
-	background:url(https://i.imgur.com/7SbtKvw.png) !important;
+	background:url(https://i.imgur.com/7SbtKvw.png);
 	background-size:cover !important;
 }
 
@@ -159,11 +159,17 @@ textarea {
 }
 
 .guilds li.active .guild-inner {
-	background:#25ACE8;
+	background:#25ACE8 !important;
+	animation: colorPulse 2s infinite alternate;
+}
+
+@-webkit-keyframes colorPulse {
+      0% {background: #25ACE8;}
+    100% {background: #1D6586;}
 }
 
 .guilds li .guild-inner:hover {
-	background:#1D6586;
+	background:#1D6586 !important;
 }
 
 .guilds li .guild-inner a, .guilds li, .guilds li .avatar-small {
@@ -255,6 +261,10 @@ textarea {
 .private-channels .search-result.selected:before,
 .private-channels .search-result:hover:before {
 	border-left:2px solid #1D6586 !important;
+}
+
+.private-channels .channel .icon-friends {
+	background-color:#151515 !important;
 }
 
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
@@ -558,6 +568,21 @@ textarea {
 .channel-textarea-inner {
 	border: 2px solid rgba(255,255,255,0.1) !important;
 	background:rgba(0,0,0,0.6) !important;
+}
+
+.channel-textarea-autocomplete-inner {
+	border:none !important;
+	background:rgba(0,0,0,0.85) !important;
+}
+
+.channel-textarea-autocomplete-inner header {
+	border:none !important;
+	background: rgba(37,172,232,0.5) !important;
+	color: rgba(255,255,255,0.9) !important;
+}
+
+.channel-textarea-autocomplete-inner ul li.active {
+	background:rgba(255,255,255,0.1) !important;
 }
 
 .typing {
@@ -1008,8 +1033,7 @@ textarea {
 
 .form .radio-group .radio,
 .form .checkbox-group .checkbox,
-.checkbox .checkbox-inner+span,
-#permissions .permission-actions {
+.checkbox .checkbox-inner+span {
 	color:rgba(255,255,255,0.7) !important;
 }
 
