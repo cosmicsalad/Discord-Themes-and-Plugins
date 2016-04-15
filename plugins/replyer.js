@@ -12,9 +12,7 @@ Replyer.prototype.start = function() {
 		if(target.parents(".message").length > 0) {
 			var allmessages = $('.messages .message-group');
 			var nameDateBlock = $('.messages .message-group .comment .message .body h2');
-			var reply = $('.messages .message-group .replyer');
 			var replyBtn = '<span class="replyer" style="cursor:pointer;color:#fff !important;position:relative;top:-1px;margin-left:5px;text-transform:uppercase;font-size:10px;padding:3px 5px;box-sizing:border-box;background:rgba(0,0,0,0.4)">Reply</span>';
-			
 			allmessages.on('mouseover',function() {
 				if(nameDateBlock.find('.replyer').length == 0) {
 					$(this).find(nameDateBlock).append(replyBtn);
@@ -24,7 +22,6 @@ Replyer.prototype.start = function() {
 					});
 				}
 			});
-
 			allmessages.on('mouseleave',function() {
 				if(nameDateBlock.find('.replyer').length == 1) {
 					$(this).find('.replyer').empty().remove();
@@ -32,7 +29,6 @@ Replyer.prototype.start = function() {
 			});
 		}
 	});
-
 	console.log('Replyer started.');
 };
 
