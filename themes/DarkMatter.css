@@ -194,8 +194,8 @@ textarea {
 }
 
 @-webkit-keyframes colorPulse {
-      0% {background: #25ACE8;}
-    100% {background: #1D6586;}
+      0% {background: #1D6586;}
+    100% {background: #25ACE8;}
 }
 
 .guilds li .guild-inner:hover {
