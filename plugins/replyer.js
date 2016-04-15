@@ -35,9 +35,13 @@ Replyer.prototype.start = function() {
 Replyer.prototype.load = function() {};
 Replyer.prototype.unload = function() {
 	$(document).off("mouseover.rpr");
+	$('.messages .message-group').off('mouseover');
+	$('.messages .message-group').off('mouseleave');
 };
 Replyer.prototype.stop = function() {
 	$(document).off("mouseover.rpr");
+	$('.messages .message-group').off('mouseover');
+	$('.messages .message-group').off('mouseleave');
 };
 Replyer.prototype.getSettingsPanel = function() {
 	return null;
