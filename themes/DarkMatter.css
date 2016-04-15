@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.2"}*//
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.2"}*//{}
 
 /*
                      _                _                                   _ 
@@ -634,6 +634,14 @@ textarea {
 	background:rgba(255,255,255,0.1) !important;
 }
 
+.channel-textarea-guard button {
+	background:#1D6586 !important;
+}
+
+.channel-textarea-guard button:hover {
+	background:#25ACE8 !important;
+}
+
 .typing {
 	font-size:11px;
 }
@@ -699,6 +707,10 @@ textarea {
 
 .private-channels .channel.btn-friends .badge {
 	margin-right:10px;
+}
+
+.private-channels .channel .close {
+	margin-right:5px;
 }
 
 #friends {
