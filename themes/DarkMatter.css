@@ -257,6 +257,12 @@ textarea {
     background: rgba(0,0,0,0.3);
 }
 
+.guilds-error {
+	width:40px;
+	height:40px;
+	line-height:36px;
+}
+
 .guild-channels header h2,
 .private-channels header {
 	opacity:.6;
