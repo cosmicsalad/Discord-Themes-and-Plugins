@@ -1348,3 +1348,21 @@ textarea {
 	margin-right:8px;
 	margin-left:5px;
 }
+
+// BetterDiscord Server List Start
+#pubs-container,#slist {
+	background-color:rgba(0, 0, 0, 0.9) !important
+}
+#slist span {
+	color:white !important;
+}
+.server-row:nth-child(2n+1) {
+	background-color:rgba(20, 20, 20, 0.9) !important;
+}
+.server-row:nth-child(2n+2) {
+	background-color:rgba(0, 0, 0, 0.9) !important;
+}
+#pubs-header,#pubs-footer {
+	background-color:#1D6586 !important;
+}
+// BetterDiscord Server List End
