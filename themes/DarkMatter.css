@@ -1362,3 +1362,8 @@ textarea {
 	margin-right:8px;
 	margin-left:5px;
 }
+
+/* Colored Verification Levels */
+span[data-reactid=".0.5.$=1$GuildSettingsModal.0.0.1.0.$OVERVIEW.0.0.1:2.0.2.1.0.1.0"]{color:green !important;}
+span[data-reactid=".0.5.$=1$GuildSettingsModal.0.0.1.0.$OVERVIEW.0.0.1:2.0.2.2.0.1.0"]{color:yellow !important;}
+span[data-reactid=".0.5.$=1$GuildSettingsModal.0.0.1.0.$OVERVIEW.0.0.1:2.0.2.3.0.1.0"]{color:red !important;}
