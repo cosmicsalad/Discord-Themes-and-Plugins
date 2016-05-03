@@ -1413,19 +1413,73 @@ textarea {
 	margin-left:5px;
 }
 
+/*
+             _     _ _        _     _     _   
+ _ __  _   _| |__ | (_) ___  | |   (_)___| |_ 
+| '_ \| | | | '_ \| | |/ __| | |   | / __| __|
+| |_) | |_| | |_) | | | (__  | |___| \__ \ |_ 
+| .__/ \__,_|_.__/|_|_|\___| |_____|_|___/\__|
+|_|                                           
 
-#pubs-container,#slist {
-	background-color:rgba(0, 0, 0, 0.9) !important
+*/
+
+#slist,
+#pubs-container {
+	background-color:rgba(0,0,0,0.7) !important;
+	border-radius:5px 5px 0 0;
 }
+
+#pubs-header {
+	padding:10px;
+	background-color:#25ACE8 !important;
+	border-radius:5px 5px 0 0;
+}
+
+#pubs-header input {
+	padding-left:10px;
+}
+
+#pubs-footer {
+	padding:10px;
+    font-size:12px;
+	background:rgba(0,0,0,0.8) !important;
+	border-radius:0 0 5px 5px;
+}
+
+.server-icon {
+	width:50px;
+    height:50px;
+	border-radius:100%;
+}
+
+.server-row {
+	padding:10px 10px 8px 10px;
+}
+
+.server-info {
+	line-height:50px;
+}
+
+.server-info button {
+	background-color:#1D6586 !important;
+	width:70px;
+    height:40px;
+    margin-top:4px;
+    margin-right:4px;
+}
+
+.server-info button:hover {
+	background-color:#25ACE8 !important;
+}
+
 #slist span {
 	color:white !important;
 }
+
 .server-row:nth-child(2n+1) {
-	background-color:rgba(20, 20, 20, 0.9) !important;
+	background-color:rgba(255,255,255,0.06) !important;
 }
+
 .server-row:nth-child(2n+2) {
-	background-color:rgba(0, 0, 0, 0.9) !important;
-}
-#pubs-header,#pubs-footer {
-	background-color:#1D6586 !important;
+	background-color:rgba(0,0,0,0) !important;
 }
