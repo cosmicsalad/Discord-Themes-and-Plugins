@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.2"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.3"}*//{}
 
 /*
                      _                _                                   _ 
@@ -816,6 +816,35 @@ textarea {
                                           |_|         |_|                    
 */
 
+.user-popout .header {
+	background:#25ACE8 !important;
+}
+
+.user-popout .avatar-wrapper .avatar-popout {
+	border:4px solid rgba(0,0,0,0.9);
+    background-color:rgba(0,0,0,0.9);
+}
+
+.user-popout .body {
+	background:rgba(0,0,0,0.8);
+	border-left:1px solid rgba(255,255,255,0.2);
+	border-right:1px solid rgba(255,255,255,0.2);
+}
+
+.user-popout .footer {
+	background:rgba(0,0,0,0.8);
+    border-top:1px solid rgba(255,255,255,0.2);
+    border-left:1px solid rgba(255,255,255,0.2);
+	border-right:1px solid rgba(255,255,255,0.2);
+	border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.user-popout .username-wrapper .game,
+.user-popout .username-wrapper.hasNickname .discriminator,
+.user-popout .username-wrapper.hasNickname .username {
+	color:rgba(0,0,0,0.7);
+}
+
 .popout header,
 .slider-bar-fill {
 	background-color:#25ACE8;
@@ -1033,6 +1062,15 @@ textarea {
                           |___/     
 */
 
+.context-menu {
+    background: rgba(0,0,0,0.95) !important;
+}
+
+.context-menu .item:hover,
+.context-menu .item-subMenu {
+	background-color:rgba(255,255,255,0.05) !important;
+}
+
 .avatar-uploader a {
 	color:#25ACE8;
 }
@@ -1153,6 +1191,14 @@ textarea {
 .form .control-group input[type=text]:disabled,
 .form .control-group textarea:disabled {
 	background:rgba(255,255,255,0.2) !important;
+}
+
+.guild-settings-modal-members {
+	background:none !important;
+}
+
+#settings-roles .roles {
+	border-right:1px solid rgba(255,255,255,0.2);
 }
 
 #settings-roles .roles li:hover:before {
@@ -1300,7 +1346,7 @@ textarea {
 }
 
 .popout section {
-	background:rgba(0,0,0,0.85) !important;
+	background:rgba(0,0,0,0.95) !important;
 }
 
 .popout.popout-bottom header:before {
@@ -1310,6 +1356,10 @@ textarea {
 #autocomplete-popout .row.selected,
 #autocomplete-popout .row:hover {
 	background:rgba(255,255,255,0.2) !important;
+}
+
+#permissions .permission-actions span {
+	color:rgba(255,255,255,0.7) !important;
 }
 
 #autocomplete-popout .empty h4,
@@ -1361,4 +1411,21 @@ textarea {
 	font-size:14px;
 	margin-right:8px;
 	margin-left:5px;
+}
+
+
+#pubs-container,#slist {
+	background-color:rgba(0, 0, 0, 0.9) !important
+}
+#slist span {
+	color:white !important;
+}
+.server-row:nth-child(2n+1) {
+	background-color:rgba(20, 20, 20, 0.9) !important;
+}
+.server-row:nth-child(2n+2) {
+	background-color:rgba(0, 0, 0, 0.9) !important;
+}
+#pubs-header,#pubs-footer {
+	background-color:#1D6586 !important;
 }
