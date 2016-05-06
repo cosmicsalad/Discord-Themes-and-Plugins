@@ -582,6 +582,12 @@ textarea {
 .messages .mentioned .message-text {
 	border-radius: 0 !important;
 	background: rgba(37,172,232,0.2) !important;
+	animation: highlight 2s infinite alternate;
+}
+
+@-webkit-keyframes highlight {
+	0% {box-shadow: 0 0 20px -3px rgba(37,172,232,0);}
+	100% {box-shadow: 0 0 20px -3px rgba(37,172,232,1);}
 }
 
 .messages .mentioned .message-text:after {
@@ -693,12 +699,13 @@ textarea {
 /*** COMPACT MODE ***/
 
 .message-group.compact .timestamp {
-    position: relative;
-    top: -3px;
+	color:rgba(255,255,255,0.3) !important;
+    position:relative;
+    top:-3px;
 }
 
 .message-group.compact .message .markup .user-name {
-    margin-right: 10px;
+    margin-right:10px;
 }
 
 /*
