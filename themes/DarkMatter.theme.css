@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.3"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.4"}*//
 
 /*
                      _                _                                   _ 
@@ -1411,6 +1411,52 @@ textarea {
 	font-size:14px;
 	margin-right:8px;
 	margin-left:5px;
+}
+
+.bda-slist li {
+	background:rgba(0,0,0,0.65) !important;
+	border-top:1px solid rgba(255,255,255,0.2) !important;
+	border-bottom:none;
+}
+
+.bda-slist li:nth-child(odd),
+.bda-slist .bda-description {
+	border:none;
+}
+
+.bda-slist li:first-of-type {
+	border-top:none !important;
+}
+
+.bda-slist .bda-name {
+	color:rgba(255,255,255,0.8);
+	letter-spacing: .3px;
+}
+
+.bda-slist .bda-left {
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.bda-slist .bda-right .bda-plugin-reload {
+	margin-top:25px;
+}
+
+.bda-slist .bda-right .btn {
+	margin-left:-5px;
+}
+
+.bda-slist .bda-right .btn:disabled {
+	opacity:0.3;
+}
+
+.bda-slist .checkbox {
+	position:relative;
+	top:8px;
+}
+
+#bd-themes-pane .bda-plugin-reload {
+	margin-top:60px;
 }
 
 /*
