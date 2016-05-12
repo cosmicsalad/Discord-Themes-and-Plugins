@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.4"}*//
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.5"}*//
 
 /*
                      _                _                                   _ 
@@ -167,7 +167,8 @@ textarea {
 	padding:8px 6px 10px 18px;
 }
 
-.guild-channels header h2, .guild-channels ul .channel a {
+.guild-channels header h2,
+.guild-channels ul .channel a {
 	color:#fff;
 }
 
@@ -202,6 +203,20 @@ textarea {
 	background:#1D6586 !important;
 }
 
+.guilds li.active .guild-inner {
+	animation: highlight 2s infinite alternate;
+}
+
+.guilds li:not(.active):not(:first-of-type) {
+	opacity:0.65;
+	transition:0.4s ease-in-out opacity;
+}
+
+.guilds li:not(.active):not(:first-of-type):hover {
+	opacity:1;
+	transition:0.2s ease-in-out opacity;
+}
+
 .guilds li .guild-inner a, .guilds li, .guilds li .avatar-small {
 	width:40px;
 	height:40px;
@@ -234,6 +249,7 @@ textarea {
 
 .guilds li .guild-inner:before {
 	left:-26px;
+	transition:0.2s ease-in-out all;
 }
 
 .guilds li.unread .guild-inner:before,
@@ -376,6 +392,15 @@ textarea {
 
 .account .btn-group, #voice-connection .btn-group {
 	border:none;
+}
+
+.account .avatar-small {
+	margin:0 0 0 10px;
+}
+
+.message-group .comment {
+	background:transparent !important;
+	border:none !important;
 }
 
 /*
@@ -600,7 +625,7 @@ textarea {
 	color:#25ACE8 !important;
 }
 
-.messages .markup:not([data-colour="true"]) {
+.messages .markup {
 	color:rgba(255,255,255,0.5) !important;
 	line-height:1.5em !important;
 }
@@ -844,6 +869,12 @@ textarea {
     border-left:1px solid rgba(255,255,255,0.2);
 	border-right:1px solid rgba(255,255,255,0.2);
 	border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.user-popout .footer .quick-message-wrapper .input {
+	background:rgba(255,255,255,0.1);
+	border-color:rgba(255,255,255,0.2);
+	color:rgba(255,255,255,0.9);
 }
 
 .user-popout .username-wrapper .game,
