@@ -195,35 +195,10 @@ textarea {
 
 .guilds li.active:first-of-type .guild-inner {
 	background:#25ACE8 !important;
-	animation: colorPulse 2s infinite alternate;
-}
-
-@-webkit-keyframes colorPulse {
-      0% {background: #1D6586;}
-    100% {background: #25ACE8;}
 }
 
 .guilds li .guild-inner:hover {
 	background:#1D6586 !important;
-}
-
-.guilds li.active:not(:first-of-type) .guild-inner {
-	animation: highlightserver 2s infinite alternate;
-}
-
-@-webkit-keyframes highlightserver {
-	0% {box-shadow: 0 0 20px -3px rgba(0,0,0,0);}
-	100% {box-shadow: 0 0 20px -1px rgba(0,0,0,0.9);}
-}
-
-.guilds li:not(.active):not(:first-of-type) {
-	opacity:0.65;
-	transition:0.4s ease-in-out opacity;
-}
-
-.guilds li:not(.active):not(:first-of-type):hover {
-	opacity:1;
-	transition:0.2s ease-in-out opacity;
 }
 
 .guilds li .guild-inner a, .guilds li, .guilds li .avatar-small {
@@ -620,12 +595,6 @@ textarea {
 .messages .mentioned .message-text {
 	border-radius: 0 !important;
 	background: rgba(37,172,232,0.2) !important;
-	animation: highlight 2s infinite alternate;
-}
-
-@-webkit-keyframes highlight {
-	0% {box-shadow: 0 0 20px -3px rgba(37,172,232,0);}
-	100% {box-shadow: 0 0 20px -3px rgba(37,172,232,1);}
 }
 
 .messages .mentioned .message-text:after {
@@ -848,6 +817,10 @@ textarea {
     padding-bottom: 10px;
 }
 
+.channel-members .member+h2 {
+	margin-top:12px;
+}
+
 .channel-members h2:first-of-type {
 	margin-top:0px !important;
 }
@@ -961,6 +934,11 @@ textarea {
 */
 
 /* SERVER LIST */
+.bd-minimal .channel-text a,
+.bd-minimal .guild-channels ul .channel-voice {
+	padding:5px 5px 5px 10px !important;
+}
+
 .bd-minimal .guilds {
 	padding-left:10px !important;
 }
@@ -1047,7 +1025,7 @@ textarea {
 
 /* MEMBERS */
 .bd-minimal .channel-members h2 {
-	margin-top:20px;
+	margin-top:10px;
     margin-bottom:3px;
     padding-left:20px;
 }
@@ -1063,7 +1041,7 @@ textarea {
 
 /* CHANNELS */
 .bd-minimal .guild-header header span {
-	margin-left:-13px;
+	margin-left:-7px;
 	font-size:14px;
 }
 
@@ -1074,7 +1052,7 @@ textarea {
 }
 
 .bd-minimal .guild-channels h2 {
-	margin-left:10px;
+	margin-left:15px;
 }
 
 /* ACCOUNT BAR */
@@ -1090,6 +1068,7 @@ textarea {
 
 .bd-minimal .account .avatar-small {
 	display:block !important;
+	margin-left:2px;
 }
 
 .bd-minimal .account .username {
@@ -1388,6 +1367,10 @@ textarea {
 
 .user-settings-modal-games .games-table .games-row .item-game .last-played {
 	color:rgba(255,255,255,0.5);
+}
+
+.now-playing {
+	background:#25ACE8 !important;	
 }
 
 .now-playing.no-detection {
