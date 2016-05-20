@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.5"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.6"}*//
 
 /*
                      _                _                                   _ 
@@ -176,7 +176,7 @@ textarea {
 	color:#fff;
 }
 
-.guilds {
+.guilds-wrapper .guilds {
 	padding:18px 20px 85px 20px;
 }
 
@@ -185,44 +185,46 @@ textarea {
 	background:#000;
 }
 
-.guilds .friends-online {
+.guilds-wrapper .guilds .friends-online {
 	margin-left:-5px;
 }
 
-.guilds li .guild-inner {
+.guilds-wrapper .guilds .guild .guild-inner {
 	background:#151515 !important;
 }
 
-.guilds li.active:first-of-type .guild-inner {
+.guilds-wrapper .guilds .guild.active:first-of-type .guild-inner {
 	background:#25ACE8 !important;
 }
 
-.guilds li .guild-inner:hover {
+.guilds-wrapper .guilds .guild .guild-inner:hover {
 	background:#1D6586 !important;
 }
 
-.guilds li .guild-inner a, .guilds li, .guilds li .avatar-small {
+.guilds-wrapper .guilds .guild .guild-inner a,
+.guilds-wrapper .guilds .guild,
+.guilds-wrapper .guilds .guild .avatar-small {
 	width:40px;
 	height:40px;
 }
 
-.guilds li .avatar-small {
+.guilds-wrapper .guilds .guild .avatar-small {
 	width:40px;
 	height:40px;
 	background-size: 40px 40px;
 }
 
-.guilds li .guild-inner {
+.guilds-wrapper .guilds .guild .guild-inner {
 	line-height:40px;
 }
 
-.guilds .friends-icon {
+.guilds-wrapper .guilds .friends-icon {
 	width:40px;
 	height:40px;
 	background-size:25px 19px;
 }
 
-.guilds li.audio .guild-inner:after {
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
 	background-size:12px;
 	background-color:rgba(0,0,0,0.8);
 }
@@ -231,21 +233,23 @@ textarea {
 	background:#969696;
 }
 
-.guilds li .guild-inner:before {
+.guilds-wrapper .guilds .guild:before,
+.guilds-wrapper .guilds .guild.unread:before,
+.guilds-wrapper .guilds .guild.selected:before {
 	left:-26px;
 	transition:0.2s ease-in-out all;
 }
 
-.guilds li.unread .guild-inner:before,
+.guilds-wrapper .guilds .guild.unread:not(.selected):before,
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
 	background:#25ACE8;
 }
 
-.guilds li.active .guild-inner:before {
+.guilds-wrapper .guilds .guild.active .guild-inner:before {
 	background:#fff !important;
 }
 
-.guilds .friends-online {
+.guilds-wrapper .guilds .friends-online {
 	color: #ccc;
     font-size: 9px;
     margin-left: -7px;
@@ -624,6 +628,10 @@ textarea {
 	color:rgba(255,255,255,0.2) !important;
 }
 
+.messages h2 .bot-tag {
+	color:rgba(255,255,255,0.8) !important;
+}
+
 .messages .markup pre {
 	background:transparent !important;
     border-color:rgba(255,255,255,0.1) !important;
@@ -939,49 +947,45 @@ textarea {
 	padding:5px 5px 5px 10px !important;
 }
 
-.bd-minimal .guilds {
+.bd-minimal .guilds-wrapper .guilds {
 	padding-left:10px !important;
 }
 
-.bd-minimal .guilds .friends-icon {
-	background-size:60%;
+.bd-minimal .guilds-wrapper .guilds .friends-icon {
+	background-size:60% !important;
 }
 
-.bd-minimal .guilds li .guild-inner:before {
+.bd-minimal .guilds-wrapper .guilds .guild:before {
+	width:10px;
     height:25px;
     border-radius:5px;
     margin-top:-13px;
-}
-
-.bd-minimal .guilds li.unread .guild-inner:before {
-	width:10px;
-	height:10px;
-	margin-top:-5px;
 	left:-16px;
 }
 
-.bd-minimal .guilds li.active .guild-inner:before {
-	left:-18px;
+.bd-minimal .guilds-wrapper .guilds .guild.unread:before {
+	height:10px;
+	margin-top:-5px;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild.selected:before {
 	border-radius:5px;
 	height:25px;
 	margin-top:-13px;
 }
 
-.bd-minimal .guilds li,
-.bd-minimal .guilds li .avatar-small,
-.bd-minimal .guilds li .guild-inner,
-.bd-minimal .guilds li .guild-inner a,
-.bd-minimal .guilds .friends-icon {
+.bd-minimal .guilds-wrapper .guilds .guild,
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner,
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner .avatar-small,
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner .friends-icon {
 	width:25px;
     height:25px;
     line-height:25px;
+    background-size:25px 25px;
+    font-size:10px !important;
 }
 
-.bd-minimal .guilds li .avatar-small, #bd-pub-button {
-	font-size:10px !important;
-}
-
-.bd-minimal .guilds .friends-online {
+.bd-minimal .guilds-wrapper .guilds .friends-online {
     font-size: 10px;
     word-spacing: 50px;
     line-height: 20px;
@@ -991,6 +995,10 @@ textarea {
     border-radius: 20px;
     overflow: hidden;
     background: rgba(0,0,0,0.5);
+}
+
+.bd-minimal .guilds-wrapper .guild-separator {
+	width:25px;
 }
 
 /* CHAT */
