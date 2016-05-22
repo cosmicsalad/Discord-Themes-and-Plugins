@@ -130,8 +130,19 @@ textarea {
 	background-color:#1D6586 !important;
 }
 
+.platform-osx .guilds-wrapper {
+    padding-top:30px;
+}
+
 .guilds-wrapper {
-	box-shadow:inset -10px 0px 20px -10px rgba(0,0,0,0.2);
+	border-right:1px solid rgba(0,0,0,0.4);
+	box-shadow:inset-10px 0px 20px -10px rgba(0,0,0,0.2);
+}
+
+.guilds-wrapper .guild-separator {
+	margin-top:15px;
+    margin-bottom:15px;
+	margin-left:-5px;
 }
 
 .guild-header ul {
@@ -148,10 +159,6 @@ textarea {
 
 .guilds-add {
     opacity: 0.5;
-}
-
-.guilds-wrapper {
-	border-right: 1px solid rgba(0,0,0,0.4);
 }
 
 .guild-header header span {
