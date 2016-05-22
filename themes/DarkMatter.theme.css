@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.6"}*//
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"CosmicSalad","version":"1.4.6"}*//{}
 
 /*
                      _                _                                   _ 
@@ -167,12 +167,12 @@ textarea {
 	padding:0 18px;
 }
 
-.guild-channels ul .channel-text a {
+.guild-channels .channel-text a {
 	padding:8px 6px 10px 18px;
 }
 
 .guild-channels header h2,
-.guild-channels ul .channel a {
+.guild-channels .channel a {
 	color:#fff;
 }
 
@@ -241,7 +241,7 @@ textarea {
 }
 
 .guilds-wrapper .guilds .guild.unread:not(.selected):before,
-.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
 	background:#25ACE8;
 }
 
@@ -272,6 +272,10 @@ textarea {
 	opacity:.6;
 }
 
+.guild-channels .channel:hover {
+	background:rgba(0,0,0,0.3) !important;
+}
+
 .private-channels .search-bar {
 	background:rgba(10,13,16,0) !important;
 }
@@ -280,7 +284,7 @@ textarea {
 	background:rgba(0,0,0,0.8) !important;
 }
 
-.guild-channels ul .channel.selected,
+.guild-channels .channel.selected,
 .private-channels .channel.selected,
 .private-channels .search-result.selected,
 .private-channels .search-result:hover {
@@ -292,9 +296,9 @@ textarea {
 	background:rgba(0,0,0,0.3) !important;
 }
 
-.guild-channels ul .channel:not(.selected):before,
-.guild-channels ul .channel.selected:before,
-.guild-channels ul .channel.selected:hover:before,
+.guild-channels .channel:not(.selected):before,
+.guild-channels .channel.selected:before,
+.guild-channels .channel.selected:hover:before,
 .private-channels .channel:not(.selected):before,
 .private-channels .channel.selected:before,
 .private-channels .channel.selected:hover:before,
@@ -307,7 +311,7 @@ textarea {
 	background-color:#151515 !important;
 }
 
-.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
 	left:-8px;
 }
 
