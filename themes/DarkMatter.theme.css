@@ -130,21 +130,6 @@ textarea {
 	background-color:#1D6586 !important;
 }
 
-.platform-osx .guilds-wrapper {
-    padding-top:30px;
-}
-
-.guilds-wrapper {
-	border-right:1px solid rgba(0,0,0,0.4);
-	box-shadow:inset-10px 0px 20px -10px rgba(0,0,0,0.2);
-}
-
-.guilds-wrapper .guild-separator {
-	margin-top:15px;
-    margin-bottom:15px;
-	margin-left:-5px;
-}
-
 .guild-header ul {
 	background:#000 !important;
     opacity:0 !important;
@@ -159,6 +144,25 @@ textarea {
 
 .guilds-add {
     opacity: 0.5;
+}
+
+.platform-osx .guilds-wrapper {
+    padding-top:30px;
+}
+
+.guilds-wrapper {
+	border-right:1px solid rgba(0,0,0,0.4);
+	box-shadow:inset -10px 0px 20px -10px rgba(0,0,0,0.2);
+}
+
+.guilds-wrapper .guild-separator {
+	margin-top:15px;
+    margin-bottom:15px;
+	margin-left:-5px;
+}
+
+.guilds-separator:after {
+	background:#969696;
 }
 
 .guild-header header span {
@@ -234,10 +238,6 @@ textarea {
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
 	background-size:12px;
 	background-color:rgba(0,0,0,0.8);
-}
-
-.guilds-separator:after {
-	background:#969696;
 }
 
 .guilds-wrapper .guilds .guild:before,
@@ -622,9 +622,12 @@ textarea {
 	color:#25ACE8 !important;
 }
 
+.messages .markup {
+	line-height:1.5em !important;
+}
+
 .messages .markup:not([data-colour="true"]) {
 	color:rgba(255,255,255,0.5) !important;
-	line-height:1.5em !important;
 }
 
 .messages .comment .markup pre {
@@ -1457,7 +1460,7 @@ textarea {
 	background:rgba(255,255,255,0.2) !important;
 }
 
-#permissions .permission-actions span {
+#permissions .permission-actions {
 	color:rgba(255,255,255,0.7) !important;
 }
 
