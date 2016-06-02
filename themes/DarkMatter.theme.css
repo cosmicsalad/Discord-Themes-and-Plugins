@@ -199,6 +199,11 @@ textarea {
 	padding:0 18px;
 }
 
+.guild-channels .channel-text .channel-name,
+.guild-channels .channel-voice .channel-name {
+	font-size:0.9em;
+}
+
 .guild-channels .channel-text a {
 	padding:8px 6px 10px 18px;
 }
@@ -632,6 +637,7 @@ textarea {
 }
 
 .messages h2 .user-name {
+	font-size:0.85em;
 	color:rgba(255,255,255,0.8);
 }
 
@@ -1235,6 +1241,7 @@ textarea {
 .form .checkbox-group .checkbox,
 .checkbox .checkbox-inner+span {
 	color:rgba(255,255,255,0.7) !important;
+	font-size: 0.95em;
 }
 
 .form .control-group input[type=email],
