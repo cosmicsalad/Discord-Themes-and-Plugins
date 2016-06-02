@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock","version":"1.4.6"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.4.7"}*//{}
 
 /*
                      _                _                                   _ 
@@ -16,6 +16,8 @@
 	background-size:cover !important;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 /*
                            _                           _       
   ___ ___  _ __ ___    ___| | ___ _ __ ___   ___ _ __ | |_ ___ 
@@ -24,6 +26,24 @@
  \___\___/|_|  \___|  \___|_|\___|_| |_| |_|\___|_| |_|\__|___/
 
 */
+
+@font-face {
+    font-family: 'Karla';
+    src: url(https://a.pomf.cat/nlkmlf.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Karla';
+	src: url(https://a.pomf.cat/msqfbv.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+* {
+    font-family: 'Karla' !important;
+}
 
 textarea {
 	background:transparent !important;
@@ -583,18 +603,6 @@ textarea {
     border-bottom-color:hsla(0,0%,100%,.04) !important;
 }
 
-.messages .message-group .markup .highlight {
-    background-color:rgba(29,101,134,.5) !important;
-    color:#ddd !important;
-	padding: 1px 4px;
-    border-radius: 0;
-}
-
-.messages .message-group .markup .highlight:hover {
-    background-color:rgba(29,101,134,1) !important;
-    color:#fff !important;
-}
-
 .messages .message-group {
 	border-bottom: none !important;
 }
@@ -622,18 +630,6 @@ textarea {
 	color:#25ACE8 !important;
 }
 
-.messages .markup {
-	line-height:1.5em !important;
-}
-
-.messages .markup:not([data-colour="true"]) {
-	color:rgba(255,255,255,0.5) !important;
-}
-
-.messages .comment .markup pre {
-	border-radius:0 !important;
-}
-
 .messages h2 .user-name {
 	color:rgba(255,255,255,0.8);
 }
@@ -646,7 +642,17 @@ textarea {
 	color:rgba(255,255,255,0.8) !important;
 }
 
+.messages .markup {
+	font-size:0.85em !important;
+	line-height:1.4em !important;
+}
+
+.messages .markup:not([data-colour="true"]) {
+	color:rgba(255,255,255,0.5) !important;
+}
+
 .messages .markup pre {
+	border-radius:0 !important;
 	background:transparent !important;
     border-color:rgba(255,255,255,0.1) !important;
 }
@@ -663,6 +669,23 @@ textarea {
     color:rgba(255,255,255,0.7) !important;
 	padding:0.3em 0.6em !important;
 	border-radius:0 !important;
+}
+
+.messages .markup .highlight {
+    background-color:rgba(29,101,134,.5) !important;
+    color:#ddd !important;
+	padding: 1px 4px;
+    border-radius: 0;
+}
+
+.messages .markup .highlight:hover {
+    background-color:rgba(29,101,134,1) !important;
+    color:#fff !important;
+}
+
+.emotewrapper img {
+	position: relative;
+    top: 7px;
 }
 
 .channel-textarea-upload {
@@ -1013,6 +1036,7 @@ textarea {
 
 .bd-minimal .guilds-wrapper .guild-separator {
 	width:25px;
+	margin-left:0;
 }
 
 /* CHAT */
@@ -1027,10 +1051,6 @@ textarea {
 
 .bd-minimal .message-group {
 	padding:10px 5px;
-}
-
-.bd-minimal .guild-channels ul .channel-text .channel-name {
-	padding-left:5px;
 }
 
 .bd-minimal .avatar-large {
@@ -1067,7 +1087,15 @@ textarea {
 	font-size:14px;
 }
 
-.bd-minimal .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
+.bd-minimal .guild-channels .channel-text .channel-name {
+	padding-left:5px;
+}
+
+.bd-minimal .guild-channels header:first-of-type {
+	margin-top:5px;
+}
+
+.bd-minimal .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
 	top:9px;
     width:10px;
     height:10px;
@@ -1536,6 +1564,7 @@ textarea {
 }
 
 .bda-slist .bda-left {
+	width:380px;
 	padding:10px;
 	box-sizing:border-box;
 }
@@ -1553,8 +1582,17 @@ textarea {
 }
 
 .bda-slist .checkbox {
+	margin-left:10px;
 	position:relative;
 	top:8px;
+}
+
+.bda-slist {
+	margin-bottom:25px;
+}
+
+.bda-slist-top {
+    height: 35px;
 }
 
 #bd-themes-pane .bda-plugin-reload {
