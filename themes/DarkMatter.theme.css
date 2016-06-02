@@ -159,11 +159,12 @@ textarea {
 }
 
 .guild-header-open ul {
-	opacity: 1 !important;
+	opacity:1 !important;
 }
 
 .guilds-add {
-    opacity: 0.5;
+    opacity:0.5;
+    font-size:22px !important;
 }
 
 .platform-osx .guilds-wrapper {
