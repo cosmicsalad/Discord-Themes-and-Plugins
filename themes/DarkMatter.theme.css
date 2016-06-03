@@ -29,14 +29,14 @@
 
 @font-face {
     font-family: 'Karla';
-    src: url(https://a.pomf.cat/nlkmlf.ttf);
+    src: url(https://github.com/cosmicsalad/Discord-Themes-and-Plugins/raw/master/lib/Karla-Regular.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Karla';
-	src: url(https://a.pomf.cat/msqfbv.ttf);
+	src: url(https://github.com/cosmicsalad/Discord-Themes-and-Plugins/raw/master/lib/Karla-Bold.ttf);
 	font-weight: bold;
 	font-style: normal;
 }
