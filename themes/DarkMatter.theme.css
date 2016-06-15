@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.4.7"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.4.8"}*//{}
 
 /*
                      _                _                                   _ 
@@ -114,6 +114,7 @@ textarea {
 	-webkit-filter:invert() hue-rotate(150deg);
 }
 
+.create-guild-container h5,
 .create-guild-container .action.create .action-header {
 	color:#25ACE8;
 }
@@ -124,6 +125,58 @@ textarea {
 
 .create-guild-container .action.create:hover .btn-primary {
 	background-color:#1D6586 !important;
+}
+
+.create-guild-container .form-actions .btn-default {
+	background: rgba(255,255,255,0.1);
+    border: 0;
+}
+
+.create-guild-container .create-guild .guild-form .region-select {
+	background: rgba(255,255,255,0.1);
+}
+
+.create-guild-container .create-guild .guild-form .region-select button {
+	color:#000;
+}
+
+.create-guild-container .create-guild .guild-form .region-select:hover button {
+	background-color:#25ACE8;
+	border-color:#25ACE8;
+	color:#fff;
+}
+
+.create-guild-container .create-guild .guild-form .region-select:hover .region-select-inner {
+	border-color:#25ACE8;
+}
+
+.create-guild-container .create-guild .guild-form .region-select-name {
+	color:#fff;
+}
+
+.avatar-uploader .avatar-uploader-inner {
+	background-color: #25ACE8;
+}
+
+.region-select-modal {
+	background:rgba(0,0,0,0.8);
+}
+
+.region-select-modal .region-select-modal-header {
+	color:#25ACE8;
+}
+
+.region-select-modal .region-select-modal-option {
+	background:rgba(255,255,255,0.1);
+	border:2px solid rgba(255,255,255,0.1);
+}
+
+.region-select-modal .region-select-modal-option:hover {
+	    border-color: #25ACE8;
+}
+
+.region-select-modal .region-select-modal-option .region-select-name {
+	color:#fff;
 }
 
 .guild-header ul {
@@ -664,6 +717,11 @@ textarea {
 .messages .markup .highlight:hover {
     background-color:rgba(29,101,134,1) !important;
     color:#fff !important;
+}
+
+.messages .invite-button {
+	background: rgba(255,255,255,0.07) !important;
+	border-color: rgba(255,255,255,0.1) !important;
 }
 
 .emotewrapper img {
@@ -1581,6 +1639,61 @@ textarea {
 
 #bd-themes-pane .bda-plugin-reload {
 	margin-top:60px;
+}
+
+.bda-dark #bda-qem-favourite-container,
+.bda-dark #bda-qem-twitch-container,
+.bda-dark .emoji-picker {
+	background-color: rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-top: none;
+}
+
+.bda-dark .emoji-picker .category {
+	background-color: rgba(0,0,0,0.7);
+    border: 0px solid rgba(255,255,255,0.2);
+    border-top: none;
+}
+
+.bda-dark #bda-qem {
+	padding-right: 0px !important;
+    border-bottom: 0px solid rgba(0,0,0,0.5) !important;
+    background: rgba(0,0,0,0.7);
+}
+
+.bda-dark #bda-qem button {
+	background: rgba(255,255,255,0.1);
+	box-shadow: rgba(0,0,0,0.5) 1px 0 0 0;
+}
+
+.bda-dark #bda-qem button:hover {
+    background: rgba(0,0,0,0.6);
+}
+
+.bda-dark #bda-qem button.active {
+    background: rgba(0,0,0,1);
+}
+
+/* Scrollbar drag bar */
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb {
+    background:rgba(255,255,255,0.4) !important;
+    border-color:rgba(255,255,255,0) !important;
+}
+
+/* Scrollbar background */
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece {
+	background:rgba(255,255,255,0.1) !important;
+    border-color:rgba(255,255,255,0) !important;
 }
 
 /*
