@@ -63,15 +63,23 @@ ESorter.prototype.initEmoteList = function() {
 			setTimeout(function() {
 
 				$('#bda-qem-favourite-container .emote-menu-inner .emote-container').each(function(i,v) {
-					$(this).attr('data-sort', i);
+					//$(this).attr('data-sort', i);
 				});
 
 				ESorter.prototype.activateEmoteList();
 
 				if(storedEmoteOrder) {
+					var emoteBox = $('#bda-qem-favourite-container .emote-menu-inner');
+
 					$.each(storedEmoteOrder,function(i,v) {
-						$('#bda-qem-favourite-container .emote-menu-inner .emote-container*[data-sort='+i+']').append($('.emote-icon[title*="'+v+'"]'));
+						$('.emote-icon[title*="'+v+'"]').parent().attr('data-sort', i);
 					});
+
+					$('#bda-qem-favourite-container .emote-menu-inner').find('.emote-container').sort(sortemotes).appendTo(emoteBox);
+					
+					function sortemotes(a,b){
+						return ($(b).data('sort')) < ($(a).data('sort')) ? 1 : -1;    
+					}
 				}
 
 			}, 10);
