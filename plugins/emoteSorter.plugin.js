@@ -61,7 +61,6 @@ ESorter.prototype.initEmoteList = function() {
 					var emoteBox = $('#bda-qem-favourite-container .emote-menu-inner');
 
 					$.each(storedEmoteOrder,function(i,v) {
-						console.log('index: '+i+' / value: '+v);
 						$('.emote-icon[title="'+v+'"]').parent().attr('data-sort', i);
 					});
 
@@ -92,8 +91,6 @@ ESorter.prototype.storeNewEmoteList = function() {
 	emoteList = {};
 	emoteList = emotes;
 	newEmoteList = $.extend({}, storedEmoteOrder, emoteList);
-
-	console.log(newEmoteList);
 
 	localStorage.setItem("sortEmoteOrder", JSON.stringify(newEmoteList));
 };
