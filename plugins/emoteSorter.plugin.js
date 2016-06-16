@@ -39,14 +39,7 @@ ESorter.prototype.activateEmoteList = function() {
 			ESorter.prototype.storeNewEmoteList();
 		},
 		sort: function (e) {
-			$('#bda-qem-favourite-container .emote-menu-inner .emote-placeholder').css({
-				"display":"inline-block",
-				"width":"30px",
-				"height":"30px",
-				"padding":"2px",
-				"background":"rgba(255,255,255,0.1)",
-				"border-radius":"5px"
-			});
+			$('#bda-qem-favourite-container .emote-menu-inner .emote-placeholder').css({"display":"inline-block","width":"30px","height":"30px","padding":"2px","background":"rgba(255,255,255,0.1)","border-radius":"5px"});
 		}
 	}).disableSelection();
 }
@@ -62,20 +55,17 @@ ESorter.prototype.initEmoteList = function() {
 		if (!$('#bda-qem-favourite-container .emote-menu-inner').hasClass("ui-sortable")) {
 			setTimeout(function() {
 
-				$('#bda-qem-favourite-container .emote-menu-inner .emote-container').each(function(i,v) {
-					//$(this).attr('data-sort', i);
-				});
-
 				ESorter.prototype.activateEmoteList();
 
 				if(storedEmoteOrder) {
 					var emoteBox = $('#bda-qem-favourite-container .emote-menu-inner');
 
 					$.each(storedEmoteOrder,function(i,v) {
-						$('.emote-icon[title*="'+v+'"]').parent().attr('data-sort', i);
+						console.log('index: '+i+' / value: '+v);
+						$('.emote-icon[title="'+v+'"]').parent().attr('data-sort', i);
 					});
 
-					$('#bda-qem-favourite-container .emote-menu-inner').find('.emote-container').sort(sortemotes).appendTo(emoteBox);
+					$('#bda-qem-favourite-container .emote-menu-inner .emote-container').sort(sortemotes).appendTo(emoteBox);
 					
 					function sortemotes(a,b){
 						return ($(b).data('sort')) < ($(a).data('sort')) ? 1 : -1;    
@@ -102,6 +92,8 @@ ESorter.prototype.storeNewEmoteList = function() {
 	emoteList = {};
 	emoteList = emotes;
 	newEmoteList = $.extend({}, storedEmoteOrder, emoteList);
+
+	console.log(newEmoteList);
 
 	localStorage.setItem("sortEmoteOrder", JSON.stringify(newEmoteList));
 };
