@@ -471,6 +471,10 @@ textarea {
 
 */
 
+.header-toolbar button.popout-open {
+	background:#25ACE8;
+}
+
 .channel-pins-wrap {
     background: rgba(0,0,0,0.9) !important;
 }
@@ -483,6 +487,11 @@ textarea {
 
 .channel-pins .message-group {
     background-color: rgba(0,0,0,0.7) !important;
+}
+
+.channel-pins .message-group:hover {
+    box-shadow: 0 0 4px 5px rgba(37, 172, 232, 0.1);
+    border-color: rgba(37, 172, 232, 0.47) !important;
 }
 
 .channel-pins .message-group .action-buttons {
