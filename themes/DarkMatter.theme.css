@@ -828,14 +828,19 @@ textarea {
 
 /*** COMPACT MODE ***/
 
+.message-group.compact {
+	margin-left:0;
+}
+
 .message-group.compact .timestamp {
 	color:rgba(255,255,255,0.3) !important;
     position:relative;
-    top:-3px;
+    top:-1px;
 }
 
 .message-group.compact .message .markup .user-name {
-    margin-right:10px;
+    margin-right:8px;
+    font-size:14px;
 }
 
 /*
