@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.4.85"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.4.9"}*//{}
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 /*
@@ -471,6 +471,29 @@ textarea {
 
 */
 
+.channel-pins-wrap {
+    background: rgba(0,0,0,0.9) !important;
+}
+
+.channel-pins-wrap .header,
+.channel-pins-wrap .footer {
+    background-color: rgba(0,0,0,0.95) !important;
+    box-shadow: none !important;
+}
+
+.channel-pins .message-group {
+    background-color: rgba(0,0,0,0.7) !important;
+}
+
+.channel-pins .message-group .action-buttons {
+	box-shadow: none !important;
+    background: none !important;
+}
+
+.channel-pins .message-group .action-buttons .jump-button {
+	background-color: rgba(255,255,255,0.15) !important;
+}
+
 .spinner-wandering-cubes .spinner-item {
 	background-color:#25ACE8;
 	width:15px;
@@ -655,12 +678,12 @@ textarea {
 	font-style:italic;
 }
 
-.messages .mentioned .message-text {
+.mentioned .message-text {
 	border-radius: 0 !important;
 	background: rgba(37,172,232,0.2) !important;
 }
 
-.messages .mentioned .message-text:after {
+.mentioned .message-text:after {
 	border-radius: 0 !important;
 	border-color:#25ACE8 !important;
 	background:rgba(37,172,232,0.2) !important;
@@ -692,20 +715,20 @@ textarea {
 	color:rgba(255,255,255,0.5) !important;
 }
 
-.messages .markup pre {
+.markup pre {
 	border-radius:0 !important;
 	background:transparent !important;
     border-color:rgba(255,255,255,0.1) !important;
 }
 
-.messages .markup pre code.hljs {
+.markup pre code.hljs {
     background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
     padding:1em !important;
 }
 
 .modal-content .markup code.inline,
-.messages .markup code.inline {
+.markup code.inline {
 	background:rgba(255,255,255,0.1) !important;
     color:rgba(255,255,255,0.7) !important;
 	padding:0.3em 0.6em !important;
