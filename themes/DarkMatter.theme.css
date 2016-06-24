@@ -27,7 +27,7 @@
 */
 
 div>*:not(code) {
-    font-family: 'Karla' !important;
+    font-family: 'Karla',Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif !important;
 }
 
 textarea {
