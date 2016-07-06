@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Theme1",
+    "type": "theme",
+    "src": "",
+    "version": "1.0",
+    "authors": [
+      "Hammock"
+    ]
+  },
+  {
+    "name": "Theme2",
+    "type": "theme",
+    "src": "",
+    "version": "1.1",
+    "authors": [
+      "Hammock",
+      "Hammock2"
+    ]
+  }
+]
