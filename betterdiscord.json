@@ -7,5 +7,14 @@
     "authors": [
       "Hammock"
     ]
+  },
+  {
+    "name": "Transparent",
+    "type": "theme",
+    "src": "themes/Transparent",
+    "version": "1.0",
+    "authors": [
+      "Hammock"
+    ]
   }
 ]
