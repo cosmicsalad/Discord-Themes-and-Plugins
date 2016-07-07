@@ -16,5 +16,14 @@
     "authors": [
       "Hammock"
     ]
+  },
+  {
+    "name": "Replyer",
+    "type": "plugin",
+    "src": "plugins/Replyer",
+    "version": "1.0",
+    "authors": [
+      "Hammock"
+    ]
   }
 ]
