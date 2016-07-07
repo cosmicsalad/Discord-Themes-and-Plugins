@@ -1,21 +1,11 @@
 [
   {
-    "name": "Theme1",
+    "name": "Dark Matter",
     "type": "theme",
-    "src": "",
-    "version": "1.0",
+    "src": "themes",
+    "version": "1.4",
     "authors": [
       "Hammock"
-    ]
-  },
-  {
-    "name": "Theme2",
-    "type": "theme",
-    "src": "",
-    "version": "1.1",
-    "authors": [
-      "Hammock",
-      "Hammock2"
     ]
   }
 ]
