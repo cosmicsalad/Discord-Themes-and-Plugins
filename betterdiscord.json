@@ -2,7 +2,7 @@
   {
     "name": "Dark Matter",
     "type": "theme",
-    "src": "themes",
+    "src": "themes/DarkMatter",
     "version": "1.4",
     "authors": [
       "Hammock"
