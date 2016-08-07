@@ -328,7 +328,7 @@ textarea {
     background: rgba(0,0,0,0.3);
 }
 
-.guilds-error {
+.guilds-wrapper .guilds-error {
 	width:40px;
 	height:40px;
 	line-height:36px;
