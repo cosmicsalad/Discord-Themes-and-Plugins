@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.4.9"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5"}*//{}
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 /*
@@ -211,13 +211,14 @@ textarea {
 }
 
 .guilds-wrapper .guild-separator {
-	margin-top:15px;
-    margin-bottom:15px;
+	margin-top:5px;
+    margin-bottom:5px;
 	margin-left:-5px;
+	display:none;
 }
 
-.guilds-separator:after {
-	background:#969696;
+.guilds-wrapper .guild-separator:after {
+	background:transparent;
 }
 
 .guild-header header span {
@@ -257,7 +258,7 @@ textarea {
 }
 
 .guilds-wrapper .guilds .friends-online {
-	margin-left:-5px;
+	
 }
 
 .guilds-wrapper .guilds .guild .guild-inner {
@@ -295,6 +296,23 @@ textarea {
 	background-size:25px 19px;
 }
 
+.guilds-wrapper .guilds .friends-icon {
+    background-color: rgba(0,0,0,0.3) !important;
+    background-image: none !important;
+    padding-top:0px;
+}
+
+.guilds-wrapper .guilds .friends-icon:after {
+    display:block;
+    width:40px;
+    height:40px;
+    content:'';
+    background-image: url(https://i.imgur.com/cm6mEXd.gif) !important;
+    background-size:110%;
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
 	background-size:12px;
 	background-color:rgba(0,0,0,0.8);
@@ -319,7 +337,7 @@ textarea {
 .guilds-wrapper .guilds .friends-online {
 	color: #ccc;
     font-size: 9px;
-    margin-left: -7px;
+    margin: 15px 0 15px -7px;
     line-height: 20px;
     width: 55px;
     height: 20px;
@@ -637,25 +655,41 @@ textarea {
 	color:#25ACE8 !important;
 }
 
-/* Date 1px line */
+.chat .divider {
+	height:25px;
+	background:none;
+}
+
+.chat .divider>div {
+	display:none !important;
+}
 .chat .divider:not(.divider-red)>div {
 	background:rgba(255,255,255,0.2) !important;
 }
 
-.chat .divider>span {
+.chat .divider:before {
 	background:rgba(255,255,255,0.1) !important;
+	height:25px;
+}
+
+.chat .divider.divider-red:before {
+	background: rgba(240,71,71,.8) !important;
+}
+
+.chat .divider>span {
+	background-color:transparent !important;
 	font-size:12px;
 	text-transform:uppercase;
 	margin:10px 0px;
 	border-radius: 0px;
 	opacity: 1;
-    padding: 5px 15px;
+    padding: 8px 15px;
+    line-height: 1px;
     width: 100%;
     text-align: center;
 }
 
 .chat .divider.divider-red>span {
-	background: rgba(240,71,71,.8) !important;
     color: rgba(255,255,255,0.9) !important;
 }
 
@@ -940,7 +974,7 @@ textarea {
 }
 
 .channel-members h2 {
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1597,11 +1631,19 @@ textarea {
 }
 
 #user-profile-modal .sub-header,
-#user-profile-modal .tab-bar,
+#user-profile-modal .tab-bar-container,
 #user-profile-modal .scroller,
 #user-profile-modal .empty,
 #user-profile-modal footer {
 	background:rgba(0,0,0,0.85) !important;
+}
+
+#user-profile-modal .tab-bar-container {
+	border-bottom: 1px solid rgba(240, 240, 240, 0.15) !important;
+}
+
+#user-profile-modal .guilds .section+.section {
+	border-top: 1px solid rgba(240, 240, 240, 0.15) !important;
 }
 
 #user-profile-modal .guilds .guild:hover {
@@ -1683,57 +1725,57 @@ textarea {
 	margin-top:60px;
 }
 
-.bda-dark #bda-qem-favourite-container,
-.bda-dark #bda-qem-twitch-container,
-.bda-dark .emoji-picker {
-	background-color: rgba(0,0,0,0.7);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-top: none;
+#bda-qem-favourite-container,
+#bda-qem-twitch-container,
+.emoji-picker {
+	background-color: rgba(0,0,0,0.95) !important;
+    border: 0px solid rgba(255,255,255,0.1) !important;
+    border-top: none !important;
 }
 
-.bda-dark .emoji-picker .category {
-	background-color: rgba(0,0,0,0.7);
-    border: 0px solid rgba(255,255,255,0.2);
-    border-top: none;
+.emoji-picker .category {
+	background-color: rgba(0,0,0,0.7) !important;
+    border: 0px solid rgba(255,255,255,0.2) !important;
+    border-top: none !important;
 }
 
-.bda-dark #bda-qem {
+#bda-qem {
 	padding-right: 0px !important;
     border-bottom: 0px solid rgba(0,0,0,0.5) !important;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.95) !important;
 }
 
-.bda-dark #bda-qem button {
-	background: rgba(255,255,255,0.1);
-	box-shadow: rgba(0,0,0,0.5) 1px 0 0 0;
+#bda-qem button {
+	background: rgba(255,255,255,0.1) !important;
+	box-shadow: rgba(0,0,0,0.5) 1px 0 0 0 !important;
 }
 
-.bda-dark #bda-qem button:hover {
-    background: rgba(0,0,0,0.6);
+#bda-qem button:hover {
+    background: rgba(0,0,0,0.6) !important;
 }
 
-.bda-dark #bda-qem button.active {
-    background: rgba(0,0,0,1);
+#bda-qem button.active {
+    background: rgba(0,0,0,1) !important;
 }
 
 /* Scrollbar drag bar */
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
-.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
-.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb {
+.emoji-picker .scroller::-webkit-scrollbar-thumb,
+#bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
+#bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb {
     background:rgba(255,255,255,0.4) !important;
     border-color:rgba(255,255,255,0) !important;
 }
 
 /* Scrollbar background */
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar,
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track,
-.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece,
-.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar,
-.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
-.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
-.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar,
-.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
-.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece {
+.emoji-picker .scroller::-webkit-scrollbar,
+.emoji-picker .scroller::-webkit-scrollbar-track,
+.emoji-picker .scroller::-webkit-scrollbar-track-piece,
+#bda-qem-favourite-container .scroller::-webkit-scrollbar,
+#bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
+#bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
+#bda-qem-twitch-container .scroller::-webkit-scrollbar,
+#bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
+#bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece {
 	background:rgba(255,255,255,0.1) !important;
     border-color:rgba(255,255,255,0) !important;
 }
