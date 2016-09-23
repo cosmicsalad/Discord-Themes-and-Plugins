@@ -188,8 +188,6 @@ textarea {
 	background:#000 !important;
     opacity:0 !important;
     transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
-    padding-top:100px;
-    top:-56px;
 }
 
 .guild-header-open ul {
