@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5.1"}*//{}
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 /*
@@ -1778,6 +1778,70 @@ textarea {
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece {
 	background:rgba(255,255,255,0.1) !important;
     border-color:rgba(255,255,255,0) !important;
+}
+
+.instant-invite-modal {
+	background: none;
+}
+
+#instant-invite-modal .copy {
+	background-color: #25ACE8;
+}
+
+#instant-invite-modal .clipboard-input-inner input {
+	color: #25ACE8;
+}
+
+.popout-menu {
+	background: transparent !important;
+}
+
+.popout-menu.status-picker {
+	background: transparent;
+    width: 322px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0 !important;
+}
+
+.popout-menu .popout-menu-separator {
+    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.popout-menu .popout-menu-item {
+    background: rgba(0,0,0,0.95) !important;
+}
+
+.popout-top .popout-menu .popout-menu-item {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.popout-menu .popout-menu-item:hover {
+    background-color: #1d6586 !important;
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.popout-top {
+	top: auto !important;
+	bottom: -126px !important;
+}
+
+.themed-popout {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    border: 1px solid rgba(255,255,255,.1) !important;
+}
+
+.themed-popout .header, .themed-popout .footer {
+	background-color: #000 !important;
+}
+
+.themed-popout .messages-popout .message-group {
+    border-color: rgba(28,36,43,0) !important;
+    background-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+.themed-popout .messages-popout .message-group:hover .action-buttons {
+    box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.03) !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
 }
 
 /*
