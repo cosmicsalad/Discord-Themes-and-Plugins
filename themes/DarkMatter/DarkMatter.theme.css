@@ -588,6 +588,11 @@ textarea {
 	background:rgba(0,0,0,0.85) !important;
 }
 
+.alert.form .form-inner .btn {
+	padding: 0 !important;
+	border: none !important;
+}
+
 .channel-notification-settings .content label,
 .notification-settings-modal .mute-server .checkbox .label span {
 	color:#fff;
@@ -1621,13 +1626,18 @@ textarea {
 	color:#1D6586;
 }
 
-#user-profile-modal .header,
+/*#user-profile-modal .header,*/
 #user-profile-modal .btn {
 	background:#25ACE8;
 }
 
 #user-profile-modal .btn:hover {
 	background:#1D6586;
+}
+
+#user-profile-modal .guilds .section .connected-accounts .connected-account {
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	background: rgba(0, 0, 0, 0.65);
 }
 
 #user-profile-modal .sub-header,
@@ -1652,8 +1662,17 @@ textarea {
 }
 
 #user-profile-modal .avatar-profile {
-	border-color:rgba(0,0,0,0.7);
-	background-color:rgba(0,0,0,0.85);
+    width: 126px !important;
+    height: 126px !important;
+}
+
+#user-profile-modal .header .header-info .header-info-inner .discord-tag {
+	font-size: 22px !important;
+	font-weight: bold !important;
+}
+
+#user-profile-modal .avatar-wrapper {
+	background-color: transparent;
 }
 
 #bd-customcss-attach-controls {
