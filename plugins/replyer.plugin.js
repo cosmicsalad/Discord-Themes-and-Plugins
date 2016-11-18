@@ -21,7 +21,7 @@ Replyer.prototype.start = function() {
 			var isCompact = false;
 			var allmessages = $('.messages .message-group');
 			var nameDateBlock = $('.messages .message-group .comment .message .body h2');
-			var replyBtn = '<span class="replyer" style="cursor:pointer;color:#fff !important;position:relative;top:-1px;margin-left:5px;text-transform:uppercase;font-size:10px;padding:3px 5px;box-sizing:border-box;background:rgba(0,0,0,0.4)">Reply</span>';
+			var replyBtn = '<span class="replyer" style="cursor:pointer;color:rgba(255,255,255,.6) !important;position:relative;top:-1px;margin-left:5px;text-transform:uppercase;font-size:10px;padding:3px 5px;box-sizing:border-box;background:#282b30;-webkit-border-radius:3px;">Reply</span>';
 			allmessages.on('mouseover',function() {
 				if (nameDateBlock.find('.replyer').length == 0) {
 					$(this).find(nameDateBlock).append(replyBtn);
