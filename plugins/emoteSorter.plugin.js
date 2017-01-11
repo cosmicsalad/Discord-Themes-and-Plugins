@@ -11,7 +11,7 @@ ESorter.prototype.getDescription = function() {
 };
 
 ESorter.prototype.getVersion = function() {
-    return "1.0";
+    return "1.1";
 };
 
 ESorter.prototype.getAuthor = function() {
@@ -50,7 +50,7 @@ ESorter.prototype.initEmoteList = function() {
 	$('.channel-textarea-emoji').on('click',function() {
 
 		// set initial order
-		storedEmoteOrder = JSON.parse(localStorage.getItem("sortEmoteOrder"));
+		storedEmoteOrder = JSON.parse(bdPluginStorage.get("sortEmoteOrder", 'config'));
 
 		if (!$('#bda-qem-favourite-container .emote-menu-inner').hasClass("ui-sortable")) {
 			setTimeout(function() {
@@ -86,13 +86,13 @@ ESorter.prototype.storeNewEmoteList = function() {
 		return $(el).children('.emote-icon').attr('title');
 	});
 
-	var storedEmoteOrder = JSON.parse(localStorage.getItem("sortEmoteOrder"));
+	var storedEmoteOrder = JSON.parse(bdPluginStorage.get("sortEmoteOrder", 'config'));
 
 	emoteList = {};
 	emoteList = emotes;
 	newEmoteList = $.extend({}, storedEmoteOrder, emoteList);
 
-	localStorage.setItem("sortEmoteOrder", JSON.stringify(newEmoteList));
+	bdPluginStorage.set("sortEmoteOrder", 'config', JSON.stringify(newEmoteList));
 };
 
 ESorter.prototype.load = function() {};
