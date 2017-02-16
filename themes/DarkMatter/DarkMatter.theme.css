@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5.1"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5.2"}*//{}
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 /*
@@ -44,6 +44,7 @@ textarea {
 	background-color:rgba(0,0,0,0.3) !important;
 }
 
+
 /*
  _     _     _      
 | |__ (_) __| | ___ 
@@ -56,6 +57,10 @@ textarea {
 .links,
 .help-container {
 	display: none;
+}
+
+.layers {
+	background: transparent !important;
 }
 
 /*
@@ -184,12 +189,28 @@ textarea {
 	color:#fff;
 }
 
-.guild-header ul {
-	background:#000 !important;
-    opacity:0 !important;
-    transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
-    padding-top:100px;
-    top:-56px;
+.guild-header {
+	background: rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0);
+	padding-left: 82px;
+	margin-left: -80px;
+}
+
+.guilds-wrapper .guilds .guild:first-of-type {
+	/*transform: scale(0.85);*/
+    margin-top: 1px;
+    margin-left: -5px;
+    border: 5px solid rgba(0,0,0,0);
+    border-radius: 100% !important;
+    transition: 200ms all ease-in-out;
+}
+
+.guilds-wrapper .guilds .guild:first-of-type:hover {
+    border-radius: 100% !important;
+}
+
+.guilds-wrapper .guilds .guild.active {
+	border-radius: 100% !important;
 }
 
 .guild-header-open ul {
@@ -199,6 +220,9 @@ textarea {
 .guilds-add {
     opacity:0.5;
     font-size:22px !important;
+    border: 1px dashed rgba(255,255,255,0.3) !important;
+    margin-left: 0 !important;
+    margin-top: 10px !important;
 }
 
 .platform-osx .guilds-wrapper {
@@ -249,7 +273,7 @@ textarea {
 }
 
 .guilds-wrapper .guilds {
-	padding:18px 20px 85px 20px;
+	padding:18px 20px 85px 15px;
 }
 
 .guilds-add {
@@ -258,7 +282,7 @@ textarea {
 }
 
 .guilds-wrapper .guilds .friends-online {
-	
+	margin-top: 10px !important;
 }
 
 .guilds-wrapper .guilds .guild .guild-inner {
@@ -321,7 +345,7 @@ textarea {
 .guilds-wrapper .guilds .guild:before,
 .guilds-wrapper .guilds .guild.unread:before,
 .guilds-wrapper .guilds .guild.selected:before {
-	left:-26px;
+	left:-19px;
 	transition:0.2s ease-in-out all;
 }
 
@@ -361,8 +385,20 @@ textarea {
 	background:rgba(0,0,0,0.3) !important;
 }
 
+.private-channels {
+	overflow: visible !important;
+}
+
 .private-channels .search-bar {
-	background:rgba(10,13,16,0) !important;
+	background: rgba(0,0,0,0) !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	padding-left: 91px;
+	margin-left: -81px;
+}
+
+.private-channels .search-bar .search-bar-inner {
+	background: rgba(0,0,0,1) !important;
 }
 
 .private-channels .search-bar input {
@@ -488,6 +524,135 @@ textarea {
  \___|_| |_|\__,_|\__| |___/\___|\___|\__|_|\___/|_| |_|
 
 */
+
+.search .search-bar {
+	background-color: rgba(0, 0, 0, 0.55) !important;
+}
+
+.search-answer,
+.search-filter {
+	background-color: #1D6586 !important;
+}
+
+.search-popout {
+	background-color: rgba(12, 13, 14, 0.9);
+	/*position: absolute !important;
+	top: 55px !important;
+    right: 162px !important;
+    left: auto !important;*/
+}
+
+.search-popout .option:after {
+	background: transparent;
+}
+
+.search-popout .option.selected {
+    background-color: rgba(5, 5, 6, 0.9) !important;
+	box-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+.search-popout .option.selected:after {
+	background: transparent !important;
+}
+
+.search-results-wrap {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.search-results-wrap .search-header {
+	background: transparent !important;
+}
+
+.search-results-wrap .channel-separator:before {
+	border: none;
+}
+
+.search-results-wrap .channel-separator .channel-name {
+	background-color: transparent !important;
+}
+
+.search-results-wrap .search-result:before {
+	background: transparent !important;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.search-results-wrap .search-result:after {
+	background: transparent !important;
+}
+
+.search-results-wrap .search-result:not(.expanded) .search-result-message.hit, 
+.search-results-wrap .search-result.expanded {
+	border: 2px solid rgba(17, 21, 25, 0.6) !important;
+}
+
+.search-results-wrap .search-result .hit {
+	background-color: rgba(0, 0, 0, 0.9) !important;
+	box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.45) !important;
+}
+
+.theme-dark .search-results-wrap .action-buttons .jump-button {
+	background-color: rgba(240, 240, 240, 0.07);
+}
+
+.search-popout .date-picker .date-picker-hint .hint-value {
+	background: #25ACE8 !important;
+}
+
+.search-popout .date-picker .date-picker-hint {
+	border-top: none !important;
+}
+
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+	border:3px solid rgba(255,255,255,0) !important;
+	background-color:rgba(0,0,0,0.3) !important;
+}
+
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb {
+	border:3px solid rgba(255,255,255,0) !important;
+	background-color:#1D6586 !important;
+}
+
+.search-popout .date-picker {
+	border-top: none !important;
+}
+
+.react-datepicker {
+	background-color: rgba(0,0,0,0.6) !important;
+	color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.react-datepicker .react-datepicker__header {
+    background-color: transparent !important;
+}
+
+.react-datepicker .react-datepicker__day--disabled,
+.react-datepicker .react-datepicker__day--outside-month {
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    color: rgba(167, 167, 167, 0.6) !important;
+}
+
+.react-datepicker .react-datepicker__day {
+	color: #fff;
+	border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+	border-left: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.react-datepicker .react-datepicker__month>.react-datepicker__week:last-of-type .react-datepicker__day {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.react-datepicker .react-datepicker__month .react-datepicker__week>.react-datepicker__day:last-of-type {
+	border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.react-datepicker .react-datepicker__day.react-datepicker__day--today:after {
+	background-color: #25ACE8 !important;
+}
+
+.react-datepicker .react-datepicker__day.react-datepicker__day--selected:hover, .react-datepicker .react-datepicker__day:hover {
+	background-color: #25ACE8 !important;
+}
+
 
 .header-toolbar button.popout-open {
 	background:#25ACE8;
@@ -633,6 +798,12 @@ textarea {
 
 .chat .new-messages-bar button:last-child {
 	color:rgba(255,255,255,0.5);
+}
+
+.chat .empty-message {
+	border: 0 !important;
+	background: transparent !important;
+	height: 40px;
 }
 
 .chat-empty {
@@ -1024,10 +1195,10 @@ textarea {
 	border-bottom:1px solid rgba(255,255,255,0.2);
 }
 
-.user-popout .footer .quick-message-wrapper .input {
-	background:rgba(255,255,255,0.1);
-	border-color:rgba(255,255,255,0.2);
-	color:rgba(255,255,255,0.9);
+.quick-message {
+	color: #fff;
+    border: 1px solid rgba(224, 229, 232, 0.26);
+    background: rgb(0, 0, 0);
 }
 
 .user-popout .username-wrapper .game,
@@ -1844,23 +2015,32 @@ textarea {
 	bottom: -126px !important;
 }
 
+.popout-bottom:not(.no-arrow):not(.search-popout) {
+	left: 191px !important;
+}
+
 .themed-popout {
-    background-color: rgba(0, 0, 0, 0.95) !important;
+    background-color: rgba(12, 13, 14, 0.9) !important;
     border: 1px solid rgba(255,255,255,.1) !important;
 }
 
 .themed-popout .header, .themed-popout .footer {
-	background-color: #000 !important;
+	background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .themed-popout .messages-popout .message-group {
     border-color: rgba(28,36,43,0) !important;
-    background-color: rgba(255, 255, 255, 0.07) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+	box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.45) !important;
 }
 
 .themed-popout .messages-popout .message-group:hover .action-buttons {
-    box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.03) !important;
-    background-color: rgba(255, 255, 255, 0.03) !important;
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.themed-popout .messages-popout .message-group:hover .action-buttons .jump-button {
+	background-color: rgba(240, 240, 240, 0.07) !important;
 }
 
 /*
