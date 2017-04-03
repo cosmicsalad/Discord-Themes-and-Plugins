@@ -1,0 +1,22 @@
+//META{"name":"Small_Guilds","description":"Smaller guilds","author":"Hammock","version":"1.0"}*//{}
+
+.guilds-wrapper .guilds .guild {
+    width: 40px;
+    height: 40px;
+    left:5px;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner {
+	line-height: 40px;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner a {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild.unread:before {
+    left: -20px;
+}
