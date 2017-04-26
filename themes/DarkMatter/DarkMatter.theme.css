@@ -10,9 +10,7 @@
       |_|   |_|                           |___/                             
 */
 
-/*	Main background and settings background
-	IMPORTANT: Make sure the link you use for the background image begins with https://
-*/
+/* Main background and settings background */
 .app,
 .callout-backdrop {
 	background:url(https://i.imgur.com/7SbtKvw.png) !important;
@@ -61,6 +59,11 @@ textarea {
 	display: none;
 }
 
+.layer,
+.layers {
+	background: transparent !important;
+}
+
 /*
                  _         _                _                                   _     
  _ __ ___   __ _(_)_ __   | |__   __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |___ 
@@ -94,9 +97,6 @@ textarea {
 
 /* User list area */
 .channel-members { background:rgba(0,0,0,0.9) !important }
-
-/* Remove the background image block */
-.layers { background: transparent !important; }
 
 /*
                                 _ _     _                   _   _             
