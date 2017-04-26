@@ -82,6 +82,7 @@ textarea {
 .guild-header header,
 .divider-red span,
 .messages-wrapper,
+#rtc-connection,
 #voice-connection {
 	background: transparent !important;
 }
@@ -484,17 +485,19 @@ textarea {
 
 .account .btn-deafen,
 .account .btn-mute {
-    border-right:none;/*1px solid #101010;*/
+	border-right:none;/*1px solid #101010;*/
 }
 
+#rtc-connection,
 #voice-connection {
 	z-index:9;
 	border-top:none !important;
 	/*width:285px;
-    margin-left:-83px;*/
+	margin-left:-83px;*/
 	padding:15px 20px 15px 18px !important;
 }
 
+#rtc-connection .btn,
 #voice-connection .btn {
 	background:#000;
 	box-shadow:none !important;
@@ -504,7 +507,9 @@ textarea {
 	box-shadow:none !important;
 }
 
-.account .btn-group, #voice-connection .btn-group {
+.account .btn-group, 
+#rtc-connection .btn-group,
+#voice-connection .btn-group {
 	border:none;
 }
 
@@ -1400,6 +1405,7 @@ textarea {
 }
 
 /* ACCOUNT BAR */
+.bd-minimal #rtc-connection,
 .bd-minimal #voice-connection {
 	width:176px;
     margin-left:-46px;
