@@ -1,5 +1,22 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5.2"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5.3"}*//{}
 @import url(https://fonts.googleapis.com/css?family=Karla);
+
+/* 	
+	MAIN VARS
+	Change these if you want to modify the basics of the theme.
+ */
+
+:root {
+
+	--main-color: rgba(37,172,232,1);
+	--main-color-faded: rgba(37,172,232,0.2);
+	--accent-color: rgba(29,101,134,1);
+
+	/* Modal Background Color / Opacity */
+	--short-gradient: linear-gradient(45deg, rgba(29,101,134,0.5), rgba(37,172,232,0.5));
+	--short-gradient-faded: linear-gradient(45deg, rgba(29,101,134,0.1), rgba(37,172,232,0.1));
+
+}
 
 /*
                      _                _                                   _ 
@@ -13,8 +30,8 @@
 /* Main background and settings background */
 .app,
 .callout-backdrop {
-	background:url(https://i.imgur.com/7SbtKvw.png) !important;
-	background-size:cover !important;
+	background: url(https://i.imgur.com/7SbtKvw.png) !important;
+	background-size: cover !important;
 }
 
 /*
@@ -27,21 +44,21 @@
 */
 
 div>*:not(code) {
-    font-family: 'Karla',Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif !important;
+	font-family: 'Karla',Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif !important;
 }
 
 textarea {
-	background:transparent !important;
+	background: transparent !important;
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
-	border:3px solid rgba(255,255,255,0) !important;
-	background-color:#1D6586 !important;
+	border: 3px solid rgba(255,255,255,0) !important;
+	background-color: var(--accent-color) !important;
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-	border:3px solid rgba(255,255,255,0) !important;
-	background-color:rgba(0,0,0,0.3) !important;
+	border: 3px solid rgba(255,255,255,0) !important;
+	background-color: rgba(0,0,0,0.3) !important;
 }
 
 
@@ -59,8 +76,8 @@ textarea {
 	display: none;
 }
 
-.layer,
-.layers {
+.layers,
+.container-RYiLUQ {
 	background: transparent !important;
 }
 
@@ -100,6 +117,32 @@ textarea {
 .channel-members { background:rgba(0,0,0,0.9) !important }
 
 /*
+ _              _ _   _           
+| |_ ___   ___ | | |_(_)_ __  ___ 
+| __/ _ \ / _ \| | __| | '_ \/ __|
+| || (_) | (_) | | |_| | |_) \__ \
+ \__\___/ \___/|_|\__|_| .__/|___/
+                       |_|        
+*/
+
+.tooltip {
+    background: var(--accent-color);
+    color: #e0e0e0;
+}
+
+.tooltip.tooltip-right:after {
+    border-right-color:var(--accent-color);
+}
+
+.tooltip.tooltip-top:after {
+    border-top-color:var(--accent-color);
+}
+
+.tooltip.tooltip-bottom:after {
+    border-bottom-color:var(--accent-color);
+}
+
+/*
                                 _ _     _                   _   _             
  ___  ___ _ ____   _____ _ __  | (_)___| |_   ___  ___  ___| |_(_) ___  _ __  
 / __|/ _ \ '__\ \ / / _ \ '__| | | / __| __| / __|/ _ \/ __| __| |/ _ \| '_ \ 
@@ -108,17 +151,50 @@ textarea {
 
 */ 
 
+.name-2SL4ev {
+	font-size: 14px;
+}
+
+.icon-3tVJnl {
+	width: 14px;
+	height: 14px;
+}
+
+.unread-23Kvxk {
+	background-color: var(--main-color);
+}
+
+.container-iksrDt {
+	height: 75px;
+	background: rgba(0,0,0,0.8);
+	padding: 0 10px 0 15px;
+}
+
+.contentSelectedText-3j5CXt {
+	background: rgba(0,0,0,0.8);
+}
+
+.contentSelectedText-3j5CXt:hover {
+	background: rgba(0,0,0,0.3);
+}
+
+.contentHoveredText-2HYGIY,
+.contentHoveredVoice-3qGNKh:active,
+.contentSelectedVoice-gTtYM9:active {
+	background: rgba(0,0,0,0.5);
+}
+
 .create-guild-container {
-	background:none !important;
+	background: none !important;
 }
 
 .create-guild-container .action {
-	background:rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.7);
 }
 
 .create-guild-container .create-or-join .actions .or {
-	-webkit-filter:opacity(0.9) invert();
-	color:#000;
+	-webkit-filter: opacity(0.9) invert();
+	color: #000;
 }
 
 .create-guild-container .action.create .action-icon,
@@ -128,15 +204,15 @@ textarea {
 
 .create-guild-container h5,
 .create-guild-container .action.create .action-header {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .create-guild-container .action.create .btn-primary {
-	background-color:#25ACE8 !important;
+	background-color:var(--main-color) !important;
 }
 
 .create-guild-container .action.create:hover .btn-primary {
-	background-color:#1D6586 !important;
+	background-color:var(--accent-color) !important;
 }
 
 .create-guild-container .form-actions .btn-default {
@@ -153,13 +229,13 @@ textarea {
 }
 
 .create-guild-container .create-guild .guild-form .region-select:hover button {
-	background-color:#25ACE8;
-	border-color:#25ACE8;
+	background-color:var(--main-color);
+	border-color:var(--main-color);
 	color:#fff;
 }
 
 .create-guild-container .create-guild .guild-form .region-select:hover .region-select-inner {
-	border-color:#25ACE8;
+	border-color:var(--main-color);
 }
 
 .create-guild-container .create-guild .guild-form .region-select-name {
@@ -167,7 +243,7 @@ textarea {
 }
 
 .avatar-uploader .avatar-uploader-inner {
-	background-color: #25ACE8;
+	background-color: var(--main-color);
 }
 
 .region-select-modal {
@@ -175,7 +251,7 @@ textarea {
 }
 
 .region-select-modal .region-select-modal-header {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .region-select-modal .region-select-modal-option {
@@ -184,7 +260,7 @@ textarea {
 }
 
 .region-select-modal .region-select-modal-option:hover {
-	    border-color: #25ACE8;
+	border-color: var(--main-color);
 }
 
 .region-select-modal .region-select-modal-option .region-select-name {
@@ -200,15 +276,15 @@ textarea {
 
 .guilds-wrapper .guilds .guild:first-of-type {
 	/*transform: scale(0.85);*/
-    margin-top: 1px;
-    margin-left: -5px;
-    border: 5px solid rgba(0,0,0,0);
-    border-radius: 100% !important;
-    transition: 200ms all ease-in-out;
+	margin-top: 1px;
+	margin-left: -5px;
+	border: 5px solid rgba(0,0,0,0);
+	border-radius: 100% !important;
+	transition: 200ms all ease-in-out;
 }
 
 .guilds-wrapper .guilds .guild:first-of-type:hover {
-    border-radius: 100% !important;
+	border-radius: 100% !important;
 }
 
 .guilds-wrapper .guilds .guild.active {
@@ -220,25 +296,25 @@ textarea {
 }
 
 .guilds-add {
-    opacity:0.5;
-    font-size:22px !important;
-    border: 1px dashed rgba(255,255,255,0.3) !important;
-    margin-left: 0 !important;
-    margin-top: 10px !important;
+	opacity:0.5;
+	font-size:22px !important;
+	border: 1px dashed rgba(255,255,255,0.3) !important;
+	margin-left: 0 !important;
+	margin-top: 10px !important;
 }
 
 .platform-osx .guilds-wrapper {
-    padding-top:30px;
+	padding-top:30px;
 }
 
 .guilds-wrapper {
-	border-right:1px solid rgba(0,0,0,0.4);
-	box-shadow:inset -10px 0px 20px -10px rgba(0,0,0,0.2);
+	border-right:1px solid rgba(0,0,0,0.2);
+	box-shadow:inset -10px 0px 20px -10px rgba(0,0,0,0.3);
 }
 
 .guilds-wrapper .guild-separator {
 	margin-top:5px;
-    margin-bottom:5px;
+	margin-bottom:5px;
 	margin-left:-5px;
 	display:none;
 }
@@ -271,16 +347,16 @@ textarea {
 
 .guild-channels header h2,
 .guild-channels .channel a {
-	color:#fff;
+	color: #fff;
 }
 
 .guilds-wrapper .guilds {
-	padding:18px 20px 85px 15px;
+	padding: 18px 20px 85px 15px;
 }
 
 .guilds-add {
-	font-size:30px;
-	background:#000;
+	font-size: 30px;
+	background: #000;
 }
 
 .guilds-wrapper .guilds .friends-online {
@@ -288,15 +364,11 @@ textarea {
 }
 
 .guilds-wrapper .guilds .guild .guild-inner {
-	background:#151515 !important;
+	background: #151515 !important;
 }
 
 .guilds-wrapper .guilds .guild.active:first-of-type .guild-inner {
-	background:#25ACE8 !important;
-}
-
-.guilds-wrapper .guilds .guild .guild-inner:hover {
-	background:#1D6586 !important;
+	background: var(--main-color) !important;
 }
 
 .guilds-wrapper .guilds .guild .guild-inner a,
@@ -323,20 +395,20 @@ textarea {
 }
 
 .guilds-wrapper .guilds .friends-icon {
-    background-color: rgba(0,0,0,0.3) !important;
-    background-image: none !important;
-    padding-top:0px;
+	background-color: rgba(0,0,0,0.3) !important;
+	background-image: none !important;
+	padding-top:0px;
 }
 
 .guilds-wrapper .guilds .friends-icon:after {
-    display:block;
-    width:40px;
-    height:40px;
-    content:'';
-    background-image: url(https://i.imgur.com/cm6mEXd.gif) !important;
-    background-size:110%;
-    background-repeat:no-repeat;
-    background-position:top center;
+	display:block;
+	width:40px;
+	height:40px;
+	content:'';
+	background-image: url(https://i.imgur.com/233d55Y.gif) !important;
+	background-size:110%;
+	background-repeat:no-repeat;
+	background-position:top center;
 }
 
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
@@ -353,7 +425,7 @@ textarea {
 
 .guilds-wrapper .guilds .guild.unread:not(.selected):before,
 .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
-	background:#25ACE8;
+	background:var(--main-color);
 }
 
 .guilds-wrapper .guilds .guild.active .guild-inner:before {
@@ -362,14 +434,14 @@ textarea {
 
 .guilds-wrapper .guilds .friends-online {
 	color: #ccc;
-    font-size: 9px;
-    margin: 15px 0 15px -7px;
-    line-height: 20px;
-    width: 55px;
-    height: 20px;
-    border-radius: 25px;
-    overflow: hidden;
-    background: rgba(0,0,0,0.3);
+	font-size: 9px;
+	margin: 15px 0 15px -7px;
+	line-height: 20px;
+	width: 55px;
+	height: 20px;
+	border-radius: 25px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.3);
 }
 
 .guilds-wrapper .guilds-error {
@@ -395,8 +467,7 @@ textarea {
 	background: rgba(0,0,0,0) !important;
 	box-shadow: none !important;
 	border-radius: 0 !important;
-	padding-left: 91px;
-	margin-left: -81px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .private-channels .search-bar .search-bar-inner {
@@ -404,19 +475,20 @@ textarea {
 }
 
 .private-channels .search-bar input {
-	background:rgba(0,0,0,0.8) !important;
+	background: rgba(0,0,0,0.8) !important;
 }
 
 .guild-channels .channel.selected,
-.private-channels .channel.selected,
+.private-channels .channel.selected a,
 .private-channels .search-result.selected,
 .private-channels .search-result:hover {
-	background:rgba(0,0,0,0.6) !important;
+	background: rgba(0,0,0,0.6) !important;
 }
 
 .guild-channels ul .channel:not(.selected):hover,
-.private-channels .channel:not(.selected):hover {
-	background:rgba(0,0,0,0.3) !important;
+.private-channels .channel:not(.selected) a:hover,
+.private-channels .channel:not(.selected):hover a {
+	background: rgba(0,0,0,0.3) !important;
 }
 
 .guild-channels .channel:not(.selected):before,
@@ -427,11 +499,7 @@ textarea {
 .private-channels .channel.selected:hover:before,
 .private-channels .search-result.selected:before,
 .private-channels .search-result:hover:before {
-	border-left:2px solid #1D6586 !important;
-}
-
-.private-channels .channel .icon-friends {
-	background-color:#151515 !important;
+	border-left: 2px solid var(--accent-color) !important;
 }
 
 .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
@@ -459,7 +527,7 @@ textarea {
 	z-index:9;
 	border-top:none !important;
 	width:320px;
-    margin-left:-80px;
+	margin-left:-80px;
 	padding:0 15px !important;
 	background:rgba(0,0,0,0.95);
 	height:77px;
@@ -467,7 +535,7 @@ textarea {
 }
 
 .account .status {
-    border:2px solid rgba(0,0,0,1);
+	border:2px solid rgba(0,0,0,1);
 }
 
 .account .btn {
@@ -537,7 +605,7 @@ textarea {
 
 .search-answer,
 .search-filter {
-	background-color: #1D6586 !important;
+	background-color: var(--accent-color) !important;
 }
 
 .search-popout {
@@ -601,7 +669,7 @@ textarea {
 }
 
 .search-popout .date-picker .date-picker-hint .hint-value {
-	background: #25ACE8 !important;
+	background: var(--main-color) !important;
 }
 
 .search-popout .date-picker .date-picker-hint {
@@ -615,7 +683,7 @@ textarea {
 
 .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb {
 	border:3px solid rgba(255,255,255,0) !important;
-	background-color:#1D6586 !important;
+	background-color:var(--accent-color) !important;
 }
 
 .search-popout .date-picker {
@@ -652,16 +720,19 @@ textarea {
 }
 
 .react-datepicker .react-datepicker__day.react-datepicker__day--today:after {
-	background-color: #25ACE8 !important;
+	background-color: var(--main-color) !important;
 }
 
 .react-datepicker .react-datepicker__day.react-datepicker__day--selected:hover, .react-datepicker .react-datepicker__day:hover {
-	background-color: #25ACE8 !important;
+	background-color: var(--main-color) !important;
 }
 
+.header-toolbar button span {
+	background-size: 22px;
+}
 
 .header-toolbar button.popout-open {
-	background:#25ACE8;
+	background:var(--main-color);
 }
 
 .channel-pins-wrap {
@@ -693,21 +764,21 @@ textarea {
 }
 
 .spinner-wandering-cubes .spinner-item {
-	background-color:#25ACE8;
+	background-color:var(--main-color);
 	width:15px;
 	height:15px;
 	border-radius:4px;
 }
 
 .chat .has-more button {
-	color:#25ACE8 !important;
+	color:var(--main-color) !important;
 	background:rgba(255,255,255,0.1) !important;
 	border:none !important;
 	box-shadow:none !important;
 }
 
 .highlight {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .emoji-picker {
@@ -729,12 +800,12 @@ textarea {
 }
 
 .emoji-picker .categories .item.selected {
-	border-bottom-color:#25ACE8;
+	border-bottom-color:var(--main-color);
 }
 
-.title-wrap {
-	border-bottom:1px solid rgba(0,0,0,0.3) !important;
-	background:rgba(0,0,0,0.95) !important;
+.chat>.title-wrap {
+	border-bottom: 1px solid rgba(0,0,0,0.3) !important;
+	background: rgba(0,0,0,0.95) !important;
 }
 
 .header-toolbar button.active {
@@ -743,11 +814,13 @@ textarea {
 
 .bot-tag,
 .need-help-modal .header {
-	background:#25ACE8;
+	background:var(--main-color);
+	padding: 2px 3px;
+	font-size: 9px;
 }
 
 .form header {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .markdown-modal,
@@ -757,6 +830,7 @@ textarea {
 .need-help-modal .footer,
 .markdown-modal .markdown-modal-footer {
 	background:rgba(0,0,0,0.85) !important;
+	color: #fff;
 }
 
 .alert.form .form-inner .btn {
@@ -784,6 +858,10 @@ textarea {
 .markdown-modal .markdown-modal-header,
 .markdown-modal .markdown-modal-footer {
 	border-color:rgba(255,255,255,0.2);
+}
+
+.modal-content {
+	background: transparent !important;
 }
 
 .modal-content .user-name {
@@ -834,7 +912,7 @@ textarea {
 .markdown-modal .highlight:hover,
 .chat .title-wrap .topic .highlight:hover {
 	background-color:rgba(255,255,255,.2) !important;
-	color:#25ACE8 !important;
+	color:var(--main-color) !important;
 }
 
 .chat .divider {
@@ -850,8 +928,9 @@ textarea {
 }
 
 .chat .divider:before {
-	background:rgba(255,255,255,0.1) !important;
+	background:rgba(255,255,255,0.06) !important;
 	height:25px;
+	border-radius: 3px;
 }
 
 .chat .divider.divider-red:before {
@@ -910,12 +989,19 @@ textarea {
 
 .mentioned .message-text:after {
 	border-radius: 0 !important;
-	border-color:#25ACE8 !important;
+	border-color:var(--main-color) !important;
 	background:rgba(37,172,232,0.2) !important;
 }
 
+.mention {
+	color: var(--main-color) !important;
+	background-color: var(--main-color-faded) !important;
+	padding: 3px 5px;
+	border-radius: 5px;
+}
+
 .messages a {
-	color:#25ACE8 !important;
+	color:var(--main-color) !important;
 }
 
 .messages h2 .user-name {
@@ -1007,11 +1093,11 @@ textarea {
 }
 
 .channel-textarea-guard button {
-	background:#1D6586 !important;
+	background:var(--accent-color) !important;
 }
 
 .channel-textarea-guard button:hover {
-	background:#25ACE8 !important;
+	background:var(--main-color) !important;
 }
 
 .typing {
@@ -1020,10 +1106,10 @@ textarea {
 
 .spoiler span {display:none;}
 .spoiler:before {
-    min-height:18px;
-    padding-top:2px;
-    border-radius:5px;
-    background:rgba(25,25,25,0.7);
+	min-height:18px;
+	padding-top:2px;
+	border-radius:5px;
+	background:rgba(25,25,25,0.7);
 }
 
 #twitchcord-button {
@@ -1069,34 +1155,29 @@ textarea {
 */
 
 #friends .btn,
-.add-friend-popout .btn,
-.private-channels .channel.selected .icon-friends {
-	background-color:#25ACE8 !important;
+.add-friend-popout .btn {
+	background-color: var(--main-color) !important;
 }
 
 .add-friend-popout .btn:disabled {
-	background-color:#1D6586 !important;
-	opacity:0.4;
-}
-
-.private-channels .channel:hover:not(.selected) .icon-friends {
-	background-color:#1D6586 !important;
+	background-color: var(--accent-color) !important;
+	opacity: 0.4;
 }
 
 .private-channels .channel.btn-friends .badge {
-	margin-right:10px;
+	margin-right: 10px;
 }
 
 .private-channels .channel .close {
-	margin-right:5px;
+	margin-right: 5px;
 }
 
 #friends {
-	background:transparent !important;
+	background: transparent !important;
 }
 
 .friends-header {
-	background:rgba(0,0,0,0.95) !important;
+	background: rgba(0,0,0,0.95) !important;
 }
 
 .friends-table {
@@ -1132,11 +1213,15 @@ textarea {
 */
 
 .channel-members .invite-btn {
-	background:#1D6586;
+	background:var(--accent-color);
 }
 
 .channel-members .invite-btn:hover {
-	background:#25ACE8;
+	background:var(--main-color);
+}
+
+.channel-members .bot-tag {
+	padding: 0px 3px;
 }
 
 .channel-members .member:hover {
@@ -1179,7 +1264,7 @@ textarea {
 */
 
 .user-popout .header {
-	background:#25ACE8 !important;
+	background:var(--main-color) !important;
 }
 
 .user-popout .avatar-wrapper .avatar-popout {
@@ -1215,18 +1300,18 @@ textarea {
 
 .popout header,
 .slider-bar-fill {
-	background-color:#25ACE8;
-	border:1px solid #25ACE8;
+	background-color:var(--main-color);
+	border:1px solid var(--main-color);
 }
 
 .user-popout .user-popout-options .btn {
-	background-color:#1D6586;
-	border:1px solid #1D6586;
+	background-color:var(--accent-color);
+	border:1px solid var(--accent-color);
 }
 
 .user-popout .user-popout-options .btn:hover {
-	background-color:#25ACE8;
-	border:1px solid #25ACE8;
+	background-color:var(--main-color);
+	border:1px solid var(--main-color);
 }
 
 /* Admin buttons */
@@ -1240,32 +1325,6 @@ textarea {
 	color: rgba(255,255,255,1);
     background: rgba(240,71,71,1);
 	border: none !important;
-}
-
-/*
- _              _ _   _           
-| |_ ___   ___ | | |_(_)_ __  ___ 
-| __/ _ \ / _ \| | __| | '_ \/ __|
-| || (_) | (_) | | |_| | |_) \__ \
- \__\___/ \___/|_|\__|_| .__/|___/
-                       |_|        
-*/
-
-.tooltip {
-    background:#1D6586;
-    color:#e0e0e0;
-}
-
-.tooltip.tooltip-right:after {
-    border-right-color:#1D6586;
-}
-
-.tooltip.tooltip-top:after {
-    border-top-color:#1D6586;
-}
-
-.tooltip.tooltip-bottom:after {
-    border-bottom-color:#1D6586;
 }
 
 /*
@@ -1293,9 +1352,9 @@ textarea {
 
 .bd-minimal .guilds-wrapper .guilds .guild:before {
 	width:10px;
-    height:25px;
-    border-radius:5px;
-    margin-top:-13px;
+	height:25px;
+	border-radius:5px;
+	margin-top:-13px;
 	left:-16px;
 }
 
@@ -1315,22 +1374,22 @@ textarea {
 .bd-minimal .guilds-wrapper .guilds .guild .guild-inner .avatar-small,
 .bd-minimal .guilds-wrapper .guilds .guild .guild-inner .friends-icon {
 	width:25px;
-    height:25px;
-    line-height:25px;
-    background-size:25px 25px;
-    font-size:10px !important;
+	height:25px;
+	line-height:25px;
+	background-size:25px 25px;
+	font-size:10px !important;
 }
 
 .bd-minimal .guilds-wrapper .guilds .friends-online {
-    font-size: 10px;
-    word-spacing: 50px;
-    line-height: 20px;
-    margin-left: 0px;
-    width: 25px;
-    height: 20px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: rgba(0,0,0,0.5);
+	font-size: 10px;
+	word-spacing: 50px;
+	line-height: 20px;
+	margin-left: 0px;
+	width: 25px;
+	height: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.5);
 }
 
 .bd-minimal .guilds-wrapper .guild-separator {
@@ -1433,6 +1492,246 @@ textarea {
 	width:30px;
 }
 
+/* BD Settings */
+
+#bd-settingspane-container .content-column {
+	color: rgba(255,255,255,0.9);
+}
+
+#bd-settingspane-container .content-column h2 {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#bd-settingspane-container .content-column .ui-switch-item,
+#bd-settingspane-container .content-column .ui-switch-item div {
+	justify-content: space-between !important;
+}
+
+#bd-settingspane-container .content-column .ui-switch-item {
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	padding-bottom: 20px;
+}
+
+#bd-settingspane-container .content-column .ui-switch-item .ui-form-text {
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(255,255,255,0.35);
+}
+
+.bda-slist li {
+	flex: 1 1 auto;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	background: transparent !important;
+	padding: 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+.ui-standard-sidebar-view .bda-slist li:nth-child(odd) {
+	border-top: none !important;
+}
+
+.bda-slist .bda-left {
+	width: 100% !important;
+	padding: 0;
+}
+
+.bda-slist .bda-right {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	float: none;
+	position: absolute;
+	top: -2px;
+	right: 0;
+}
+
+.bd-pfbtn {
+	position: relative;
+	top: -43px;
+	left: 100px;
+	height: 24px;
+	padding: 0 8px;
+	line-height: 22px;
+	margin: 0 !important;
+	background: var(--accent-color);
+	transition: background 100ms ease-in-out;
+}
+
+.bd-pfbtn:hover {
+	background: var(--main-color);
+}
+
+.ui-standard-sidebar-view .bda-slist .bda-right button {
+	height: 24px;
+	width: auto;
+	padding: 0 11px;
+	margin: 0 10px 0 0;
+	background: var(--accent-color);
+	transition: background 100ms ease-in-out;
+}
+
+.ui-standard-sidebar-view .bda-slist .bda-right button:hover {
+	background: var(--main-color);
+}
+
+.bda-slist .bda-name {
+	color: rgba(255,255,255,0.6);
+	font-size: 12px;
+	max-height: 30px;
+	height: 20px;
+}
+
+.bda-slist .bda-name span:first-of-type {
+	color: rgba(255,255,255,1);
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+.bda-slist .bda-name span:last-of-type {
+	color: var(--main-color);
+}
+
+.ui-standard-sidebar-view .bda-slist .bda-description {
+	border: none !important;
+	min-height: auto;
+	max-height: 80px;
+	line-height: 20px;
+	color: rgba(255,255,255,0.4);
+}
+
+#emoteBlistTa {
+	color: #fff;
+	padding: 10px 10px 0 10px;
+	margin: 10px 0;
+	border-radius: 3px;
+	background: rgba(0,0,0,0.4) !important;
+	border-color: rgba(255,255,255,0.2);
+	outline: none;
+}
+
+.bda-slist li div:not(.bda-right):not(.bda-left):not(.scroller-wrap):not(.scroller):nth-of-type(1) {
+	float: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.bda-slist li div:not(.bda-right):not(.bda-left):not(.scroller-wrap):not(.scroller):nth-of-type(2) {
+	margin-top: 0;
+	width: 100%;
+}
+
+.bda-slist li[style*="max-height: 500px; overflow: auto;"] h2 {
+	font-size: 18px !important;
+	text-transform: none !important;
+	margin: 0 0 20px 0 !important;
+}
+
+.bda-slist li[style*="max-height: 500px; overflow: auto;"] h2 span {
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.bda-slist li[style*="max-height: 500px; overflow: auto;"] h2 button {
+	color: #fff;
+	background: var(--accent-color);
+	border-radius: 3px;
+	padding: 0 8px;
+	height: 24px;
+	transition: background 100ms ease-in-out;
+}
+
+.bda-slist li[style*="max-height: 500px; overflow: auto;"] h2 button:hover {
+	background: var(--main-color);
+}
+
+.content-region .CodeMirror, 
+.content-region .cm-s-material .CodeMirror-gutters, 
+#bd-customcss-detach-container .CodeMirror, 
+#bd-customcss-detach-container .cm-s-material .CodeMirror-gutters {
+	background: rgba(0, 0, 0, 0.5)!important;
+	border-radius: 5px;
+}
+
+.content-region #bd-customcss-attach-controls, 
+#bd-customcss-detach-container #bd-customcss-attach-controls {
+	background: rgba(0, 0, 0, 0.8)!important;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+#bd-customcss-attach-controls {
+	padding: 10px 15px 10px 25px;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ui-standard-sidebar-view #bd-customcss-attach-controls button, 
+.bd-detached-css-editor #bd-customcss-attach-controls button {
+	width: auto !important;
+	border-radius: 3px !important;
+	border: none !important;
+	margin-left: 7px;
+	padding: 5px 15px;
+}
+
+#bd-customcss-attach-controls button {
+	
+	background: var(--accent-color) !important;
+	transition: background 100ms ease-in-out;
+}
+
+#bd-customcss-attach-controls button:hover {
+	background: var(--main-color) !important;
+}
+
+#bd-customcss-detach-controls-button {
+	text-align: right;
+}
+
+#bd-customcss-detach-controls-button span {
+	display: block;
+	text-align: right;
+	padding-top: 10px;
+	color: rgba(255,255,255,0.5);
+}
+
+#bd-customcss-detach-container {
+	background-color: rgba(0,0,0,1);
+}
+
+#bd-customcss-detach-container .ui-standard-sidebar-view #bd-customcss-attach-controls button, 
+#bd-customcss-detach-container .bd-detached-css-editor #bd-customcss-attach-controls button {
+	padding: 5px 7px;
+}
+
+#bd-customcss-detach-container #bd-customcss-attach-controls {
+	padding: 10px 15px 10px 15px;
+}
+
+.content-region .CodeMirror-scroll {
+	padding-top: 10px;
+}
+
+.CodeMirror-lines {
+	padding: 4px 10px;
+}
+
+.CodeMirror pre {
+	padding: 0 5px;
+}
+
+.CodeMirror-gutter {
+	margin-right: 20px;
+}
+
 /*
           _   _   _                 
  ___  ___| |_| |_(_)_ __   __ _ ___ 
@@ -1441,6 +1740,107 @@ textarea {
 |___/\___|\__|\__|_|_| |_|\__, |___/
                           |___/     
 */
+
+.layer {
+	background: rgba(0,0,0,0.4) !important;
+}
+
+.ui-text-input .input.editable:focus:focus, 
+.ui-text-input .input.editable:hover:focus, 
+.ui-text-input .input:focus {
+	border-color: var(--main-color) !important;
+}
+
+.description-3MVziF,
+.labelDescriptor-1BebCl {
+	color: rgba(255,255,255,0.35);
+}
+
+.buttonBrandFilled-3Mv0Ra {
+	background: var(--accent-color);
+	box-shadow: 0 10px 30px -8px rgba(0,0,0,0);
+	transition: all 100ms ease-in-out;
+	transform: translate3d(0,0,0);
+}
+
+.buttonBrandFilledDefault-2Rs6u5:hover {
+	color: rgba(0,0,0,0.8);
+	font-weight: bold;
+	background: var(--main-color);
+	box-shadow: 0 10px 30px -8px rgba(0,0,0,0.8);
+	transform: translate3d(0,-3px,0);
+}
+
+.ui-slider .slider-bar-fill {
+	background: var(--main-color);
+}
+
+.ui-standard-sidebar-view {
+	background: transparent !important;
+}
+
+.ui-standard-sidebar-view .sidebar-region,
+.ui-standard-sidebar-view .sidebar-region .scrollbar {
+	background: rgba(0,0,0,0.5) !important;
+}
+
+.ui-standard-sidebar-view .content-region,
+.ui-standard-sidebar-view .content-region .scrollbar {
+	background: rgba(0,0,0,0.65) !important;
+}
+
+.ui-tab-bar.SIDE .ui-tab-bar-item {
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected {
+	color: rgba(255,255,255,1) !important;
+	background: var(--short-gradient) !important;
+}
+
+.ui-tab-bar-item:hover {
+	background: var(--short-gradient-faded) !important;
+}
+
+.ui-radiogroup .checked {
+	border-color: rgba(0,0,0,1) !important;
+	background: var(--short-gradient) !important;
+}
+
+.ui-tab-bar-item,
+.ui-tab-bar.SIDE .ui-tab-bar-item.brand {
+	color: rgba(255,255,255,0.6) !important;
+}
+
+.ui-button.brand.filled {
+	color: rgba(255,255,255,0.6);
+	box-shadow: 0 0px 20px 0px rgba(0,0,0,0);
+	transform: translate3d(0,0,0);
+	background: var(--short-gradient) !important;
+	-webkit-transition: 200ms all cubic-bezier(0.13, 0.28, 0.19, 0.89);
+}
+
+.ui-button.brand.filled:hover {
+	color: rgba(255,255,255,1);
+	box-shadow: 0 10px 20px 0px rgba(0,0,0,0.5);
+	transform: translate3d(0,-3px,0);
+	background: var(--short-gradient) !important;
+}
+
+.ui-radiogroup .checked svg g polyline {
+	stroke: #fff !important;
+}
+
+.ui-switch-checkbox:checked+.ui-switch {
+	background: var(--short-gradient) !important;
+}
+
+.avatar-xxlarge {
+	box-shadow: 0 10px 20px 2px rgba(0,0,0,0.5);
+}
+
+/* OLD SETTINGS */
 
 .context-menu {
     background: rgba(0,0,0,0.95) !important;
@@ -1452,11 +1852,11 @@ textarea {
 }
 
 .avatar-uploader a {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .avatar-uploader a:hover {
-	color:#1D6586;
+	color:var(--accent-color);
 }
 
 .settings .settings-header {
@@ -1464,19 +1864,19 @@ textarea {
 }
 
 .form .btn-primary {
-	background-color:#1D6586;
+	background-color:var(--accent-color);
 }
 
 .form .btn-primary:hover {
-	background-color:#25ACE8;
+	background-color:var(--main-color);
 }
 
 .user-settings-modal a {
-	color:#1D6586;
+	color:var(--accent-color);
 }
 
 .user-settings-modal a:hover {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .channel-notification-settings .content .content-inner {
@@ -1496,11 +1896,11 @@ textarea {
 }
 
 .tab-bar.SIDE .tab-bar-item.selected:before {
-	border-color:#25ACE8;
+	border-color:var(--main-color);
 }
 
 .tab-bar.SIDE .tab-bar-item:before {
-	border-color:#1D6586;
+	border-color:var(--accent-color);
 }
 
 .popout header,
@@ -1522,7 +1922,9 @@ textarea {
 }
 
 .settings .settings-inner,
-.settings .settings-actions {
+.settings .settings-actions,
+.deprecated-settings-modal .settings-inner,
+.deprecated-settings-modal .settings-actions {
 	background:rgba(0,0,0,0.75);
 }
 
@@ -1625,7 +2027,7 @@ textarea {
 }
 
 #settings-roles .roles li:hover:before {
-	background:#1D6586;
+	background:var(--accent-color);
 }
 
 #settings-roles .roles li:hover:not(.selected) {
@@ -1637,7 +2039,7 @@ textarea {
 }
 
 #settings-roles .roles li.selected:before {
-	background:#25ACE8;
+	background:var(--main-color);
 }
 
 .btn-help {
@@ -1647,11 +2049,11 @@ textarea {
 
 .btn-help:hover,
 .radio:hover span:after {
-	background:#1D6586;
+	background:var(--accent-color);
 }
 
 .radio .radio-inner span:after {
-	background:#25ACE8;
+	background:var(--main-color);
 }
 
 .user-settings-modal-keybinds .user-settings-modal-keybinds-header {
@@ -1659,17 +2061,17 @@ textarea {
 }
 
 .user-settings-modal .voice-settings .reset-voice-settings {
-	color:#1D6586;
+	color:var(--accent-color);
 }
 
 .user-settings-modal .voice-settings .reset-voice-settings:hover {
-	color:#1D6586;
+	color:var(--accent-color);
 	opacity:0.6;
 }
 
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
-	background:#25ACE8;
-	border-color:#25ACE8;
+	background:var(--main-color);
+	border-color:var(--main-color);
 }
 
 .user-settings-modal-connections .user-settings-modal-accounts-list .connect-container .name {
@@ -1693,8 +2095,8 @@ textarea {
 }
 
 .tab-bar.TOP .tab-bar-item.selected {
-	border-color:#25ACE8;
-	color:#25ACE8;
+	border-color:var(--main-color);
+	color:var(--main-color);
 }
 
 .user-settings-streamer-mode {
@@ -1721,7 +2123,7 @@ textarea {
 }
 
 .now-playing {
-	background:#25ACE8 !important;	
+	background:var(--main-color) !important;	
 }
 
 .now-playing.no-detection {
@@ -1761,12 +2163,12 @@ textarea {
 }
 
 .cm-s-neat span.cm-builtin {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .cm-s-neat span.cm-atom,
 .cm-s-neat span.cm-number {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 .member-roles .member-role {
@@ -1781,7 +2183,7 @@ textarea {
 }
 
 .popout.popout-bottom header:before {
-	border-bottom-color:#1D6586;
+	border-bottom-color:var(--accent-color);
 }
 
 #autocomplete-popout .row.selected,
@@ -1796,21 +2198,21 @@ textarea {
 #autocomplete-popout .empty h4,
 #permissions .permissions-helpdesk,
 .guild-settings-modal-members .guild-settings-modal-members-footer a {
-	color:#25ACE8;
+	color:var(--main-color);
 }
 
 #permissions .permissions-helpdesk:hover,
 .guild-settings-modal-members .guild-settings-modal-members-footer a:hover {
-	color:#1D6586;
+	color:var(--accent-color);
 }
 
 /*#user-profile-modal .header,*/
 #user-profile-modal .btn {
-	background:#25ACE8;
+	background:var(--main-color);
 }
 
 #user-profile-modal .btn:hover {
-	background:#1D6586;
+	background:var(--accent-color);
 }
 
 #user-profile-modal .guilds .section .connected-accounts .connected-account {
@@ -1853,43 +2255,8 @@ textarea {
 	background-color: transparent;
 }
 
-#bd-customcss-attach-controls {
-	background:rgba(0,0,0,0.85);
-	border:none;
-	box-shadow:none;
-    padding:5px 10px 10px 10px;
-}
-
-#bd-customcss-attach-controls .checkbox > span {
-	font-size:14px;
-	margin-right:8px;
-	margin-left:5px;
-}
-
-.bda-slist li {
-	background:rgba(0,0,0,0.65) !important;
-	border-top:1px solid rgba(255,255,255,0.2) !important;
-	border-bottom:none;
-}
-
-.bda-slist li:nth-child(odd),
-.bda-slist .bda-description {
-	border:none;
-}
-
 .bda-slist li:first-of-type {
 	border-top:none !important;
-}
-
-.bda-slist .bda-name {
-	color:rgba(255,255,255,0.8);
-	letter-spacing: .3px;
-}
-
-.bda-slist .bda-left {
-	width:380px;
-	padding:10px;
-	box-sizing:border-box;
 }
 
 .bda-slist .bda-right .bda-plugin-reload {
@@ -1915,7 +2282,7 @@ textarea {
 }
 
 .bda-slist-top {
-    height: 35px;
+	height: 35px;
 }
 
 #bd-themes-pane .bda-plugin-reload {
@@ -1926,20 +2293,20 @@ textarea {
 #bda-qem-twitch-container,
 .emoji-picker {
 	background-color: rgba(0,0,0,0.95) !important;
-    border: 0px solid rgba(255,255,255,0.1) !important;
-    border-top: none !important;
+	border: 0px solid rgba(255,255,255,0.1) !important;
+	border-top: none !important;
 }
 
 .emoji-picker .category {
 	background-color: rgba(0,0,0,0.7) !important;
-    border: 0px solid rgba(255,255,255,0.2) !important;
-    border-top: none !important;
+	border: 0px solid rgba(255,255,255,0.2) !important;
+	border-top: none !important;
 }
 
 #bda-qem {
 	padding-right: 0px !important;
-    border-bottom: 0px solid rgba(0,0,0,0.5) !important;
-    background: rgba(0,0,0,0.95) !important;
+	border-bottom: 0px solid rgba(0,0,0,0.5) !important;
+	background: rgba(0,0,0,0.95) !important;
 }
 
 #bda-qem button {
@@ -1982,11 +2349,11 @@ textarea {
 }
 
 #instant-invite-modal .copy {
-	background-color: #25ACE8;
+	background-color: var(--main-color);
 }
 
 #instant-invite-modal .clipboard-input-inner input {
-	color: #25ACE8;
+	color: var(--main-color);
 }
 
 .popout-menu {
@@ -2013,7 +2380,7 @@ textarea {
 }
 
 .popout-menu .popout-menu-item:hover {
-    background-color: #1d6586 !important;
+    background-color: var(--accent-color) !important;
     color: rgba(255,255,255,0.8) !important;
 }
 
@@ -2068,7 +2435,7 @@ textarea {
 
 #pubs-header {
 	padding:10px;
-	background-color:#25ACE8 !important;
+	background-color:var(--main-color) !important;
 	border-radius:5px 5px 0 0;
 }
 
@@ -2098,7 +2465,7 @@ textarea {
 }
 
 .server-info button {
-	background-color:#1D6586 !important;
+	background-color:var(--accent-color) !important;
 	width:70px;
     height:40px;
     margin-top:4px;
@@ -2106,7 +2473,7 @@ textarea {
 }
 
 .server-info button:hover {
-	background-color:#25ACE8 !important;
+	background-color:var(--main-color) !important;
 }
 
 #slist span {
