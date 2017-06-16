@@ -515,6 +515,22 @@ textarea {
 
 */
 
+.channel-notices .channel-notice.quickswitcher-notice {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.channel-notices .channel-notice .message .btn {
+	border: none;
+	background-color: var(--accent-color);
+	transition: all 100ms ease-in-out;
+}
+
+.channel-notices .channel-notice .message .btn:hover {
+	color: #000;
+  	font-weight: bold;
+	background-color: var(--main-color);
+}
+
 .btn-hamburger {
 	margin-right:-30px;
 }
