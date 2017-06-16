@@ -1043,7 +1043,7 @@ textarea {
 	background:rgba(255,255,255,0.1) !important;
 	color:rgba(255,255,255,0.7) !important;
 	padding:0.3em 0.6em !important;
-	border-radius:0 !important;
+	border-radius:3px !important;
 }
 
 .messages .markup .highlight {
@@ -1265,11 +1265,30 @@ textarea {
 
 .user-popout .header {
 	background:var(--main-color) !important;
+	position: relative;
+	z-index: 1;
+}
+
+.user-popout .header:after {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	content: '';
+}
+
+.user-popout .avatar-wrapper,
+.user-popout .username-wrapper {
+	z-index: 10;
 }
 
 .user-popout .avatar-wrapper .avatar-popout {
-	border:4px solid rgba(0,0,0,0.9);
+	border: none !important;
 	background-color:rgba(0,0,0,0.9);
+	box-shadow: 0 10px 40px -8px rgba(0,0,0,1);
 }
 
 .user-popout .body {
@@ -2273,6 +2292,7 @@ textarea {
 
 #user-profile-modal .avatar-wrapper {
 	background-color: transparent;
+	box-shadow: 0 8px 40px -5px rgba(0,0,0,1);
 }
 
 .bda-slist li:first-of-type {
