@@ -19,12 +19,12 @@
 }
 
 /*
-                     _                _                                   _ 
+					 _                _                                   _ 
   __ _ _ __  _ __   | |__   __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |
  / _` | '_ \| '_ \  | '_ \ / _` |/ __| |/ / _` | '__/ _ \| | | | '_ \ / _` |
 | (_| | |_) | |_) | | |_) | (_| | (__|   < (_| | | | (_) | |_| | | | | (_| |
  \__,_| .__/| .__/  |_.__/ \__,_|\___|_|\_\__, |_|  \___/ \__,_|_| |_|\__,_|
-      |_|   |_|                           |___/                             
+	  |_|   |_|                           |___/                             
 */
 
 /* Main background and settings background */
@@ -35,7 +35,7 @@
 }
 
 /*
-                           _                           _       
+						   _                           _       
   ___ ___  _ __ ___    ___| | ___ _ __ ___   ___ _ __ | |_ ___ 
  / __/ _ \| '__/ _ \  / _ \ |/ _ \ '_ ` _ \ / _ \ '_ \| __/ __|
 | (_| (_) | | |  __/ |  __/ |  __/ | | | | |  __/ | | | |_\__ \
@@ -82,12 +82,12 @@ textarea {
 }
 
 /*
-                 _         _                _                                   _     
+				 _         _                _                                   _     
  _ __ ___   __ _(_)_ __   | |__   __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |___ 
 | '_ ` _ \ / _` | | '_ \  | '_ \ / _` |/ __| |/ / _` | '__/ _ \| | | | '_ \ / _` / __|
 | | | | | | (_| | | | | | | |_) | (_| | (__|   < (_| | | | (_) | |_| | | | | (_| \__ \
 |_| |_| |_|\__,_|_|_| |_| |_.__/ \__,_|\___|_|\_\__, |_|  \___/ \__,_|_| |_|\__,_|___/
-                                                |___/                                 
+												|___/                                 
 */
 
 .links,
@@ -122,28 +122,28 @@ textarea {
 | __/ _ \ / _ \| | __| | '_ \/ __|
 | || (_) | (_) | | |_| | |_) \__ \
  \__\___/ \___/|_|\__|_| .__/|___/
-                       |_|        
+					   |_|        
 */
 
 .tooltip {
-    background: var(--accent-color);
-    color: #e0e0e0;
+	background: var(--accent-color);
+	color: #e0e0e0;
 }
 
 .tooltip.tooltip-right:after {
-    border-right-color:var(--accent-color);
+	border-right-color:var(--accent-color);
 }
 
 .tooltip.tooltip-top:after {
-    border-top-color:var(--accent-color);
+	border-top-color:var(--accent-color);
 }
 
 .tooltip.tooltip-bottom:after {
-    border-bottom-color:var(--accent-color);
+	border-bottom-color:var(--accent-color);
 }
 
 /*
-                                _ _     _                   _   _             
+								_ _     _                   _   _             
  ___  ___ _ ____   _____ _ __  | (_)___| |_   ___  ___  ___| |_(_) ___  _ __  
 / __|/ _ \ '__\ \ / / _ \ '__| | | / __| __| / __|/ _ \/ __| __| |/ _ \| '_ \ 
 \__ \  __/ |   \ V /  __/ |    | | \__ \ |_  \__ \  __/ (__| |_| | (_) | | | |
@@ -217,7 +217,7 @@ textarea {
 
 .create-guild-container .form-actions .btn-default {
 	background: rgba(255,255,255,0.1);
-    border: 0;
+	border: 0;
 }
 
 .create-guild-container .create-guild .guild-form .region-select {
@@ -507,7 +507,7 @@ textarea {
 }
 
 /*
-      _                            _                     _   _             
+	  _                            _                     _   _             
   ___| |__   __ _ _ __  _ __   ___| |___   ___  ___  ___| |_(_) ___  _ __  
  / __| '_ \ / _` | '_ \| '_ \ / _ \ / __| / __|/ _ \/ __| __| |/ _ \| '_ \ 
 | (__| | | | (_| | | | | | | |  __/ \__ \ \__ \  __/ (__| |_| | (_) | | | |
@@ -591,7 +591,7 @@ textarea {
 }
 
 /*
-      _           _                   _   _             
+	  _           _                   _   _             
   ___| |__   __ _| |_   ___  ___  ___| |_(_) ___  _ __  
  / __| '_ \ / _` | __| / __|/ _ \/ __| __| |/ _ \| '_ \ 
 | (__| | | | (_| | |_  \__ \  __/ (__| |_| | (_) | | | |
@@ -612,8 +612,8 @@ textarea {
 	background-color: rgba(12, 13, 14, 0.9);
 	/*position: absolute !important;
 	top: 55px !important;
-    right: 162px !important;
-    left: auto !important;*/
+	right: 162px !important;
+	left: auto !important;*/
 }
 
 .search-popout .option:after {
@@ -621,7 +621,7 @@ textarea {
 }
 
 .search-popout .option.selected {
-    background-color: rgba(5, 5, 6, 0.9) !important;
+	background-color: rgba(5, 5, 6, 0.9) !important;
 	box-shadow: 0 0 5px rgba(0,0,0,0.8);
 }
 
@@ -630,7 +630,7 @@ textarea {
 }
 
 .search-results-wrap {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+	background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .search-results-wrap .search-header {
@@ -647,7 +647,7 @@ textarea {
 
 .search-results-wrap .search-result:before {
 	background: transparent !important;
-    border-top: 1px solid rgba(0,0,0,0.3);
+	border-top: 1px solid rgba(0,0,0,0.3);
 }
 
 .search-results-wrap .search-result:after {
@@ -696,13 +696,13 @@ textarea {
 }
 
 .react-datepicker .react-datepicker__header {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .react-datepicker .react-datepicker__day--disabled,
 .react-datepicker .react-datepicker__day--outside-month {
-    background-color: rgba(255, 255, 255, 0.07) !important;
-    color: rgba(167, 167, 167, 0.6) !important;
+	background-color: rgba(255, 255, 255, 0.07) !important;
+	color: rgba(167, 167, 167, 0.6) !important;
 }
 
 .react-datepicker .react-datepicker__day {
@@ -736,27 +736,27 @@ textarea {
 }
 
 .channel-pins-wrap {
-    background: rgba(0,0,0,0.9) !important;
+	background: rgba(0,0,0,0.9) !important;
 }
 
 .channel-pins-wrap .header,
 .channel-pins-wrap .footer {
-    background-color: rgba(0,0,0,0.95) !important;
-    box-shadow: none !important;
+	background-color: rgba(0,0,0,0.95) !important;
+	box-shadow: none !important;
 }
 
 .channel-pins .message-group {
-    background-color: rgba(0,0,0,0.7) !important;
+	background-color: rgba(0,0,0,0.7) !important;
 }
 
 .channel-pins .message-group:hover {
-    box-shadow: 0 0 4px 5px rgba(37, 172, 232, 0.1);
-    border-color: rgba(37, 172, 232, 0.47) !important;
+	box-shadow: 0 0 4px 5px rgba(37, 172, 232, 0.1);
+	border-color: rgba(37, 172, 232, 0.47) !important;
 }
 
 .channel-pins .message-group .action-buttons {
 	box-shadow: none !important;
-    background: none !important;
+	background: none !important;
 }
 
 .channel-pins .message-group .action-buttons .jump-button {
@@ -944,14 +944,14 @@ textarea {
 	margin:10px 0px;
 	border-radius: 0px;
 	opacity: 1;
-    padding: 8px 15px;
-    line-height: 1px;
-    width: 100%;
-    text-align: center;
+	padding: 8px 15px;
+	line-height: 1px;
+	width: 100%;
+	text-align: center;
 }
 
 .chat .divider.divider-red>span {
-    color: rgba(255,255,255,0.9) !important;
+	color: rgba(255,255,255,0.9) !important;
 }
 
 .chat .divider:not(.divider-red)>span {
@@ -967,7 +967,7 @@ textarea {
 }
 
 .messages .message-group:not(.has-divider) {
-    border-bottom-color:hsla(0,0%,100%,.04) !important;
+	border-bottom-color:hsla(0,0%,100%,.04) !important;
 }
 
 .messages .message-group {
@@ -1029,33 +1029,33 @@ textarea {
 .markup pre {
 	border-radius:0 !important;
 	background:transparent !important;
-    border-color:rgba(255,255,255,0.1) !important;
+	border-color:rgba(255,255,255,0.1) !important;
 }
 
 .markup pre code.hljs {
-    background:rgba(255,255,255,0.1) !important;
-    color:rgba(255,255,255,0.7) !important;
-    padding:1em !important;
+	background:rgba(255,255,255,0.1) !important;
+	color:rgba(255,255,255,0.7) !important;
+	padding:1em !important;
 }
 
 .modal-content .markup code.inline,
 .markup code.inline {
 	background:rgba(255,255,255,0.1) !important;
-    color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7) !important;
 	padding:0.3em 0.6em !important;
 	border-radius:0 !important;
 }
 
 .messages .markup .highlight {
-    background-color:rgba(29,101,134,.5) !important;
-    color:#ddd !important;
+	background-color:rgba(29,101,134,.5) !important;
+	color:#ddd !important;
 	padding: 1px 4px;
-    border-radius: 0;
+	border-radius: 0;
 }
 
 .messages .markup .highlight:hover {
-    background-color:rgba(29,101,134,1) !important;
-    color:#fff !important;
+	background-color:rgba(29,101,134,1) !important;
+	color:#fff !important;
 }
 
 .messages .invite-button {
@@ -1065,7 +1065,7 @@ textarea {
 
 .emotewrapper img {
 	position: relative;
-    top: 7px;
+	top: 7px;
 }
 
 .channel-textarea-upload {
@@ -1136,13 +1136,13 @@ textarea {
 
 .message-group.compact .timestamp {
 	color:rgba(255,255,255,0.3) !important;
-    position:relative;
-    top:-1px;
+	position:relative;
+	top:-1px;
 }
 
 .message-group.compact .message .markup .user-name {
-    margin-right:8px;
-    font-size:14px;
+	margin-right:8px;
+	font-size:14px;
 }
 
 /*
@@ -1204,7 +1204,7 @@ textarea {
 }
 
 /*
-                       _ _     _                   _   _             
+					   _ _     _                   _   _             
  _   _ ___  ___ _ __  | (_)___| |_   ___  ___  ___| |_(_) ___  _ __  
 | | | / __|/ _ \ '__| | | / __| __| / __|/ _ \/ __| __| |/ _ \| '_ \ 
 | |_| \__ \  __/ |    | | \__ \ |_  \__ \  __/ (__| |_| | (_) | | | |
@@ -1237,13 +1237,13 @@ textarea {
 }
 
 .channel-members .avatar-small .status {
-    border-color:rgba(0,0,0,0.7) !important;
+	border-color:rgba(0,0,0,0.7) !important;
 }
 
 .channel-members h2 {
 	background: rgba(0,0,0,0);
-    padding-top: 10px;
-    padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .channel-members .member+h2 {
@@ -1255,12 +1255,12 @@ textarea {
 }
 
 /*
-                       _        __                                       _   
+					   _        __                                       _   
  _   _ ___  ___ _ __  (_)_ __  / _| ___    _ __   ___  _ __   ___  _   _| |_ 
 | | | / __|/ _ \ '__| | | '_ \| |_ / _ \  | '_ \ / _ \| '_ \ / _ \| | | | __|
 | |_| \__ \  __/ |    | | | | |  _| (_) | | |_) | (_) | |_) | (_) | |_| | |_ 
  \__,_|___/\___|_|    |_|_| |_|_|  \___/  | .__/ \___/| .__/ \___/ \__,_|\__|
-                                          |_|         |_|                    
+										  |_|         |_|                    
 */
 
 .user-popout .header {
@@ -1269,7 +1269,7 @@ textarea {
 
 .user-popout .avatar-wrapper .avatar-popout {
 	border:4px solid rgba(0,0,0,0.9);
-    background-color:rgba(0,0,0,0.9);
+	background-color:rgba(0,0,0,0.9);
 }
 
 .user-popout .body {
@@ -1280,16 +1280,16 @@ textarea {
 
 .user-popout .footer {
 	background:rgba(0,0,0,0.8);
-    border-top:1px solid rgba(255,255,255,0.2);
-    border-left:1px solid rgba(255,255,255,0.2);
+	border-top:1px solid rgba(255,255,255,0.2);
+	border-left:1px solid rgba(255,255,255,0.2);
 	border-right:1px solid rgba(255,255,255,0.2);
 	border-bottom:1px solid rgba(255,255,255,0.2);
 }
 
 .quick-message {
 	color: #fff;
-    border: 1px solid rgba(224, 229, 232, 0.26);
-    background: rgb(0, 0, 0);
+	border: 1px solid rgba(224, 229, 232, 0.26);
+	background: rgb(0, 0, 0);
 }
 
 .user-popout .username-wrapper .game,
@@ -1316,19 +1316,19 @@ textarea {
 
 /* Admin buttons */
 .user-popout .user-popout-options .btn.btn-server {
-    color: rgba(255,255,255,0.7);
-    background: rgba(240,71,71,0.4);
+	color: rgba(255,255,255,0.7);
+	background: rgba(240,71,71,0.4);
 	border: none !important;
 }
 
 .user-popout .user-popout-options .btn.btn-server:hover {
 	color: rgba(255,255,255,1);
-    background: rgba(240,71,71,1);
+	background: rgba(240,71,71,1);
 	border: none !important;
 }
 
 /*
-           _       _                 _                       _      
+		   _       _                 _                       _      
  _ __ ___ (_)_ __ (_)_ __ ___   __ _| |  _ __ ___   ___   __| | ___ 
 | '_ ` _ \| | '_ \| | '_ ` _ \ / _` | | | '_ ` _ \ / _ \ / _` |/ _ \
 | | | | | | | | | | | | | | | | (_| | | | | | | | | (_) | (_| |  __/
@@ -1399,7 +1399,7 @@ textarea {
 
 /* CHAT */
 .bd-minimal .chat>.title-wrap>.title {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 .bd-minimal .theme-dark .comment {
@@ -1416,7 +1416,7 @@ textarea {
 }
 
 .bd-minimal .message-group .edit-message .edit-container-outer {
-    margin-left:50px;
+	margin-left:50px;
 }
 
 .bd-minimal .message-group .edit-message .edit-container-inner {
@@ -1426,17 +1426,17 @@ textarea {
 /* MEMBERS */
 .bd-minimal .channel-members h2 {
 	margin-top:10px;
-    margin-bottom:3px;
-    padding-left:20px;
+	margin-bottom:3px;
+	padding-left:20px;
 }
 
 .bd-minimal .channel-members h2:first-of-type {
 	margin-top:0px;
-    margin-bottom:3px;
+	margin-bottom:3px;
 }
 
 .bd-minimal .channel-members .member {
-    padding:5px 15px 8px 20px;
+	padding:5px 15px 8px 20px;
 }
 
 /* CHANNELS */
@@ -1455,8 +1455,8 @@ textarea {
 
 .bd-minimal .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
 	top:9px;
-    width:10px;
-    height:10px;
+	width:10px;
+	height:10px;
 }
 
 .bd-minimal .guild-channels h2 {
@@ -1467,12 +1467,12 @@ textarea {
 .bd-minimal #rtc-connection,
 .bd-minimal #voice-connection {
 	width:176px;
-    margin-left:-46px;
+	margin-left:-46px;
 }
 
 .bd-minimal .account {
 	width:206px;
-    margin-left:-46px;
+	margin-left:-46px;
 }
 
 .bd-minimal .account .avatar-small {
@@ -1733,12 +1733,12 @@ textarea {
 }
 
 /*
-          _   _   _                 
+		  _   _   _                 
  ___  ___| |_| |_(_)_ __   __ _ ___ 
 / __|/ _ \ __| __| | '_ \ / _` / __|
 \__ \  __/ |_| |_| | | | | (_| \__ \
 |___/\___|\__|\__|_|_| |_|\__, |___/
-                          |___/     
+						  |___/     
 */
 
 .layer {
@@ -1843,7 +1843,7 @@ textarea {
 /* OLD SETTINGS */
 
 .context-menu {
-    background: rgba(0,0,0,0.95) !important;
+	background: rgba(0,0,0,0.95) !important;
 }
 
 .context-menu .item:hover,
@@ -1888,7 +1888,7 @@ textarea {
 }
 
 .tab-bar.SIDE {
-    margin-right: -17px;
+	margin-right: -17px;
 }
 
 .tab-bar.SIDE .tab-bar-item.selected {
@@ -1994,8 +1994,8 @@ textarea {
 .form .btn-default {
 	padding:10px 0 !important;
 	width: 75px;
-    height: 35.5px;
-    border-radius: 3px;
+	height: 35.5px;
+	border-radius: 3px;
 }
 
 .form hr,
@@ -2149,8 +2149,8 @@ textarea {
 
 .CodeMirror {
 	background: rgba(255,255,255,0.15) !important;
-    border-radius: 0px;
-    color: rgba(255,255,255,0.8) !important;
+	border-radius: 0px;
+	color: rgba(255,255,255,0.8) !important;
 }
 
 .CodeMirror-gutters {
@@ -2206,13 +2206,23 @@ textarea {
 	color:var(--accent-color);
 }
 
-/*#user-profile-modal .header,*/
-#user-profile-modal .btn {
-	background:var(--main-color);
+#user-profile-modal {
+	border-radius: 5px;
 }
 
-#user-profile-modal .btn:hover {
-	background:var(--accent-color);
+#user-profile-modal .header {
+	border-radius: 5px 5px 0 0;
+	background: var(--main-color-faded);
+	background-image: none !important;
+}
+
+#user-profile-modal .header:after {
+	background-image: none !important;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#user-profile-modal .btn {
+	background:var(--main-color);
 }
 
 #user-profile-modal .guilds .section .connected-accounts .connected-account {
@@ -2242,13 +2252,23 @@ textarea {
 }
 
 #user-profile-modal .avatar-profile {
-    width: 126px !important;
-    height: 126px !important;
+	width: 126px !important;
+	height: 126px !important;
 }
 
 #user-profile-modal .header .header-info .header-info-inner .discord-tag {
 	font-size: 22px !important;
 	font-weight: bold !important;
+	color: #fff;
+}
+
+#user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {
+	color: rgba(255, 255, 255, 0.5);
+	padding-left: 3px;
+}
+
+#user-profile-modal .header .header-info .header-info-inner .activity {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 #user-profile-modal .avatar-wrapper {
@@ -2315,19 +2335,19 @@ textarea {
 }
 
 #bda-qem button:hover {
-    background: rgba(0,0,0,0.6) !important;
+	background: rgba(0,0,0,0.6) !important;
 }
 
 #bda-qem button.active {
-    background: rgba(0,0,0,1) !important;
+	background: rgba(0,0,0,1) !important;
 }
 
 /* Scrollbar drag bar */
 .emoji-picker .scroller::-webkit-scrollbar-thumb,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb {
-    background:rgba(255,255,255,0.4) !important;
-    border-color:rgba(255,255,255,0) !important;
+	background:rgba(255,255,255,0.4) !important;
+	border-color:rgba(255,255,255,0) !important;
 }
 
 /* Scrollbar background */
@@ -2341,7 +2361,7 @@ textarea {
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece {
 	background:rgba(255,255,255,0.1) !important;
-    border-color:rgba(255,255,255,0) !important;
+	border-color:rgba(255,255,255,0) !important;
 }
 
 .instant-invite-modal {
@@ -2362,26 +2382,26 @@ textarea {
 
 .popout-menu.status-picker {
 	background: transparent;
-    width: 322px !important;
-    margin-left: 0px !important;
-    margin-bottom: 0 !important;
+	width: 322px !important;
+	margin-left: 0px !important;
+	margin-bottom: 0 !important;
 }
 
 .popout-menu .popout-menu-separator {
-    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+	border-bottom: 1px solid rgba(255,255,255,0.2) !important;
 }
 
 .popout-menu .popout-menu-item {
-    background: rgba(0,0,0,0.95) !important;
+	background: rgba(0,0,0,0.95) !important;
 }
 
 .popout-top .popout-menu .popout-menu-item {
-    color: rgba(255,255,255,0.8) !important;
+	color: rgba(255,255,255,0.8) !important;
 }
 
 .popout-menu .popout-menu-item:hover {
-    background-color: var(--accent-color) !important;
-    color: rgba(255,255,255,0.8) !important;
+	background-color: var(--accent-color) !important;
+	color: rgba(255,255,255,0.8) !important;
 }
 
 .popout-top {
@@ -2394,8 +2414,8 @@ textarea {
 }
 
 .themed-popout {
-    background-color: rgba(12, 13, 14, 0.9) !important;
-    border: 1px solid rgba(255,255,255,.1) !important;
+	background-color: rgba(12, 13, 14, 0.9) !important;
+	border: 1px solid rgba(255,255,255,.1) !important;
 }
 
 .themed-popout .header, .themed-popout .footer {
@@ -2403,14 +2423,14 @@ textarea {
 }
 
 .themed-popout .messages-popout .message-group {
-    border-color: rgba(28,36,43,0) !important;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+	border-color: rgba(28,36,43,0) !important;
+	background-color: rgba(0, 0, 0, 0.9) !important;
 	box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.45) !important;
 }
 
 .themed-popout .messages-popout .message-group:hover .action-buttons {
-    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.7) !important;
-    background-color: rgba(0, 0, 0, 0.8) !important;
+	box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.7) !important;
+	background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .themed-popout .messages-popout .message-group:hover .action-buttons .jump-button {
@@ -2418,7 +2438,7 @@ textarea {
 }
 
 /*
-             _     _ _        _     _     _   
+			 _     _ _        _     _     _   
  _ __  _   _| |__ | (_) ___  | |   (_)___| |_ 
 | '_ \| | | | '_ \| | |/ __| | |   | / __| __|
 | |_) | |_| | |_) | | | (__  | |___| \__ \ |_ 
@@ -2445,14 +2465,14 @@ textarea {
 
 #pubs-footer {
 	padding:10px;
-    font-size:12px;
+	font-size:12px;
 	background:rgba(0,0,0,0.8) !important;
 	border-radius:0 0 5px 5px;
 }
 
 .server-icon {
 	width:50px;
-    height:50px;
+	height:50px;
 	border-radius:100%;
 }
 
@@ -2467,9 +2487,9 @@ textarea {
 .server-info button {
 	background-color:var(--accent-color) !important;
 	width:70px;
-    height:40px;
-    margin-top:4px;
-    margin-right:4px;
+	height:40px;
+	margin-top:4px;
+	margin-right:4px;
 }
 
 .server-info button:hover {
