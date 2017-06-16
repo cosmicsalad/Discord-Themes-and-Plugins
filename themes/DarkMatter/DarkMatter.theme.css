@@ -3,13 +3,13 @@
 
 /* 	
 	MAIN VARS
-	Change these if you want to modify the basics of the theme.
+	Change these to modify dark matter's colors.
  */
 
 :root {
 
 	--main-color: rgba(37,172,232,1);
-	--main-color-faded: rgba(37,172,232,0.2);
+	--main-color-faded: rgba(37,172,232,0.4);
 	--accent-color: rgba(29,101,134,1);
 
 	/* Modal Background Color / Opacity */
@@ -2309,6 +2309,7 @@ textarea {
 #user-profile-modal .avatar-wrapper {
 	background-color: transparent;
 	box-shadow: 0 8px 40px -5px rgba(0,0,0,1);
+	border-radius: 100%;
 }
 
 .bda-slist li:first-of-type {
