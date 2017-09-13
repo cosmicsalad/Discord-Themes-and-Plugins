@@ -1,6 +1,6 @@
 ### A work-in-progress collection of quality themes for use with [BetterDiscord](https://betterdiscord.net)
 
-*All themes go into %AppData%\BetterDiscord\themes* , or for just CSS paste into CSS editor
+*All themes go into %AppData%\BetterDiscord\themes* , or for just CSS just paste [this](https://raw.githubusercontent.com/peaches6/Discord-Themes-and-Plugins/master/themes/DarkMatter/DarkMatter.theme.css "Paste this into CSS editor") into CSS editor
 
 #### Dark Matter | *A cold, dark & frosty theme.*
 
