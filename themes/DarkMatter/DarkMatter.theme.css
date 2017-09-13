@@ -1,4 +1,4 @@
-//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad)","version":"1.5.3"}*//{}
+//META{"name":"Dark_Matter","description":"A cold, dark & frosty theme","author":"Hammock (CosmicSalad) - Edited by peaches6","version":"1.5.3"}*//{}
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 /* 	
@@ -30,7 +30,7 @@
 /* Main background and settings background */
 .app,
 .callout-backdrop {
-	background: url(https://i.imgur.com/7SbtKvw.png) !important;
+	background: url(http://i.imgur.com/QXHtnIc.jpg) !important;
 	background-size: cover !important;
 }
 
@@ -405,7 +405,7 @@ textarea {
 	width:40px;
 	height:40px;
 	content:'';
-	background-image: url(https://i.imgur.com/233d55Y.gif) !important;
+	background-image: url(https://i.imgur.com/8Mtf5vY.gif) !important;
 	background-size:110%;
 	background-repeat:no-repeat;
 	background-position:top center;
