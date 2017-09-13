@@ -4,4 +4,4 @@
 
 ##### Dark Matter | *A cold, dark & frosty theme.*
 
-![Alt text](/demo.png?raw=true "Optional Title")
+![Alt text](/demo_img.png?raw=true "Optional Title")
