@@ -8,10 +8,10 @@
 #### Nissan Silvia S13 | *Blurred rolling shot of an S13.*
 
 
-![Alt text](/demo_img.png?raw=true "Demo Image")
+![Alt text](https://github.com/peaches6/Discord-Themes-and-Plugins/blob/master/demo_img.png?raw=true "Demo Image")
 
 
-![Alt text](/anim_demo.gif?raw=true "Demo Image")
+![Alt text](https://github.com/peaches6/Discord-Themes-and-Plugins/blob/master/anim_demo.gif?raw=true "Demo Image")
 
 #### Quick Settings
 
