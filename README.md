@@ -2,7 +2,10 @@
 
 *All themes go into %AppData%\BetterDiscord\themes* , or for just CSS just paste [this](https://raw.githubusercontent.com/peaches6/Discord-Themes-and-Plugins/master/themes/DarkMatter/DarkMatter.theme.css "Paste this into CSS editor") into CSS editor
 
+### Themes included:
+
 #### Dark Matter | *A cold, dark & frosty theme.*
+#### Nissan Silvia S13 | *Blurred rolling shot of an S13.*
 
 ![Alt text](/demo_img.png?raw=true "Demo Image")
 
