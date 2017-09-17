@@ -11,7 +11,7 @@
 ![Alt text](/demo_img.png?raw=true "Demo Image")
 
 
-![Alt text](/dnim_demo.gif?raw=true "Demo Image")
+![Alt text](/anim_demo.gif?raw=true "Demo Image")
 
 #### Quick Settings
 
