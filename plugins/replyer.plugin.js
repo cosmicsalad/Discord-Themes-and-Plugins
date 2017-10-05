@@ -14,9 +14,6 @@ Replyer.prototype.getVersion = function() {
 Replyer.prototype.getAuthor = function() {
     return "Hammock & Zerebos";
 };
-Replyer.prototype.getReactInstance = function(node) { 
-	return node[Object.keys(node).find((key) => key.startsWith("__reactInternalInstance"))];
-}
 Replyer.prototype.start = function() {
 	$(document).on("mouseover.rpr", function(e) {
 		var target = $(e.target);
@@ -29,14 +26,14 @@ Replyer.prototype.start = function() {
 				if (nameDateBlock.find('.replyer').length == 0) {
 					$(this).find(nameDateBlock).append(replyBtn);
 					$(this).find('.replyer').click(function() {
-						var getReactInstance = function(node) { 
-							return node[Object.keys(node).find((key) => key.startsWith("__reactInternalInstance"))];
-						}
-						var group = $(this).parents('.message-group')
-						var user = getReactInstance(group[0])._currentElement.props.children[1].props.children["0"]["0"].props.message.author.id
-						$('.content .channel-textarea textarea').val('<@!'+user+'> '+$('.content .channel-textarea textarea').val()).focus();
-						$('.content .channelTextArea-1HTP3C textarea').val('<@!'+user+'> '+$('.content .channelTextArea-1HTP3C textarea').val()).focus();
-						$('.content .channelTextArea-1HTP3C textarea')[0].dispatchEvent(new Event('input', { bubbles: true }))
+						var group = $(this).parents('.message-group')[0];
+						var user = group[Object.keys(group).find((key) => key.startsWith("__reactInternalInstance"))].child.child.memoizedProps.user.id
+						var reply = '<@!'+user+'> '
+						var textarea = $('.content .channelTextArea-1HTP3C textarea')[0]
+						textarea.focus()
+						textarea.selectionStart = 0;
+						textarea.selectionEnd = 0;
+						document.execCommand("insertText", false, reply);
 					});
 				}
 			});
