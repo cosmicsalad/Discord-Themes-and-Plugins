@@ -34,6 +34,8 @@ Replyer.prototype.start = function() {
 						textarea.selectionStart = 0;
 						textarea.selectionEnd = 0;
 						document.execCommand("insertText", false, reply);
+						textarea.selectionStart = textarea.value.length;
+						textarea.selectionEnd = textarea.value.length;
 					});
 				}
 			});
