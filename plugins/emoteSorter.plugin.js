@@ -11,7 +11,7 @@ ESorter.prototype.getDescription = function() {
 };
 
 ESorter.prototype.getVersion = function() {
-    return "1.1";
+    return "1.1.1";
 };
 
 ESorter.prototype.getAuthor = function() {
