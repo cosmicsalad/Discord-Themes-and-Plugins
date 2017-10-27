@@ -47,7 +47,7 @@ ESorter.prototype.activateEmoteList = function() {
 ESorter.prototype.initEmoteList = function() {
 
 	// make channel list sortable
-	$('.channel-textarea-emoji').on('click',function() {
+	$('.emojiButton-38mF6t').on('click',function() {
 
 		// set initial order
 		storedEmoteOrder = JSON.parse(bdPluginStorage.get("sortEmoteOrder", 'config'));
