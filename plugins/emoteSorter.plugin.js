@@ -11,7 +11,7 @@ ESorter.prototype.getDescription = function() {
 };
 
 ESorter.prototype.getVersion = function() {
-    return "1.1";
+    return "1.1.2";
 };
 
 ESorter.prototype.getAuthor = function() {
@@ -44,10 +44,7 @@ ESorter.prototype.activateEmoteList = function() {
 	}).disableSelection();
 }
 
-ESorter.prototype.initEmoteList = function() {
-
-	// make channel list sortable
-	$('.channel-textarea-emoji').on('click',function() {
+ESorter.prototype.onClick = function() {
 
 		// set initial order
 		storedEmoteOrder = JSON.parse(bdPluginStorage.get("sortEmoteOrder", 'config'));
@@ -68,13 +65,18 @@ ESorter.prototype.initEmoteList = function() {
 					
 					function sortemotes(a,b){
 						return ($(b).data('sort')) < ($(a).data('sort')) ? 1 : -1;    
-					}
 				}
+			}
 
-			}, 10);
-		}
+		}, 10);
+	}
 
-	});
+};
+
+ESorter.prototype.initEmoteList = function() {
+
+	$(document).on('click', '.emojiButton-38mF6t', event => ESorter.prototype.onClick());
+	$(document).on('click', '.btn-reaction', event => ESorter.prototype.onClick());
 
 	this.storeNewEmoteList();
 
