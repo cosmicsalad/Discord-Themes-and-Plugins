@@ -75,7 +75,7 @@ ESorter.prototype.onClick = function() {
 
 ESorter.prototype.initEmoteList = function() {
 
-	$('.emojiButton-38mF6t').on('click', ESorter.prototype.onClick());
+	$(document).on('click', '.emojiButton-38mF6t', event => ESorter.prototype.onClick());
 	$(document).on('click', '.btn-reaction', event => ESorter.prototype.onClick());
 
 	this.storeNewEmoteList();
