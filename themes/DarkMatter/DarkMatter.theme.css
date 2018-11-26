@@ -16,7 +16,6 @@
 	--short-gradient: linear-gradient(45deg, rgba(29,101,134,0.5), rgba(37,172,232,0.5));
 	--short-gradient-faded: linear-gradient(45deg, rgba(29,101,134,0.1), rgba(37,172,232,0.1));
 }
-
 /*
 					 _                _                                   _ 
   __ _ _ __  _ __   | |__   __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |
@@ -108,16 +107,27 @@ textarea {
 }
 
 /* Server list area */
-.guilds-wrapper { background:rgba(0,0,0,0.6) !important }
+.theme-dark .guildsWrapper-5TJh6A { 
+	background:rgba(0,0,0,0.75) !important
+}
 
 /* Channels list area */
 .channels-Ie2l6A { background:rgba(0,0,0,0.7) }
 
 /* Chat area */
-.content .flex-spacer { background:rgba(0,0,0,0.8) }
-
+.flex-spacer .flex-vertical {
+	background:rgba(0,0,0,0.7) 
+}
+.theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
+    background-color: rgba(0, 0, 0, 0);
+} 
+.theme-dark .messagesWrapper-3lZDfY {
+        background-color: rgba(0, 0, 0, 0);
+}
 /* User list area */
-.channel-members { background:rgba(0,0,0,0.9) !important }
+.theme-dark .members-1998pB {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 /*
  _              _ _   _           
