@@ -122,12 +122,21 @@ textarea {
     background-color: rgba(0, 0, 0, 0);
 } 
 .theme-dark .messagesWrapper-3lZDfY {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, .4);
 }
 /* User list area */
 .theme-dark .members-1998pB {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.87);
 }
+/*header search bar area*/
+.theme-dark .title-3qD0b- {
+	background: rgba(0,0,0,1);
+}
+.appMount-3VJmYg {
+	background-color: rgba(0,0,0,1);
+}
+
+
 
 /*
  _              _ _   _           
@@ -183,9 +192,9 @@ textarea {
 	background-color: var(--main-color);
 }
 
-.container-2Thooq {
+.theme-dark .container-2Thooq {
 	height: 75px;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.0);
 	padding: 0 10px 0 15px;
 }
 
@@ -911,7 +920,7 @@ textarea {
 
 .header-2o-2hj {
 	border-bottom: 0px solid rgba(0,0,0,0.3) !important;
-	background: rgba(0,0,0,0.15) !important;
+	background: rgba(0,0,0,0.05) !important;
 	box-shadow: none !important;
 	height: 49px !important;
 }
@@ -1393,13 +1402,24 @@ textarea {
 .body-3ND3kc,
 .body-3rkFrF,
 .footer-2J5zqP {
-	background-color: var(--dark-color) !important;
+	background-color: var(--dark-color);
 }
+.theme-dark .body-3ND3kc {
+    background-color: rgba(0, 0, 0, 0.86); !important
+}
+
 
 .headerNormal-1cioxU {
 	background: var(--main-color) !important;
 	position: relative;
 	z-index: 1;
+}
+.theme-dark .headerNormal-T_seeN {
+    background-color: rgba(0, 0, 0, 0.86);
+}
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+    background-color: rgba(0, 0, 0, 0.86);
+    color: hsla(0,0%,100%,.8);
 }
 
 .buttonDefault-2OLW-v,
@@ -1693,7 +1713,8 @@ textarea {
 	background: var(--dark-color) !important;
     margin-bottom: 20px;
     border-radius: 5px;
-    padding: 15px 15px 0 15px;
+    padding: 15px 2px 5px 15px;
+	margin-top: 2px;
 }
 
 #bd-settingspane-container .content-column .ui-switch-item .ui-form-text {
@@ -1960,6 +1981,17 @@ textarea {
 	background: var(--dark-color) !important;
 }
 
+.theme-dark .paymentPane-3bwJ6A {
+    background-color: rgba(0, 0, 0, 0.68);
+    color: #f6f6f7;
+}
+.theme-dark .hoverablePayment-Yc6mK7:hover {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+.theme-dark .paginator-2CA79G {
+    color: #72767d;
+}
+
 .form-deprecated .Select-control .Select-arrow {
     top: 0;
 }
@@ -2047,6 +2079,12 @@ textarea {
 
 .ui-standard-sidebar-view {
 	background: transparent !important;
+}
+.theme-dark .standardSidebarView-3F1I7i {
+    background: rgba(0, 0, 0, 0.68);
+}
+.theme-dark .contentRegion-3nDuYy {
+    background: rgba(0, 0, 0, 0.07);
 }
 
 .ui-standard-sidebar-view .sidebar-region,
