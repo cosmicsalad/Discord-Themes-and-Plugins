@@ -421,29 +421,19 @@ textarea {
 .guilds-wrapper .guilds .guild .guild-inner {
 	line-height:40px;
 }
-
-.guilds-wrapper .guilds .friends-icon {
-	width:40px;
-	height:40px;
-	background-size:25px 19px;
-}
-
-.guilds-wrapper .guilds .friends-icon {
+.theme-dark .homeIcon-1FoKUJ {
+    color: rgba(255, 255, 255, 0); /* DON'T TOUCH THIS OR THIS DISCORD LOGO WILL OVERLAY YOUR IMAGE */
+    background-position: top left; /* This is the section of the image that you want to use, for exmaple this is using the top left of the image, you would probably want to change this to center or top center */
+    background-repeat: no-repeat; /* You probably won't need to change this */
+    background-size: 100%; /* This is how zoomed in your image will be, change this back to 100% and increase or decrease as needed */
+	height: 50px;
+    width: 50px;
 	background-color: rgba(0,0,0,0.3) !important;
-	background-image: none !important;
+	background-image: url(https://i.imgur.com/233d55Y.gif) !important;
 	padding-top:0px;
 }
 
-.guilds-wrapper .guilds .friends-icon:after {
-	display:block;
-	width:40px;
-	height:40px;
-	content:'';
-	background-image: url(https://i.imgur.com/233d55Y.gif) !important;
-	background-size:110%;
-	background-repeat:no-repeat;
-	background-position:top center;
-}
+
 
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
 	background-size:12px;
