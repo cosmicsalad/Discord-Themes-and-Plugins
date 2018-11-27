@@ -5,3 +5,6 @@
 ##### Dark Matter | *A cold, dark & frosty theme.*
 
 ![Alt text](/dm-ss.jpg?raw=true "Optional Title")
+
+##### Dark Matter Double Column| *A cold, dark & frosty theme.*
+![Alt text](/Dark_Matter_DCSL.png?raw=true "Optional Title")
