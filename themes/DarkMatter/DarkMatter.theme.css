@@ -16,7 +16,6 @@
 	--short-gradient: linear-gradient(45deg, rgba(29,101,134,0.5), rgba(37,172,232,0.5));
 	--short-gradient-faded: linear-gradient(45deg, rgba(29,101,134,0.1), rgba(37,172,232,0.1));
 }
-
 /*
 					 _                _                                   _ 
   __ _ _ __  _ __   | |__   __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |
@@ -108,16 +107,36 @@ textarea {
 }
 
 /* Server list area */
-.guilds-wrapper { background:rgba(0,0,0,0.6) !important }
+.theme-dark .guildsWrapper-5TJh6A { 
+	background:rgba(0,0,0,0.75) !important
+}
 
 /* Channels list area */
 .channels-Ie2l6A { background:rgba(0,0,0,0.7) }
 
 /* Chat area */
-.content .flex-spacer { background:rgba(0,0,0,0.8) }
-
+.flex-spacer .flex-vertical {
+	background:rgba(0,0,0,0.7) 
+}
+.theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
+    background-color: rgba(0, 0, 0, 0);
+} 
+.theme-dark .messagesWrapper-3lZDfY {
+        background-color: rgba(0, 0, 0, .4);
+}
 /* User list area */
-.channel-members { background:rgba(0,0,0,0.9) !important }
+.theme-dark .members-1998pB {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+/*header search bar area*/
+.theme-dark .title-3qD0b- {
+	background: rgba(0,0,0,1);
+}
+.appMount-3VJmYg {
+	background-color: rgba(0,0,0,1);
+}
+
+
 
 /*
  _              _ _   _           
@@ -173,9 +192,9 @@ textarea {
 	background-color: var(--main-color);
 }
 
-.container-2Thooq {
+.theme-dark .container-2Thooq {
 	height: 75px;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.0);
 	padding: 0 10px 0 15px;
 }
 
@@ -402,29 +421,19 @@ textarea {
 .guilds-wrapper .guilds .guild .guild-inner {
 	line-height:40px;
 }
-
-.guilds-wrapper .guilds .friends-icon {
-	width:40px;
-	height:40px;
-	background-size:25px 19px;
-}
-
-.guilds-wrapper .guilds .friends-icon {
+.theme-dark .homeIcon-1FoKUJ {
+    color: rgba(255, 255, 255, 0); /* DON'T TOUCH THIS OR THIS DISCORD LOGO WILL OVERLAY YOUR IMAGE */
+    background-position: top left; /* This is the section of the image that you want to use, for exmaple this is using the top left of the image, you would probably want to change this to center or top center */
+    background-repeat: no-repeat; /* You probably won't need to change this */
+    background-size: 100%; /* This is how zoomed in your image will be, change this back to 100% and increase or decrease as needed */
+	height: 50px;
+    width: 50px;
 	background-color: rgba(0,0,0,0.3) !important;
-	background-image: none !important;
+	background-image: url(https://i.imgur.com/233d55Y.gif) !important;
 	padding-top:0px;
 }
 
-.guilds-wrapper .guilds .friends-icon:after {
-	display:block;
-	width:40px;
-	height:40px;
-	content:'';
-	background-image: url(https://i.imgur.com/233d55Y.gif) !important;
-	background-size:110%;
-	background-repeat:no-repeat;
-	background-position:top center;
-}
+
 
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
 	background-size:12px;
@@ -901,7 +910,7 @@ textarea {
 
 .header-2o-2hj {
 	border-bottom: 0px solid rgba(0,0,0,0.3) !important;
-	background: rgba(0,0,0,0.15) !important;
+	background: rgba(0,0,0,0.05) !important;
 	box-shadow: none !important;
 	height: 49px !important;
 }
@@ -1383,13 +1392,24 @@ textarea {
 .body-3ND3kc,
 .body-3rkFrF,
 .footer-2J5zqP {
-	background-color: var(--dark-color) !important;
+	background-color: var(--dark-color);
 }
+.theme-dark .body-3ND3kc {
+    background-color: rgba(0, 0, 0, 0.86); !important
+}
+
 
 .headerNormal-1cioxU {
 	background: var(--main-color) !important;
 	position: relative;
 	z-index: 1;
+}
+.theme-dark .headerNormal-T_seeN {
+    background-color: rgba(0, 0, 0, 0.86);
+}
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+    background-color: rgba(0, 0, 0, 0.86);
+    color: hsla(0,0%,100%,.8);
 }
 
 .buttonDefault-2OLW-v,
@@ -1683,7 +1703,8 @@ textarea {
 	background: var(--dark-color) !important;
     margin-bottom: 20px;
     border-radius: 5px;
-    padding: 15px 15px 0 15px;
+    padding: 15px 2px 5px 15px;
+	margin-top: 2px;
 }
 
 #bd-settingspane-container .content-column .ui-switch-item .ui-form-text {
@@ -1950,6 +1971,17 @@ textarea {
 	background: var(--dark-color) !important;
 }
 
+.theme-dark .paymentPane-3bwJ6A {
+    background-color: rgba(0, 0, 0, 0.68);
+    color: #f6f6f7;
+}
+.theme-dark .hoverablePayment-Yc6mK7:hover {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+.theme-dark .paginator-2CA79G {
+    color: #72767d;
+}
+
 .form-deprecated .Select-control .Select-arrow {
     top: 0;
 }
@@ -2037,6 +2069,12 @@ textarea {
 
 .ui-standard-sidebar-view {
 	background: transparent !important;
+}
+.theme-dark .standardSidebarView-3F1I7i {
+    background: rgba(0, 0, 0, 0.68);
+}
+.theme-dark .contentRegion-3nDuYy {
+    background: rgba(0, 0, 0, 0.07);
 }
 
 .ui-standard-sidebar-view .sidebar-region,
